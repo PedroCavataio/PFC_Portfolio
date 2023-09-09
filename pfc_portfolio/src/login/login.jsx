@@ -137,8 +137,14 @@ const Login = ({ onLogin, access }) => {
         </div>
         <button className="login-button" disabled={access}>
           Ingresar
-        </button>
+        </button>        
       </div>
+      <div>
+      <button className="Saltar-button" disabled={access}>
+          Saltar Intro
+        </button> 
+      </div>
+
       <div>
         <ToastContainer />
       </div>
