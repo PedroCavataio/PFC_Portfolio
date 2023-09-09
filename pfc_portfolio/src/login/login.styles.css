@@ -1,0 +1,79 @@
+.login-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;  
+  background-color: #c2c1c1;
+}
+
+.planetLogin-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh; 
+ /*  z-index: -1; */
+}
+
+.contenedor {
+  position: absolute;
+  top: 40%; 
+  left: 55%;   
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(6, 101, 179, 0);
+}
+
+.login-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+.login-input {
+  height: 1.5rem;
+  padding: .5rem;
+  font-size: 1.0rem;
+  border: 2px solid #2d2d2e00;
+  border-radius: 5px;
+  width: 70%;
+  background-color: rgb(245, 248, 248);
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+.login-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: rgb(245, 248, 248);
+  color: #6d6c6c;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #2d2d2e00;
+  position: absolute;
+  top: 65%; 
+  left: 65%; 
+}
+
+.login-button:hover {
+  color: rgb(248, 246, 246);
+  background-color: #175188cb;
+  border: 2px solid #2d2d2e00;
+}
+
+.nombre-image {
+  position: absolute;
+  top: 0; 
+  left: 2%; 
+  height: 200px;
+}
