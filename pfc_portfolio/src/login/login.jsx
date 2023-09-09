@@ -25,7 +25,7 @@ const Login = ({ onLogin, access }) => {
     if (Object.keys(validationErrors).length === 0) {
       notify();
       onLogin(userData);
-      setUserData({ nombre: '', estacion: '' });
+      setUserData({ nombre: "", estacion: "" });
       setErrors({});
       setTimeout(() => {
         navigate(`/landing/${userData.estacion}`);
@@ -39,24 +39,26 @@ const Login = ({ onLogin, access }) => {
     const errors = {};
 
     if (!userData.nombre) {
-      errors.nombre = 'El nombre es requerido';
+      errors.nombre = "El nombre es requerido";
     } else if (!isValidNombre(userData.nombre)) {
-      errors.nombre = 'El nombre no es válido';
+      errors.nombre = "El nombre no es válido";
     } else if (userData.nombre.length > 35) {
-      errors.nombre = 'El nombre no puede tener más de 35 caracteres';
+      errors.nombre = "El nombre no puede tener más de 35 caracteres";
     }
 
     if (!userData.estacion) {
-      errors.estacion = 'La estación del año es requerida';
+      errors.estacion = "La estación del año es requerida";
     } else if (userData.estacion.length < 5 || userData.estacion.length > 10) {
-      errors.estacion = 'La estación del año, debe tener entre 5 y 10 caracteres';
+      errors.estacion =
+        "La estación del año, debe tener entre 5 y 10 caracteres";
     } else if (
       userData.estacion !== "verano" &&
-      userData.estacion !== "otoño" && 
+      userData.estacion !== "otoño" &&
       userData.estacion !== "primavera" &&
       userData.estacion !== "invierno"
-      ) {
-        errors.estacion = 'Esa no es una estación del año válida, te doy una pista (invierno/primavera/verano/otoño)';
+    ) {
+      errors.estacion =
+        "Esa no es una estación del año válida, te doy una pista (invierno/primavera/verano/otoño)";
     }
     return errors;
   };
@@ -67,7 +69,7 @@ const Login = ({ onLogin, access }) => {
 
   const notify = () => {
     toast.success(
-    `¡Genial, ${userData.nombre}! ¡Excelente elección!. ${userData.estacion} es una época maravillosa del año.`,
+      `¡Genial, ${userData.nombre}! ¡Excelente elección!. ${userData.estacion} es una época maravillosa del año.`,
       {
         position: toast.POSITION.TOP_RIGHT,
         autoClose: 5000,
@@ -77,33 +79,22 @@ const Login = ({ onLogin, access }) => {
         draggable: true,
         progress: undefined,
         theme: "colored",
-        }
+      }
     );
   };
 
-
   return (
     <form className="login-container" onSubmit={handleSubmit}>
-      <div>
-      <img
-          src={fondoLogin}
-          alt="fondo Login"
-          className="planetLogin-image"
-        />
+      <div className="image-container">
+        <img src={fondoLogin} alt="fondo Login" className="planetLogin-image" />
       </div>
-      <div>
-        <img
-          src={pedroCavataio}
-          alt="pedroIndex"
-          className="nombre-image"
-        />
+      <div className="image-logo">
+        <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" />
       </div>
       <div className="contenedor">
+        <div className="hola">Aloha!! :)</div>
         <div className="login-group">
-          <label htmlFor="nombre">
-            {" "}
-            ¿Cuál es tu nombre?
-          </label>
+          <label htmlFor="nombre"> ¿Cuál es tu nombre?</label>
           <input
             placeholder="nombre"
             type="text"
@@ -116,7 +107,9 @@ const Login = ({ onLogin, access }) => {
             autoFocus
           />
           {errors.nombre && (
-            <span className="error-message">{errors.nombre}</span>
+            <span className={`error-message ${errors.nombre ? "active" : ""}`}>
+              {errors.nombre}
+            </span>
           )}
         </div>
         <div className="login-group">
@@ -135,16 +128,20 @@ const Login = ({ onLogin, access }) => {
             autoFocus
           />
           {errors.estacion && (
-            <span className="error-message">{errors.estacion}</span>
+            <span
+              className={`error-message ${errors.estacion ? "active" : ""}`}
+            >
+              {errors.estacion}
+            </span>
           )}
         </div>
+        <button className="login-button" disabled={access}>
+          Ingresar
+        </button>
       </div>
-      <button className="login-button" disabled={access}>
-        Ingresar
-      </button>
       <div>
         <ToastContainer />
-          </div>
+      </div>
     </form>
   );
 };

@@ -1,79 +1,105 @@
 .login-container {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;  
-  background-color: #c2c1c1;
+  height: 100vh;
+  background-color: #ddddda;
+  position: absolute;
 }
 
 .planetLogin-image {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0; 
+  left: 0; 
+  width: auto; 
   height: 100vh; 
- /*  z-index: -1; */
+  object-fit: cover; 
+}
+
+.nombre-image {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  height: 200px;
 }
 
 .contenedor {
-  position: absolute;
-  top: 40%; 
-  left: 55%;   
-  padding: 20px;
+  padding: 40px;
   border-radius: 5px;
-  background-color: rgba(6, 101, 179, 0);
+  background-color: rgba(218, 220, 221, 0);
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .login-group {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 300px; 
+  min-height: 5rem;  
 }
 
 label {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.5rem;
   color: #525252;
 }
 
+.hola {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+  color: #525252;
+  padding-bottom: 20%;
+}
+
 .login-input {
   height: 1.5rem;
-  padding: .5rem;
-  font-size: 1.0rem;
+  padding: 0.5rem;
+  font-size: 1rem;
   border: 2px solid #2d2d2e00;
   border-radius: 5px;
-  width: 70%;
-  background-color: rgb(245, 248, 248);
+  width: 100%;
+  background-color: rgba(147, 248, 248, 0.288);
 }
 
 .error-message {
   color: #ff0000;
   font-size: 0.8rem;
   margin-top: 0.2rem;
+  height: 1.5rem; 
+  padding: 0.2rem; 
+  visibility: hidden; 
+  overflow: hidden; 
+  transition: visibility 0.5s, height 1s; 
+ position: fixed;
+}
+
+.error-message.active {
+  visibility: visible; 
+  height: 1.5rem;
+  
 }
 
 .login-button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  background-color: rgb(245, 248, 248);
-  color: #6d6c6c;
+  background-color: #c0bfbfec;
+  color: #272727;
   border-radius: 5px;
   cursor: pointer;
   border: 2px solid #2d2d2e00;
-  position: absolute;
-  top: 65%; 
-  left: 65%; 
+  margin-top: 1rem;
 }
 
 .login-button:hover {
   color: rgb(248, 246, 246);
-  background-color: #175188cb;
+  background-color: #3c3d3ccb;
   border: 2px solid #2d2d2e00;
 }
 
-.nombre-image {
-  position: absolute;
-  top: 0; 
-  left: 2%; 
-  height: 200px;
-}
+
