@@ -13,9 +13,13 @@ const Login = ({ onLogin, access }) => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
+    const formattedValue =
+      name === "nombre"
+        ? value.charAt(0).toUpperCase() + value.slice(1)
+        : value.charAt(0).toUpperCase() + value.slice(1).toLowerCase(); 
     setUserData((prevUserData) => ({
       ...prevUserData,
-      [name]: value,
+      [name]: formattedValue,
     }));
   };
 
@@ -28,8 +32,7 @@ const Login = ({ onLogin, access }) => {
       setUserData({ nombre: "", estacion: "" });
       setErrors({});
       setTimeout(() => {
-        navigate(`/landing/${userData.estacion}`);
-        navigate(`/landing/${userData.nombre}`);
+        navigate(`/landing/${userData.estacion}?nombre=${userData.nombre}`);        
       }, 6000);
     } else {
       setErrors(validationErrors);
@@ -53,10 +56,10 @@ const Login = ({ onLogin, access }) => {
       errors.estacion =
         "La estación del año, debe tener entre 5 y 10 caracteres";
     } else if (
-      userData.estacion !== "verano" &&
-      userData.estacion !== "otoño" &&
-      userData.estacion !== "primavera" &&
-      userData.estacion !== "invierno"
+      userData.estacion !== "Verano" &&
+      userData.estacion !== "Otoño" &&
+      userData.estacion !== "Primavera" &&
+      userData.estacion !== "Invierno"
     ) {
       errors.estacion =
         "Esa no es una estación del año válida, te doy una pista (invierno/primavera/verano/otoño)";

@@ -5,6 +5,7 @@ import "./landinPage.styles.css";
 const Landing = ({ userName }) => {
   const navigate = useNavigate();
   const { estacion } = useParams();
+  const nombre = new URLSearchParams(window.location.search).get("nombre");
 
   const handleEnter = () => {
     navigate("/home");
@@ -13,13 +14,13 @@ const Landing = ({ userName }) => {
   const fondoPorEstacion = () => {
     if (!estacion) {
       return "landing-page";
-    } else if (estacion === "primavera") {
+    } else if (estacion === "Primavera") {
       return 'landing-page primavera'
-    } else if (estacion === "verano") {
+    } else if (estacion === "Verano") {
       return 'landing-page verano'
-    } else if (estacion === "otoño") {
+    } else if (estacion === "Otoño") {
       return 'landing-page otoño'
-    } else if (estacion === "invierno") {
+    } else if (estacion === "Invierno") {
       return 'landing-page invierno'
     }
   }
@@ -27,7 +28,7 @@ const Landing = ({ userName }) => {
   return (
     <div className={fondoPorEstacion()}>
       <div className="container-landing">
-        <h2 className="description-landing">{userName} te presento mi Portfolio,!</h2>
+        <h2 className="description-landing">{nombre}, te presento mi Portfolio.</h2>
         <h3 className="sub-description">By Pedro Francisco Cavataio</h3>
         <button className="enter-button-landing" onClick={handleEnter}>Ingresar</button>
       </div>

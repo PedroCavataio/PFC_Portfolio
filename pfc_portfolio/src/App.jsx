@@ -20,17 +20,21 @@ function App() {
       );
       const { access } = data;
       setAccess(access);
-      setUserName(userData.nombre); 
+      setUserName(nombre); 
+      // if (access) {
+      //   navigate("/landing:estacion");
+      // }
     } catch (error) {
       console.error(error);
     }
   }
+  
   return (
     <div>
       <Routes>
         <Route path="/" element={<Login onLogin={login} access={access} />} />
         <Route path="/nav" element={<Nav />} />
-        {/* <Route path="/landing" element={<Landing />} /> */}
+        <Route path="/landing" element={<Landing userName={userName} />} /> 
         <Route path="/landing/:estacion" element={<Landing userName={userName} />} />
       </Routes>
         
