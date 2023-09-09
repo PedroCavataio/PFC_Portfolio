@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./login.styles.css";
 import { ToastContainer, toast } from "react-toastify";
+import "./login.styles.css";
 import "react-toastify/dist/ReactToastify.css";
 import fondoLogin from "../assets/nubesLogin.jpg";
 import pedroCavataio from "../assets/LogoVerdeSinFondo.png";
@@ -29,6 +29,7 @@ const Login = ({ onLogin, access }) => {
       setErrors({});
       setTimeout(() => {
         navigate(`/landing/${userData.estacion}`);
+        navigate(`/landing/${userData.nombre}`);
       }, 6000);
     } else {
       setErrors(validationErrors);

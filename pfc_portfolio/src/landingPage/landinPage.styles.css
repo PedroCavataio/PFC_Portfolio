@@ -1,0 +1,78 @@
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/nubesLogin2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.container-landing {
+  padding: 2%;
+  max-width: 100%;
+  height: 85%;
+  width: 85%;
+  border-radius: 2%;
+  background-color: #eaeaebc5;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.26);
+}
+
+.description-landing {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #f2f2f2;
+}
+
+.sub-description {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #f2f2f2;
+}
+
+.enter-button-landing {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  background-color: #fffcfc23;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5%;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.658);
+}
+
+.enter-button-landing:hover {
+  background-color: #fcf9f900;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.658);
+  transform: scale(1.1);
+}
+
+.primavera,
+.verano,
+.otoño,
+.invierno {
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 115%; 
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.primavera {
+  background-image: url("../assets/nubesLogin2.jpg");
+}
+.verano {
+  background-image: url("../assets/otoño.png");
+}
+.otoño {
+  background-image: url("../assets/otoño.png");
+}
+.invierno {
+  background-image: url("../assets/nubesLogin2.jpg");
+}
+

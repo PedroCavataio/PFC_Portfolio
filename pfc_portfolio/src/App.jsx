@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
+import axios from "axios";
+import './App.css';
 import Nav from "./nav/nav";
 import Login from "./login/login";
-import './App.css';
-import axios from "axios";
+import Landing from "./landingPage/landingPage";
 
 function App() {
   const [access, setAccess] = useState(false);
@@ -19,6 +20,7 @@ function App() {
       );
       const { access } = data;
       setAccess(access);
+      setUserName(userData.nombre); 
     } catch (error) {
       console.error(error);
     }
@@ -28,6 +30,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Login onLogin={login} access={access} />} />
         <Route path="/nav" element={<Nav />} />
+        {/* <Route path="/landing" element={<Landing />} /> */}
+        <Route path="/landing/:estacion" element={<Landing userName={userName} />} />
       </Routes>
         
     </div>
