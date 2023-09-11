@@ -5,10 +5,12 @@ import "./login.styles.css";
 import "react-toastify/dist/ReactToastify.css";
 /* import fondoLogin from "../assets/nubesLogin.jpg"; */
 import pedroCavataio from "../assets/PEDRO.png";
+import Modal from '../modal/modal';
 
 const Login = ({ onLogin, access }) => {
   const [userData, setUserData] = useState({ nombre: "", estacion: "" });
   const [errors, setErrors] = useState({});
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const navigate = useNavigate();
 
     const redirigirAInicio = () => {
@@ -36,6 +38,7 @@ const Login = ({ onLogin, access }) => {
       setUserData({ nombre: "", estacion: "" });
       setErrors({});
       setTimeout(() => {
+        setIsModalOpen(true);
         navigate(`/landing/${userData.estacion}?nombre=${userData.nombre}`);        
       }, 1000);
     } else {
@@ -93,6 +96,7 @@ const Login = ({ onLogin, access }) => {
   };
 
   return (
+    <>
     <form className="login-container" onSubmit={handleSubmit}>
       {/* <div className="image-container">
         <img src={fondoLogin} alt="fondo Login" className="planetLogin-image" />
@@ -158,6 +162,8 @@ const Login = ({ onLogin, access }) => {
         <ToastContainer />
       </div>
     </form>
+    {isModalOpen && <Modal onClose={() => setIsModalOpen(false)} />}
+    </>
   );
 };
 
