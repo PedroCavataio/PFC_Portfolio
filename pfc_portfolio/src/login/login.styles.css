@@ -47,8 +47,8 @@
 label {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.5rem;
-  color: #e4fd04;
-  text-shadow: 2px 1px 1px rgba(9, 5, 3, 5); 
+  color: #f7ec54;
+  text-shadow: 2px 1px 1px #4e4e4e; 
 }
 
 .hola {
@@ -56,7 +56,8 @@ label {
   font-size: 4rem;
   padding-bottom: 20%;
   color: #4e4e4e;
-  text-shadow: 2px 1px 1px #edfd04; 
+  text-shadow: 2px 1px 1px #f5d313; 
+  text-align: center;
   
 }
 
@@ -68,7 +69,6 @@ label {
   border-radius: 5px;
   width: 100%;
   background-color: rgba(246, 248, 248, 0.486); 
-
 }
 
 .error-message {
@@ -92,23 +92,31 @@ label {
 .login-button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  background-color: #02fdf1ec;
-  color: #525252;
+  /* background-color: #02fdf1ec;
+  color: #525252; */
+  color: rgb(248, 246, 246);
+  background-color: #3c3d3ccb;
   border-radius: 5px;
   cursor: pointer;
   border: 2px solid #2d2d2e00;
-  margin-top: 1rem;
+  margin-top: 1rem; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
 
 .login-button:hover {
-  color: rgb(248, 246, 246);
-  background-color: #3c3d3ccb;
+  /* color: rgb(248, 246, 246);
+  background-color: #3c3d3ccb; */
+  background-color: #02fdf1ec;
+  color: #525252;
   border: 2px solid #2d2d2e00;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .Saltar-button {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: absolute;
-  background-color: #02fdf1ec;
+  color: rgb(248, 246, 246);
+  background-color: #3c3d3ccb;
   cursor: pointer;
   border-radius: 50%; 
   width: 20vw; 
@@ -118,7 +126,6 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #525252;
   font-size: 1rem; 
   text-align: center;
   text-decoration: none;
@@ -129,8 +136,7 @@ label {
 }
 
 .Saltar-button:hover {
-  position: absolute;
-  background-color: #3c3d3ccb;
+  position: absolute;  
   cursor: pointer;
   border-radius: 50%; 
   width: 20vw; 
@@ -140,7 +146,8 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(248, 246, 246);
+  background-color: #02fdf1ec;
+  color: #525252;
   font-size: 1rem; 
   text-align: center;
   text-decoration: none;

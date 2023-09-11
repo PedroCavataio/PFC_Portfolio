@@ -11,6 +11,10 @@ const Login = ({ onLogin, access }) => {
   const [errors, setErrors] = useState({});
   const navigate = useNavigate();
 
+    const redirigirAInicio = () => {
+    navigate('/landing'); 
+  }
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     const formattedValue =
@@ -97,7 +101,7 @@ const Login = ({ onLogin, access }) => {
         <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" />
       </div>
       <div className="contenedor">
-        <div className="hola">ALOHA!! :)</div>
+        <div className="hola">ALOHA!! </div>
         <div className="login-group">
           <label htmlFor="nombre"> ¿Cuál es tu nombre?</label>
           <input
@@ -145,7 +149,7 @@ const Login = ({ onLogin, access }) => {
         </button>        
       </div>
       <div>
-      <button className="Saltar-button" disabled={access}>
+      <button className="Saltar-button"  onClick={redirigirAInicio}>
           Saltar Intro
         </button> 
       </div>

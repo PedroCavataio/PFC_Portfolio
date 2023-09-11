@@ -8,19 +8,13 @@
   justify-content: flex-end; /* Distribuye los elementos a lo largo de la barra */
   align-items: center;  
   padding: 10px; /* Añade espaciado interior para los elementos dentro de la barra */
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
   .barras {
     display: none;
   }
-
- /*  .nombre {
-    margin-right: auto; 
-    margin-left: 30px; 
-    color: rgb(234, 238,4);
-    text-shadow: 2px 1px 1px rgba(0, 0, 0, 5);
-    font-size: 35px;
-  } */
 
   .redirigirAInicio {
     cursor: pointer;
@@ -44,10 +38,10 @@
      
   }
 
-  .desplegable ul li a {
+  /* .desplegable ul li a {
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 5);   
   }
-  
+   */
   nav a{
     color: rgb(250, 247, 247);
     text-decoration: none;
@@ -59,7 +53,7 @@
   
   ul li a:hover {
     background: rgba(210, 105, 30, 0);
-    color: rgb(234, 238, 4);
+    color: rgb(238, 203, 4);
   }
   
   @media(max-width: 850px){
