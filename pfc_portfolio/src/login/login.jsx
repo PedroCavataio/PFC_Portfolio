@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "./login.styles.css";
 import "react-toastify/dist/ReactToastify.css";
-import fondoLogin from "../assets/nubesLogin.jpg";
+/* import fondoLogin from "../assets/nubesLogin.jpg"; */
 import pedroCavataio from "../assets/LogoVerdeSinFondo.png";
 
 const Login = ({ onLogin, access }) => {
@@ -33,7 +33,7 @@ const Login = ({ onLogin, access }) => {
       setErrors({});
       setTimeout(() => {
         navigate(`/landing/${userData.estacion}?nombre=${userData.nombre}`);        
-      }, 6000);
+      }, 1000);
     } else {
       setErrors(validationErrors);
     }
@@ -72,8 +72,9 @@ const Login = ({ onLogin, access }) => {
   };
 
   const notify = () => {
-    toast.success(
-      `¡Genial, ${userData.nombre}! ¡Excelente elección!. ${userData.estacion} es una época maravillosa del año.`,
+    toast.info(
+      //`¡Genial, ${userData.nombre}! ¡Excelente elección!. ${userData.estacion} es una época maravillosa del año.`,
+      `Ingresando`,
       {
         position: toast.POSITION.TOP_RIGHT,
         autoClose: 5000,
@@ -81,7 +82,7 @@ const Login = ({ onLogin, access }) => {
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
-        progress: undefined,
+        progress: 1,
         theme: "colored",
       }
     );
@@ -89,9 +90,9 @@ const Login = ({ onLogin, access }) => {
 
   return (
     <form className="login-container" onSubmit={handleSubmit}>
-      <div className="image-container">
+      {/* <div className="image-container">
         <img src={fondoLogin} alt="fondo Login" className="planetLogin-image" />
-      </div>
+      </div> */}
       <div className="image-logo">
         <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" />
       </div>

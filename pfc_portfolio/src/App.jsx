@@ -5,6 +5,7 @@ import './App.css';
 import Nav from "./nav/nav";
 import Login from "./login/login";
 import Landing from "./landingPage/landingPage";
+import About from "./about/about";
 
 function App() {
   const [access, setAccess] = useState(false);
@@ -21,21 +22,21 @@ function App() {
       const { access } = data;
       setAccess(access);
       setUserName(nombre); 
-      // if (access) {
-      //   navigate("/landing:estacion");
-      // }
     } catch (error) {
       console.error(error);
     }
   }
   
   return (
-    <div>
+    <div className="App">
+      {window.location.pathname == "/landing/:estacion" && <Nav className="styles-nav" />}
+
       <Routes>
         <Route path="/" element={<Login onLogin={login} access={access} />} />
         <Route path="/nav" element={<Nav />} />
         <Route path="/landing" element={<Landing userName={userName} />} /> 
         <Route path="/landing/:estacion" element={<Landing userName={userName} />} />
+        <Route path="/about" element={<About />} />
       </Routes>
         
     </div>

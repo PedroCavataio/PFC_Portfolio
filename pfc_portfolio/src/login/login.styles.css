@@ -5,7 +5,7 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-color: #f0f0ef;
+  background: linear-gradient(to right, #608c8d 50%,  #a8f8f8 50%);
   position: absolute;
 }
 
@@ -31,7 +31,7 @@
   background-color: rgba(218, 220, 221, 0);
   text-align: left;
   margin-top: 20px;
-  margin-left: 35%;
+  margin-left: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +64,7 @@ label {
   border: 2px solid #2d2d2e00;
   border-radius: 5px;
   width: 100%;
-  background-color: rgba(147, 248, 248, 0.288);
+  background-color: rgba(246, 248, 248, 0.486);
 }
 
 .error-message {
@@ -76,7 +76,7 @@ label {
   visibility: hidden; 
   overflow: hidden; 
   transition: visibility 0.5s, height 1s; 
- position: fixed;
+  position: fixed;
 }
 
 .error-message.active {
@@ -88,7 +88,7 @@ label {
 .login-button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  background-color: #c0bfbfec;
+  background-color: #fcf8f8ec;
   color: #525252;
   border-radius: 5px;
   cursor: pointer;
@@ -104,7 +104,7 @@ label {
 
 .Saltar-button {
   position: absolute;
-  background-color: #c0bfbfec;
+  background-color: #fcf8f8ec;
   cursor: pointer;
   border-radius: 50%; 
   width: 20vw; 

@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./landinPage.styles.css";
+import Nav from "../nav/nav";
 
 const Landing = ({ userName }) => {
   const navigate = useNavigate();
@@ -27,11 +28,12 @@ const Landing = ({ userName }) => {
 
   return (
     <div className={fondoPorEstacion()}>
-      <div className="container-landing">
+      <Nav /> 
+      {/* <div className="container-landing">
         <h2 className="description-landing">{nombre}, te presento mi Portfolio.</h2>
         <h3 className="sub-description">By Pedro Francisco Cavataio</h3>
         <button className="enter-button-landing" onClick={handleEnter}>Ingresar</button>
-      </div>
+      </div> */}
     </div>
   );
 };
