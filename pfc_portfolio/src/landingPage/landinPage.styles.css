@@ -7,34 +7,12 @@
   width: 100vw;
   height: 100vh;
   background-color: rgb(15, 190, 196);
-  /* background-image: url("../assets/nubesLogin2.jpg"); */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   z-index: -1;
 }
 
-.container-landing {
-  padding: 2%;
-  max-width: 100%;
-  height: 85%;
-  width: 85%;
-  border-radius: 2%;
-  background-color: #eaeaebc5;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.26);
-}
-
-.description-landing {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: #f2f2f2;
-}
-
-.sub-description {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #f2f2f2;
-}
 
 .enter-button-landing {
   padding: 1rem 2rem;
@@ -65,16 +43,39 @@
   background-repeat: no-repeat;
 }
 
-/* .primavera {
+.primavera {
   background-image: url("../assets/nubesLogin2.jpg");
 }
+
 .verano {
   background-image: url("../assets/otoño.png");
 }
-.otoño {
+
+.otoño .modal-content {
+  width: 50vw;
+  height: 50vh;
   background-image: url("../assets/otoño.png");
+  background-size: cover; 
+  background-position: center; 
+  border-radius: 1%;
+  z-index: 9999;
 }
+
 .invierno {
   background-image: url("../assets/nubesLogin2.jpg");
 }
- */
+ 
+ .modal-title {
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  color: #fcf3f3;
+  font-size: 2vw;
+ }
+
+ .modal-body {
+  font-size: 2vw;
+  color: #fcf3f3;
+ }
+
+ 

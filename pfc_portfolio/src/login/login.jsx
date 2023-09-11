@@ -3,14 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "./login.styles.css";
 import "react-toastify/dist/ReactToastify.css";
-/* import fondoLogin from "../assets/nubesLogin.jpg"; */
 import pedroCavataio from "../assets/PEDRO.png";
-import Modal from '../modal/modal';
 
 const Login = ({ onLogin, access }) => {
   const [userData, setUserData] = useState({ nombre: "", estacion: "" });
   const [errors, setErrors] = useState({});
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const navigate = useNavigate();
 
     const redirigirAInicio = () => {
@@ -38,7 +35,6 @@ const Login = ({ onLogin, access }) => {
       setUserData({ nombre: "", estacion: "" });
       setErrors({});
       setTimeout(() => {
-        setIsModalOpen(true);
         navigate(`/landing/${userData.estacion}?nombre=${userData.nombre}`);        
       }, 1000);
     } else {
@@ -96,11 +92,7 @@ const Login = ({ onLogin, access }) => {
   };
 
   return (
-    <>
-    <form className="login-container" onSubmit={handleSubmit}>
-      {/* <div className="image-container">
-        <img src={fondoLogin} alt="fondo Login" className="planetLogin-image" />
-      </div> */}
+     <form className="login-container" onSubmit={handleSubmit}>
       <div className="image-logo">
         <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" />
       </div>
@@ -150,7 +142,8 @@ const Login = ({ onLogin, access }) => {
         </div>
         <button className="login-button" disabled={access}>
           Ingresar
-        </button>        
+        </button>   
+            
       </div>
       <div>
       <button className="Saltar-button"  onClick={redirigirAInicio}>
@@ -161,9 +154,7 @@ const Login = ({ onLogin, access }) => {
       <div>
         <ToastContainer />
       </div>
-    </form>
-    {isModalOpen && <Modal onClose={() => setIsModalOpen(false)} />}
-    </>
+    </form>    
   );
 };
 
