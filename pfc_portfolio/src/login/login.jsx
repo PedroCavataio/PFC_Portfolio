@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "./login.styles.css";
 import "react-toastify/dist/ReactToastify.css";
 /* import fondoLogin from "../assets/nubesLogin.jpg"; */
-import pedroCavataio from "../assets/LogoVerdeSinFondo.png";
+import pedroCavataio from "../assets/PEDRO.png";
 
 const Login = ({ onLogin, access }) => {
   const [userData, setUserData] = useState({ nombre: "", estacion: "" });
@@ -97,7 +97,7 @@ const Login = ({ onLogin, access }) => {
         <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" />
       </div>
       <div className="contenedor">
-        <div className="hola">Aloha!! :)</div>
+        <div className="hola">ALOHA!! :)</div>
         <div className="login-group">
           <label htmlFor="nombre"> ¿Cuál es tu nombre?</label>
           <input

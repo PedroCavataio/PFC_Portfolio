@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; 
 import "./nav.styles.css";
+import pedroCavataio from "../assets/PEDRO.png";
+
 
 
 let vacio = "";
@@ -33,7 +35,7 @@ function Nav() {
           ></button>
         </div>
         <nav id="menu" className="desplegable">
-        <h1 className='nombre redirigirAInicio' onClick={redirigirAInicio}>Pedro Cavataio</h1>
+        <h1 className='redirigirAInicio' onClick={redirigirAInicio}><img src={pedroCavataio} alt="Logo" /></h1>
           
           <ul>
             <li>
