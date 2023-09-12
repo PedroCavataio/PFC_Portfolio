@@ -54,7 +54,8 @@
 .otoño .modal-content {
   width: 50vw;
   height: 50vh;
-  background-image: url("../assets/otoño.png");
+  /* background-image: url("../assets/otoño.png"); */
+  background-color: rgb(228, 226, 224);
   background-size: cover; 
   background-position: center; 
   border-radius: 1%;
@@ -65,17 +66,24 @@
   background-image: url("../assets/nubesLogin2.jpg");
 }
  
+.fraseLanding {
+  position: fixed;
+  color: #01f80d;
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
  .modal-title {
   align-items: center;
   justify-content: center;
-  margin-top: 10%;
-  color: #fcf3f3;
-  font-size: 2vw;
+  margin-top: 5%;
+  color: #646363;
+  font-size: 1vw;
  }
 
  .modal-body {
-  font-size: 2vw;
-  color: #fcf3f3;
+  font-size: 1vw;
+  color: #646363;
  }
 
  

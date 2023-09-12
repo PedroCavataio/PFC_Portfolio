@@ -2,24 +2,25 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./landinPage.styles.css";
 import Nav from "../nav/nav";
+import ModalComponent from "../modal/modal"; 
 
 const Landing = ({ userName }) => {
   const navigate = useNavigate();
   const { estacion } = useParams();
   const nombre = new URLSearchParams(window.location.search).get("nombre");
   const [progress, setProgress] = useState(0);
-  const [modalShown, setModalShown] = useState(true); 
+  const [modalShown, setModalShown] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (progress < 100) {
         setProgress(progress + 1);
       } else {
-        clearInterval(interval); // Detener el intervalo cuando el progreso llega al 100%
+        clearInterval(interval); 
         setModalShown(false);
         setTimeout(() => {
           navigate("/landing");
-        }, 0); // Retrasar la redirección después de completar el progreso
+        }, 0); 
       }
     }, 40);
 
@@ -46,30 +47,18 @@ const Landing = ({ userName }) => {
 
   return (
     <div className={fondoPorEstacion()}>
+      <h1 className="fraseLanding">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </h1>
+
       <Nav />
-      {modalShown && (
-        <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div className="modal-dialog" role="document">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title" id="exampleModalLabel">
-                  ¡Genial, {nombre}! ¡Excelente elección!. {estacion} es una época maravillosa del año.
-                </h5>
-                  <div className="modal-body">
-                  {nombre}, te presento mi Portfolio.
-                  </div>
-                <h5 className="modal-title" id="exampleModalLabel">
-                  Progreso: {progress}%
-                </h5>
-              </div>             
-              <div className="progress">
-                <div className="progress-bar" role="progressbar" style={{ width: `${progress}%` }} aria-valuenow={progress} aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* {!modalShown && (
+        <h1 className="fraseLanding">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h1>
+      )} */}
     </div>
   );
-}
+};
+
 export default Landing;

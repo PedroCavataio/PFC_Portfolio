@@ -32,6 +32,7 @@ function App() {
   return (
     <div className="App">
       {window.location.pathname == "/landing/:estacion" && <Nav className="styles-nav" />}
+      {window.location.pathname == "/about" && <Nav className="styles-nav" />}
 
       <Routes>
         <Route path="/" element={<Login onLogin={login} access={access} />} />

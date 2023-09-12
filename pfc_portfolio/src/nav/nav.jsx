@@ -1,15 +1,14 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom'; 
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./nav.styles.css";
-import pedroCavataio from "../assets/PEDRO.png";
-
-
+import pedroCavataio from "../assets/pedro.png";
+import { NavLink } from "react-router-dom";
 
 let vacio = "";
 
 function Nav() {
-    const navigate = useNavigate(); 
-    const abrir_cerrar_menu = () => {
+  const navigate = useNavigate();
+  const abrir_cerrar_menu = () => {
     let menu_desplegable = document.getElementById("menu");
     let boton_cerrar = document.getElementById("x");
     menu_desplegable.classList.toggle("abrir_menu");
@@ -17,12 +16,12 @@ function Nav() {
   };
 
   const redirigirALogin = () => {
-    navigate('/'); 
-  }
+    navigate("/");
+  };
 
   const redirigirAInicio = () => {
-    navigate('/landing'); 
-  }
+    navigate("/landing");
+  };
 
   return (
     <>
@@ -35,11 +34,15 @@ function Nav() {
           ></button>
         </div>
         <nav id="menu" className="desplegable">
-        <h1 className='redirigirAInicio' onClick={redirigirAInicio}><img src={pedroCavataio} alt="Logo" /></h1>
-          
+          <h1 className="redirigirAInicio" onClick={redirigirAInicio}>
+            <img src={pedroCavataio} alt="Logo" />
+          </h1>
+
           <ul>
             <li>
-              <a href={vacio}>Inicio</a>
+            <NavLink to="/landing" /*  className={styles.navLinkAbout} */>
+                Inicio
+              </NavLink>
             </li>
             <li>
               <a href={vacio}>Galería</a>
@@ -48,13 +51,17 @@ function Nav() {
               <a href={vacio}>Proyectos</a>
             </li>
             <li>
-              <a href={vacio}>Sobre Mi</a>
+              <NavLink to="/about" /*  className={styles.navLinkAbout} */>
+                Sobre Mí
+              </NavLink>
             </li>
             <li>
               <a href={vacio}>Contacto</a>
             </li>
             <li>
-            <a href onClick={redirigirALogin}>Salir</a>
+              <a href onClick={redirigirALogin}>
+                Salir
+              </a>
             </li>
           </ul>
         </nav>
