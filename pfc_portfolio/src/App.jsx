@@ -6,6 +6,8 @@ import Nav from "./nav/nav";
 import Login from "./login/login";
 import Landing from "./landingPage/landingPage";
 import About from "./about/about";
+import Trabajo from "./trabajo/trabajo";
+import Contacto from "./contacto/contacto";
 
 
 
@@ -33,6 +35,8 @@ function App() {
     <div className="App">
       {window.location.pathname == "/landing/:estacion" && <Nav className="styles-nav" />}
       {window.location.pathname == "/about" && <Nav className="styles-nav" />}
+      {window.location.pathname == "/trabajo" && <Nav className="styles-nav" />}
+      {window.location.pathname == "/contacto" && <Nav className="styles-nav" />}
 
       <Routes>
         <Route path="/" element={<Login onLogin={login} access={access} />} />
@@ -40,6 +44,8 @@ function App() {
         <Route path="/landing" element={<Landing userName={userName} />} /> 
         <Route path="/landing/:estacion" element={<Landing userName={userName} />} />
         <Route path="/about" element={<About />} />
+        <Route path="/trabajo" element={<Trabajo />} />
+        <Route path="/contacto" element={<Contacto />} />
       </Routes>
         
     </div>

@@ -40,23 +40,24 @@ function Nav() {
 
           <ul>
             <li>
-            <NavLink to="/landing" /*  className={styles.navLinkAbout} */>
+            <NavLink to="/landing">
                 Inicio
               </NavLink>
             </li>
             <li>
-              <a href={vacio}>Galería</a>
-            </li>
-            <li>
-              <a href={vacio}>Proyectos</a>
-            </li>
-            <li>
-              <NavLink to="/about" /*  className={styles.navLinkAbout} */>
-                Sobre Mí
+            <NavLink to="/trabajo">
+                Mi trabajo
               </NavLink>
             </li>
             <li>
-              <a href={vacio}>Contacto</a>
+              <NavLink to="/about">
+                Mi resumen
+              </NavLink>
+            </li>
+            <li>
+            <NavLink to="/contacto">
+                Contacto
+              </NavLink>
             </li>
             <li>
               <a href onClick={redirigirALogin}>

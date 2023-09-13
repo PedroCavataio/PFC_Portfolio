@@ -1,0 +1,27 @@
+.contacto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #8fadaa 0%, #8fadaa 60%, #c2f7f7 40%, #c2f7f7 100%);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  
+  .contacto-superior {
+    width: 50%;
+    height: 60%;
+    background: #179c9c; 
+  }
+  
+  .contacto-inferior {
+    width: 50%;
+    height: 40%;
+    background: #06e7e7; 
+  }
+  

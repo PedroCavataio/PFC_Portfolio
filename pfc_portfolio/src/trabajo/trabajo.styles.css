@@ -1,0 +1,13 @@
+.trabajo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to left, #f7f301 60%,  #01f8cf 40%);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
