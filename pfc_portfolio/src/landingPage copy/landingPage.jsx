@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./landinPage.styles.css";
 import Nav from "../nav/nav";
-import fotoPedro from "../assets/fotoPedro.jpg";
 import ModalComponent from "../modal/modal"; 
 
 const Landing = ({ userName }) => {
@@ -58,17 +57,7 @@ const Landing = ({ userName }) => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h1>
       )} */}
-
-<div className="images-container">
-        <img
-          src={fotoPedro}
-          alt="Foto Pedro Cavataio"
-          className="profile-image"
-        />
-        </div>
     </div>
-
-    
   );
 };
 

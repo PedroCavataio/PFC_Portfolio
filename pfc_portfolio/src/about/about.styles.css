@@ -1,79 +1,9 @@
-/*  .about-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(to right, #026466 60%,  #aeb1b1 40%);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-.contAbout-texto {
-  margin-top: 4%;
-  width: 45%;
-  color: #f5f5f3;  
-  font-size: 25px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-shadow: 2px 1px 1px #4e4e4e; 
-}
-
-.profile-image {
-  
-  margin-top: 4%;
-  margin-left: 18%; 
-  z-index: 1;
-}
-
-.puntos {
-  position: absolute; 
-  top: 61%; 
-  left: 61%;
-  height:100px;
-}
-.puntitos {
-  position: absolute; 
-  top: 25%; 
-  left: 62%;
-  height: 70px;
-}
-.puntitos2 {
-  position: absolute; 
-  top: 86%; 
-  left: 91%;
-  height: 70px;
-}
-.triangulos {
-  position: absolute; 
-  top: 15%; 
-  left: 89%;
-  height: 81px;
-}
-.cuadrado {
-  position: absolute; 
-  left: 71%;
-  height: 450px;
-  margin-top: 11%;
-  z-index: 0;
-}
-
-
-section1 {
-  position: absolute; 
-}
-section2 {
-  position: absolute; 
-} */
-
 .about-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100vw;
-  background: linear-gradient(to right, #026466 60%, #aeb1b1 40%);
+  background: linear-gradient(to right, #787979, #787979 20%, #aeb1b1 20%, #aeb1b1 80%, #f7f4f4 80%, #f7f4f4);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -83,29 +13,48 @@ section2 {
 
 .sections-container {
   margin-top: 20%;
-  margin-left: 15%;
+  margin-left: 5%;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;  
+  max-width: 70%;
 }
 
 .section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 10px;
-  width: 90%; /* Establece el ancho máximo de las secciones */
-  max-width: 600px; /* Cambia este valor según tus preferencias */
+    
 }
 
 .contAbout-texto {
   color: #f5f5f3;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-shadow: 2px 1px 1px #4e4e4e;
 }
+
+.info {
+  display: flex;
+  justify-content: center;
+  margin-left: 15%;
+}
+
+.section-divider {
+  width: 70%; /* Asegura que ocupe todo el ancho disponible */
+  height: 1px; /* Establece el grosor de la línea */
+  background-color: rgb(245, 242, 242); /* Color de la línea */
+  margin: 60px 0; /* Margen superior e inferior para separar las secciones */
+  margin-left: 30%;
+}
+
+.images-container {
+  max-width: 20%;
+}
+
 
 .profile-image,
 .puntos,
-.puntitos,
-.puntitos2,
 .triangulos,
 .cuadrado {
   width: auto;
@@ -121,62 +70,48 @@ section2 {
   justify-content: center;
 }
 
-
-
-.profile-image {  
-  margin-top: -221%;
-  margin-left: 23%; 
-  z-index: 1;
-}
-
-.programer { 
-  position: absolute; 
-  margin-top: -65%;
-  margin-left: 15%; 
-  width: 15%;
-  z-index: 1;
-}
-
-.aeropuerto { 
-  position: absolute; 
-  margin-top: 45%;
-  margin-left: 15%; 
-  width: 15%;
-  z-index: 1;
-}
-
-.shop { 
-  position: absolute; 
-  margin-top: 140%;
-  margin-left: 15%; 
-  width: 15%;
-  z-index: 1;
-}
-
 .puntos {
   position: absolute; 
-  top: 31%; 
-  left: 65%;
+  top: 24%; 
+  left: 48%;
   height:100px;
 }
-.puntitos {
-  position: absolute; 
-  top: 125%; 
-  left: 62%;
-  height: 70px;
-}
-.puntitos2 {
-  position: absolute; 
-  top: 86%; 
-  left: 91%;
-  height: 70px;
-}
+
 .triangulos {
   position: absolute; 
-  top: 15%; 
-  left: 89%;
+  top: 72%; 
+  left: 59%;
   height: 81px;
 }
+
+.henry {
+  position: absolute; 
+  top: 52%; 
+  left: 87%;
+  height: 45px;
+}
+
+.aa2000 {
+  position: absolute; 
+  top: 92%; 
+  left: 87%;
+  height: 70px;
+}
+
+.tecnocasa {
+  position: absolute; 
+  top: 130%; 
+  left: 90%;
+  height: 70px;
+}
+
+.umet {
+  position: absolute; 
+  top: 169%; 
+  left: 88%;
+  height: 70px;
+}
+
 .cuadrado {
   position: absolute; 
   left: 77%;

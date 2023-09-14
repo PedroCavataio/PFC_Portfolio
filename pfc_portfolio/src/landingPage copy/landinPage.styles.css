@@ -71,13 +71,6 @@
   color: #01f80d;
   font-size: 40px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-shadow: 2px 1px 1px #4e4e4e; 
-}
-
-.profile-image {  
-  margin-top: -221%;
-  margin-left: 23%; 
-  z-index: 1;
 }
 
  .modal-title {
