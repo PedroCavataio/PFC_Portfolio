@@ -20,15 +20,14 @@ const About = () => {
   return (
     <div className="about-container">
       <div className="sections-container">
+        
         <div className="section">
           <div className="data">
             <div className="contAbout-texto">
-              <p>
-              Full Stack Web Developer - Henry.
-                (2023) 
-              </p>
+              <p>Full Stack Web Developer - Henry. (2023)</p>
             </div>
           </div>
+
           <div className="info">
             <div className="contAbout-texto">
               <p>
@@ -51,8 +50,12 @@ const About = () => {
               </p>
             </div>
           </div>
+          <div className="images-container">
+            <img src={Henry} alt="henry" className="henry" />
+          </div>
         </div>
         <hr className="section-divider" />
+
         <div className="section">
           <div className="data">
             <div className="contAbout-texto">
@@ -79,6 +82,9 @@ const About = () => {
                 del equipo.
               </p>
             </div>
+          </div>
+          <div className="images-container">
+            <img src={AA2000} alt="aa2000" className="aa2000" />
           </div>
         </div>
         <hr className="section-divider" />
@@ -111,14 +117,18 @@ const About = () => {
               </p>
             </div>
           </div>
+          <div className="images-container">
+            <img src={Tecnocasa} alt="tecnocasa" className="tecnocasa" />
+          </div>
         </div>
         <hr className="section-divider" />
+
         <div className="section">
           <div className="data">
             <div className="contAbout-texto">
               <p>
-                Lic. Gestión de Organizaciones - UMET  (Universidad Metropolitana para la Educaión y el Trabajo).
-                Buenos Aires, Argentina
+                Lic. Gestión de Organizaciones - UMET (Universidad Metropolitana
+                para la Educaión y el Trabajo). Buenos Aires, Argentina
               </p>
             </div>
           </div>
@@ -145,24 +155,24 @@ const About = () => {
               </p>
             </div>
           </div>
+          <div className="images-container">
+            <img src={Umet} alt="umet" className="umet" />
+          </div>
         </div>
-      </div>
+        <hr className="section-divider" />
 
-      <div className="images-container">
-        <img src={figuraPuntos} alt="puntos" className="puntos" />
-
-        <img src={Tecnocasa} alt="tecnocasa" className="tecnocasa" /> 
-
-        <img src={AA2000} alt="aa2000" className="aa2000" /> 
-
-        <img src={figuraTriangulos} alt="triangulos" className="triangulos" />
-
-        <img src={figuraCuadrado} alt="cuadrado" className="cuadrado" />
-        
-        <img src={Henry} alt="henry" className="henry" />
-
-        <img src={Umet} alt="umet" className="umet" />
-
+        <div className="section">
+          <div className="data">
+            <div className="contAbout-texto">
+              <p></p>
+            </div>
+          </div>
+          <div className="info">
+            <div className="contAbout-texto">
+              <p><img src={figuraPuntos} alt="puntos" className="puntos" /></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

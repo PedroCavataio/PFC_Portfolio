@@ -3,119 +3,96 @@
   align-items: center;
   justify-content: space-between;
   width: 100vw;
-  background: linear-gradient(to right, #787979, #787979 20%, #aeb1b1 20%, #aeb1b1 80%, #f7f4f4 80%, #f7f4f4);
+  background: linear-gradient(
+    to right,
+    #787979,
+    #787979 20%,
+    #aeb1b1 20%,
+    #aeb1b1 80%,
+    #f7f4f4 80%,
+    #f7f4f4
+  );
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   z-index: -1;
-  padding: 20px;
+  
 }
 
 .sections-container {
-  margin-top: 20%;
-  margin-left: 5%;
+  margin-top: 15%;  
   display: flex;
   flex-direction: column;
-  align-items: center;  
-  max-width: 70%;
+  align-items: center;
+  max-width: 100%;
 }
 
 .section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: flex; 
   margin-bottom: 10px;
-    
+  text-align: center; 
 }
+
 
 .contAbout-texto {
   color: #f5f5f3;
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: left;
+}
+
+.data {
+  flex: 1; 
+  max-width: 14%; 
+  margin-right: 4%; 
+  margin-left: 4%;
 }
 
 .info {
-  display: flex;
-  justify-content: center;
-  margin-left: 15%;
+  flex: 3; 
+  max-width: 80%;
+  margin-right: 4%; 
+  margin-left: 4%;
+  }
+
+.images-container {
+  flex: 1;   
+  margin-top: 4%;  
+  padding: 1%; 
 }
 
 .section-divider {
-  width: 70%; /* Asegura que ocupe todo el ancho disponible */
-  height: 1px; /* Establece el grosor de la línea */
-  background-color: rgb(245, 242, 242); /* Color de la línea */
-  margin: 60px 0; /* Margen superior e inferior para separar las secciones */
-  margin-left: 30%;
+  width: 50%;
+  height: 1px;
+  background-color: rgb(245, 242, 242);
+  margin: 90px 0;   
 }
-
-.images-container {
-  max-width: 20%;
-}
-
-
-.profile-image,
-.puntos,
-.triangulos,
-.cuadrado {
-  width: auto;
-  max-height: 300px;
-}
-
-.images-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-}
-
-.puntos {
-  position: absolute; 
-  top: 24%; 
-  left: 48%;
-  height:100px;
+  
+ .puntos {
+  height: 100px;
+  margin-top: -65%;
 }
 
 .triangulos {
-  position: absolute; 
-  top: 72%; 
-  left: 59%;
-  height: 81px;
+  position: absolute;
+  top: 24%;
+  left: 48%;
+  height: 100px;
 }
 
 .henry {
-  position: absolute; 
-  top: 52%; 
-  left: 87%;
-  height: 45px;
+   height: 45px;
 }
 
 .aa2000 {
-  position: absolute; 
-  top: 92%; 
-  left: 87%;
-  height: 70px;
-}
-
-.tecnocasa {
-  position: absolute; 
-  top: 130%; 
-  left: 90%;
   height: 70px;
 }
 
 .umet {
-  position: absolute; 
-  top: 169%; 
-  left: 88%;
   height: 70px;
 }
 
-.cuadrado {
-  position: absolute; 
-  left: 77%;
-  height: 450px;
-  margin-top: -111%;
-  z-index: 0;
+.tecnocasa {
+  height: 70px;
 }
+
