@@ -4,7 +4,7 @@ import "./about.styles.css";
 import figuraPuntos from "../assets/figuraPuntos.png";
 import figuraPuntitos from "../assets/puntitos.png";
 import figuraTriangulos from "../assets/triangulos.png";
-import figuraCuadrado from "../assets/cuadrado.png";
+import DescargaCV from "../assets/descargaCV.png";
 import Henry from "../assets/henry.png";
 import AA2000 from "../assets/aa2000.png";
 import Tecnocasa from "../assets/tecnocasa.png";
@@ -20,7 +20,13 @@ const About = () => {
   return (
     <div className="about-container">
       <div className="sections-container">
-        
+        <div className="sectionCV">
+          <a href="URL_DEL_CURRICULUM.pdf" download="NombreDelCurriculum.pdf">
+            <img src={DescargaCV} alt="Currículum" className="CV" /> 
+          </a>
+        </div>
+        <hr className="section-dividerCV" />
+
         <div className="section">
           <div className="data">
             <div className="contAbout-texto">
@@ -93,7 +99,7 @@ const About = () => {
             <div className="contAbout-texto">
               <p>
                 Gerente Tecnocasa Franchising Networks S.A. (2000 - 2012).
-                España Madrid.
+                Madrid, España.
               </p>
             </div>
           </div>
@@ -169,7 +175,9 @@ const About = () => {
           </div>
           <div className="info">
             <div className="contAbout-texto">
-              <p><img src={figuraPuntos} alt="puntos" className="puntos" /></p>
+              <p>
+                <img src={figuraPuntos} alt="puntos" className="puntos" />
+              </p>
             </div>
           </div>
         </div>

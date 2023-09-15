@@ -20,7 +20,7 @@
 }
 
 .sections-container {
-  margin-top: 15%;  
+  margin-top: 5%;  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,8 +31,24 @@
   display: flex; 
   margin-bottom: 10px;
   text-align: center; 
+  margin-top: 1%;
 }
 
+.sectionCV {
+  display: flex; 
+  text-align: center; 
+}
+
+.section p {
+  margin: 0; /* Establece los márgenes a cero para eliminar cualquier margen predeterminado */
+  padding: 10px; /* Aplica un relleno si es necesario */
+}
+
+.CV {
+align-items: center;
+height: 150px;
+margin-left: 220%;
+}
 
 .contAbout-texto {
   color: #f5f5f3;
@@ -51,14 +67,21 @@
 .info {
   flex: 3; 
   max-width: 80%;
-  margin-right: 4%; 
+  margin-right: 5%; 
   margin-left: 4%;
+  margin-top: 1%;
   }
 
 .images-container {
   flex: 1;   
   margin-top: 4%;  
   padding: 1%; 
+}
+
+.section-dividerCV {
+  width: 50%;
+  height: 1px;
+  background-color: rgb(245, 242, 242); 
 }
 
 .section-divider {
@@ -68,18 +91,6 @@
   margin: 90px 0;   
 }
   
- .puntos {
-  height: 100px;
-  margin-top: -65%;
-}
-
-.triangulos {
-  position: absolute;
-  top: 24%;
-  left: 48%;
-  height: 100px;
-}
-
 .henry {
    height: 45px;
 }
