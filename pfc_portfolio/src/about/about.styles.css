@@ -41,7 +41,7 @@
 
 .section p {
   margin: 0; /* Establece los márgenes a cero para eliminar cualquier margen predeterminado */
-  padding: 10px; /* Aplica un relleno si es necesario */
+  padding: 15px; /* Aplica un relleno si es necesario */
 }
 
 .CV {
@@ -69,8 +69,7 @@ margin-left: 220%;
   max-width: 80%;
   margin-right: 5%; 
   margin-left: 4%;
-  margin-top: 1%;
-  }
+}
 
 .images-container {
   flex: 1;   
@@ -82,13 +81,14 @@ margin-left: 220%;
   width: 50%;
   height: 1px;
   background-color: rgb(245, 242, 242); 
+  margin-bottom: 3%;
 }
 
 .section-divider {
-  width: 50%;
+  width: 45%;
   height: 1px;
   background-color: rgb(245, 242, 242);
-  margin: 90px 0;   
+  margin: 50px 0;   
 }
   
 .henry {
@@ -105,5 +105,11 @@ margin-left: 220%;
 
 .tecnocasa {
   height: 70px;
+}
+
+.puntos {
+  height: 70px;
+  margin-bottom: 10%;
+  margin-top: -102%;
 }
 
