@@ -6,7 +6,7 @@
     text-align: center;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, #8fadaa 0%, #8fadaa 60%, #c2f7f7 40%, #c2f7f7 100%);
+    background: linear-gradient(to bottom, #8fadaa 0%, #c2f7f7 60%, #c2f7f7 40%, #c2f7f7 100%);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -14,14 +14,50 @@
   }
   
   .contacto-superior {
-    width: 50%;
+    width: 65%;
     height: 60%;
-    background: #179c9c; 
+    background: #06e7e7; 
   }
   
   .contacto-inferior {
-    width: 50%;
+    width: 65%;
     height: 40%;
     background: #06e7e7; 
   }
   
+{/* <div className="contacto-container">
+    <div className="contacto-superior"></div>
+    <div className="contacto-inferior"></div>
+
+    
+    </div> */}
+
+    .btn-primary {
+      background-color: #11b6b6;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center; 
+      line-height: 0;     
+    }
+    
+    .btn-primary:hover {
+      background-color: #1f8181;
+    }
+  
+    .form-control {
+      top: 10%;
+      margin: 10px;
+      padding: 5px;
+      font-size: 16px;
+      border: 1px solid #11b6b6;
+      border-radius: 5px;
+      text-align: left; 
+      width: 25%;
+      box-sizing: border-box;
+    }
+    
+    
