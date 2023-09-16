@@ -20,7 +20,7 @@ const About = () => {
       <div className="sections-container">
         <div className="sectionCV">
           <a href="URL_DEL_CURRICULUM.pdf" download="NombreDelCurriculum.pdf">
-            <img src={DescargaCV} alt="Currículum" className="CV" /> 
+            <img src={DescargaCV} alt="Currículum" className="CV" />
           </a>
         </div>
         <hr className="section-dividerCV" />
@@ -28,7 +28,13 @@ const About = () => {
         <div className="section">
           <div className="data">
             <div className="contAbout-texto">
-              <p>Full Stack Web Developer - Henry. (2023)</p>
+              <p>
+                <span class="job-role">- Full Stack Web Developer</span>
+                <br />
+                <span class="company-name">- Henry.</span> 
+                <br />
+                <span class="year">- 2023</span>
+              </p>
             </div>
           </div>
 
@@ -56,7 +62,7 @@ const About = () => {
           </div>
           <div className="images-container">
             <a href="https://www.soyhenry.com" target="_blank">
-            <img src={Henry} alt="henry" className="henry" />
+              <img src={Henry} alt="henry" className="henry" />
             </a>
           </div>
         </div>
@@ -66,8 +72,13 @@ const About = () => {
           <div className="data">
             <div className="contAbout-texto">
               <p>
-                Supervisor de Estacionamiento - Aeropuertos Argentina 2000 S.A.
-                (2013 - Actualidad) Buenos Aires, Argentina.
+                <span>- Supervisor de Estacionamiento</span> 
+                <br />
+                <span>- Aeropuertos Argentina 2000 S.A.</span> 
+                <br />
+                <span>- Buenos Aires, Argentina</span> 
+                <br />
+                <span>- 2013 - Actualidad</span> 
               </p>
             </div>
           </div>
@@ -90,9 +101,9 @@ const About = () => {
             </div>
           </div>
           <div className="images-container">
-          <a href="https://www.aa2000.com.ar" target="_blank">
-            <img src={AA2000} alt="aa2000" className="aa2000" />
-          </a>
+            <a href="https://www.aa2000.com.ar" target="_blank">
+              <img src={AA2000} alt="aa2000" className="aa2000" />
+            </a>
           </div>
         </div>
         <hr className="section-divider" />
@@ -100,8 +111,14 @@ const About = () => {
           <div className="data">
             <div className="contAbout-texto">
               <p>
-                Gerente Tecnocasa Franchising Networks S.A. (2000 - 2012).
-                Madrid, España.
+                - Administrador 
+                <br />
+                - Tecnocasa Franchising Networks S.A. 
+                <br />
+                - Madrid, España.
+                <br />
+               - 2000 - 2012
+                <br />
               </p>
             </div>
           </div>
@@ -126,8 +143,8 @@ const About = () => {
             </div>
           </div>
           <div className="images-container">
-          <a href="https://www.tecnocasa.es" target="_blank">
-            <img src={Tecnocasa} alt="tecnocasa" className="tecnocasa" />
+            <a href="https://www.tecnocasa.es" target="_blank">
+              <img src={Tecnocasa} alt="tecnocasa" className="tecnocasa" />
             </a>
           </div>
         </div>
@@ -137,8 +154,12 @@ const About = () => {
           <div className="data">
             <div className="contAbout-texto">
               <p>
-                Lic. Gestión de Organizaciones - UMET (Universidad Metropolitana
-                para la Educaión y el Trabajo). Buenos Aires, Argentina
+               - Lic. Gestión de Organizaciones
+                <br />
+               - UMET (Universidad Metropolitana
+                para la Educación y el Trabajo)
+                <br />
+               - Buenos Aires, Argentina
               </p>
             </div>
           </div>
@@ -166,9 +187,9 @@ const About = () => {
             </div>
           </div>
           <div className="images-container">
-          <a href="https://www.umet.edu.ar" target="_blank">
-            <img src={Umet} alt="umet" className="umet" />
-          </a>
+            <a href="https://www.umet.edu.ar" target="_blank">
+              <img src={Umet} alt="umet" className="umet" />
+            </a>
           </div>
         </div>
         <hr className="section-divider" />

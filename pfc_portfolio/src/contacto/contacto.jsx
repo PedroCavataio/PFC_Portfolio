@@ -90,10 +90,10 @@ const Contacto = () => {
         <a href="https://github.com/PedroCavataio" target="_blank"> 
           <img src={GitHub} alt="GitHub" className="github" />
         </a>
-        <a href="https://wa.me/1159547777" download="PedroCavataio">
+        <a href="https://wa.me/1159547777" target="_blank">
           <img src={Whatsapp} alt="whatsapp" className="whatsapp" />
         </a>
-        <a href="URL_DEL_CURRICULUM.pdf" download="NombreDelCurriculum.pdf">
+        <a href="https://gmail.com" target="_blank">
           <img src={Gmail} alt="gmail" className="gmail" />
         </a>
       </div>
