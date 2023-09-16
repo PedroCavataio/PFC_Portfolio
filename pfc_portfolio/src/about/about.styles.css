@@ -48,6 +48,11 @@
 align-items: center;
 height: 150px;
 margin-left: 220%;
+transition: transform 0.3s ease; 
+}
+
+.CV:hover {
+  transform: scale(1.2);
 }
 
 .contAbout-texto {

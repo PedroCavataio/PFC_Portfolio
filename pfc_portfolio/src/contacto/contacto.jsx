@@ -2,6 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./contacto.styles.css";
 import Linkedin from "../assets/linkedin.png";
+import GitHub from "../assets/github.png";
+import Whatsapp from "../assets/whatsapp.png";
+import Gmail from "../assets/gmail.png";
 
 const Contacto = () => {
   const navigate = useNavigate();
@@ -79,15 +82,22 @@ const Contacto = () => {
           </form>
         </div>
       </div>
-      
-      <div className="linkedin-container">
-    <a href="URL_DEL_CURRICULUM.pdf" download="NombreDelCurriculum.pdf">
-      <img src={Linkedin} alt="Currículum" className="linkedin" />
-    </a>
-  </div>
 
+      <div className="redes-container">
+        <a href="https://www.linkedin.com/in/pedro-francisco-cavataio/" target="_blank"> 
+          <img src={Linkedin} alt="Linkedin" className="linkedin" />
+        </a>
+        <a href="https://github.com/PedroCavataio" target="_blank"> 
+          <img src={GitHub} alt="GitHub" className="github" />
+        </a>
+        <a href="https://wa.me/1159547777" download="PedroCavataio">
+          <img src={Whatsapp} alt="whatsapp" className="whatsapp" />
+        </a>
+        <a href="URL_DEL_CURRICULUM.pdf" download="NombreDelCurriculum.pdf">
+          <img src={Gmail} alt="gmail" className="gmail" />
+        </a>
       </div>
-    
+    </div>
   );
 };
 

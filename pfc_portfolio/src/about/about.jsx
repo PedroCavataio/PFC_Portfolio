@@ -55,7 +55,9 @@ const About = () => {
             </div>
           </div>
           <div className="images-container">
+            <a href="https://www.soyhenry.com" target="_blank">
             <img src={Henry} alt="henry" className="henry" />
+            </a>
           </div>
         </div>
         <hr className="section-divider" />
@@ -88,7 +90,9 @@ const About = () => {
             </div>
           </div>
           <div className="images-container">
+          <a href="https://www.aa2000.com.ar" target="_blank">
             <img src={AA2000} alt="aa2000" className="aa2000" />
+          </a>
           </div>
         </div>
         <hr className="section-divider" />
@@ -122,7 +126,9 @@ const About = () => {
             </div>
           </div>
           <div className="images-container">
+          <a href="https://www.tecnocasa.es" target="_blank">
             <img src={Tecnocasa} alt="tecnocasa" className="tecnocasa" />
+            </a>
           </div>
         </div>
         <hr className="section-divider" />
@@ -160,7 +166,9 @@ const About = () => {
             </div>
           </div>
           <div className="images-container">
+          <a href="https://www.umet.edu.ar" target="_blank">
             <img src={Umet} alt="umet" className="umet" />
+          </a>
           </div>
         </div>
         <hr className="section-divider" />

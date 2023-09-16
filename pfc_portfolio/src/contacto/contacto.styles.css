@@ -53,9 +53,9 @@
   text-align: left;
   width: 50%;
   box-sizing: border-box;
-  background-color: #c5c2c2;
   height: 50px;
-  color: #f6f1f1;
+  background-color: #f8f6f6; 
+  color: #4e4e4e;
 }
 
 .formControlMensaje {
@@ -68,9 +68,10 @@
   text-align: left;
   width: 50%;
   box-sizing: border-box;
-  background-color: #c5c2c2;
+  
   height: 150px;
-  color: #f1f6f6;
+  background-color: #f8f6f6; 
+  color: #4e4e4e;
 }
 
 .texto-encabezado {
@@ -107,10 +108,55 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+.redes-container {
+
+}
+
 .linkedin {
   position: absolute;
-  right: 20px; /* Ajusta la distancia desde el borde derecho según tu preferencia */
-  top: 50%; /* Centra verticalmente */
+  right: 20%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
+  top: 52%; /* Centra verticalmente */
   transform: translateY(-50%);
   height: 150px;
+  transition: transform 0.3s ease; 
+}
+.linkedin:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+
+.github {
+  position: absolute;
+  right: 22%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
+  top: 63%; /* Centra verticalmente */
+  transform: translateY(-50%);
+  height: 70px;
+  transition: transform 0.3s ease; 
+}
+.github:hover {
+  transform: translateY(-50%) scale(1.2);
+
+}
+
+.whatsapp {
+  position: absolute;
+  right: 20%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
+  top: 74%; /* Centra verticalmente */
+  transform: translateY(-50%);
+  height: 150px;
+  transition: transform 0.3s ease; 
+}
+.whatsapp:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+
+.gmail {
+  position: absolute;
+  right: 20.2%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
+  top: 84%; /* Centra verticalmente */
+  transform: translateY(-50%);
+  height: 140px;
+  transition: transform 0.3s ease; 
+}
+.gmail:hover {
+  transform: translateY(-50%) scale(1.2);
 }
