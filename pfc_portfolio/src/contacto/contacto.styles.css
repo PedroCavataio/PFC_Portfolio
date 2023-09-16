@@ -1,63 +1,116 @@
 .contacto-container {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(to bottom, #8fadaa 0%, #c2f7f7 60%, #c2f7f7 40%, #c2f7f7 100%);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    z-index: -1;
-  }
-  
-  .contacto-superior {
-    width: 65%;
-    height: 60%;
-    background: #06e7e7; 
-  }
-  
-  .contacto-inferior {
-    width: 65%;
-    height: 40%;
-    background: #06e7e7; 
-  }
-  
-{/* <div className="contacto-container">
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #8fadaa 0%,
+    #c2f7f7 60%,
+    #c2f7f7 40%,
+    #c2f7f7 100%
+  );
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.contacto-superior {
+  width: 65%;
+  height: 60%;
+  background: #06e7e7;
+}
+
+.contacto-inferior {
+  width: 65%;
+  height: 40%;
+  background: #06e7e7;
+}
+
+ {
+  /* <div className="contacto-container">
     <div className="contacto-superior"></div>
     <div className="contacto-inferior"></div>
 
     
-    </div> */}
+    </div> */
+}
 
-    .btn-primary {
-      background-color: #11b6b6;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-      text-align: center; 
-      line-height: 0;     
-    }
-    
-    .btn-primary:hover {
-      background-color: #1f8181;
-    }
-  
-    .form-control {
-      top: 10%;
-      margin: 10px;
-      padding: 5px;
-      font-size: 16px;
-      border: 1px solid #11b6b6;
-      border-radius: 5px;
-      text-align: left; 
-      width: 25%;
-      box-sizing: border-box;
-    }
-    
-    
+.container.p-4 {
+  margin-top: 5%;
+}
+
+.form-control {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 10px;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid #11b6b600;
+  border-radius: 5px;
+  text-align: left;
+  width: 50%;
+  box-sizing: border-box;
+  background-color: #c5c2c2;
+  height: 50px;
+  color: #f6f1f1;
+}
+
+.formControlMensaje {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 10px;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid #11b6b600;
+  border-radius: 5px;
+  text-align: left;
+  width: 50%;
+  box-sizing: border-box;
+  background-color: #c5c2c2;
+  height: 150px;
+  color: #f1f6f6;
+}
+
+.texto-encabezado {
+  width: 50%;
+  margin-left: 25%;
+}
+
+.titulo {
+  color: #4e4e4e;
+  text-shadow: 2px 1px 1px #f5d313;
+  font-size: 4rem;
+}
+
+.sub-titulo {
+  color: #686969;
+}
+
+.btnEnviar {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: rgb(248, 246, 246);
+  background-color: #3c3d3ccb;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #2d2d2e00;
+  margin-top: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.btnEnviar:hover {
+  background-color: #02fdf1ec;
+  color: #525252;
+  border: 2px solid #2d2d2e00;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.linkedin {
+  position: absolute;
+  right: 20px; /* Ajusta la distancia desde el borde derecho según tu preferencia */
+  top: 50%; /* Centra verticalmente */
+  transform: translateY(-50%);
+  height: 150px;
+}

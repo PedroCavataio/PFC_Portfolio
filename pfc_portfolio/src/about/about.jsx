@@ -2,8 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./about.styles.css";
 import figuraPuntos from "../assets/figuraPuntos.png";
-import figuraPuntitos from "../assets/puntitos.png";
-import figuraTriangulos from "../assets/triangulos.png";
 import DescargaCV from "../assets/descargaCV.png";
 import Henry from "../assets/henry.png";
 import AA2000 from "../assets/aa2000.png";

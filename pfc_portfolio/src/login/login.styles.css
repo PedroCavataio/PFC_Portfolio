@@ -1,4 +1,5 @@
 .login-container {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,13 +43,13 @@
   width: 100%;
   max-width: 300px; 
   min-height: 5rem;  
+  
 }
 
 label {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.5rem;
   color: #4e4e4e;
-  /* text-shadow: 2px 1px 1px #f5d313; */
 }
 
 .hola {
@@ -62,13 +63,15 @@ label {
 }
 
 .login-input {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   height: 1.5rem;
   padding: 0.5rem;
   font-size: 1rem;
   border: 2px solid #2d2d2e00;
   border-radius: 5px;
   width: 100%;
-  background-color: rgba(246, 248, 248, 0.486); 
+  background-color: #4e4e4e; 
+  color: #f7f2f2;
 }
 
 .error-message {
@@ -84,6 +87,7 @@ label {
 }
 
 .error-message.active {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   visibility: visible; 
   height: 1.5rem;
   
@@ -93,7 +97,7 @@ label {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: rgb(248, 246, 246);
-  background-color: #3c3d3ccb;
+  background-color: #4e4e4e;
   border-radius: 5px;
   cursor: pointer;
   border: 2px solid #2d2d2e00;
@@ -102,10 +106,8 @@ label {
 }
 
 .login-button:hover {
-  /* color: rgb(248, 246, 246);
-  background-color: #3c3d3ccb; */
   background-color: #02fdf1ec;
-  color: #525252;
+  color: #4e4e4e;
   border: 2px solid #2d2d2e00;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -114,7 +116,7 @@ label {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: absolute;
   color: rgb(248, 246, 246);
-  background-color: #3c3d3ccb;
+  background-color: #4e4e4e;
   cursor: pointer;
   border-radius: 50%; 
   width: 20vw; 
