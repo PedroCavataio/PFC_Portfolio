@@ -2,8 +2,14 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./landinPage.styles.css";
 import Nav from "../nav/nav";
-import fotoPedro from "../assets/fotoPedro.jpg";
-import ModalComponent from "../modal/modal"; 
+import ModalComponent from "../modal/modal";
+import Foto from "../assets/fotoPedro.jpg";
+import Cuadrado from "../assets/cuadrado.png";
+import Petalos from "../assets/petalos.png";
+import Cuadros from "../assets/cuadros.png";
+import Lineas from "../assets/lineas.png";
+import LineaLoca from "../assets/lineaLoca.png";
+import LineaLocaBlanca from "../assets/lineaLocaBlanca.png";
 
 const Landing = ({ userName }) => {
   const navigate = useNavigate();
@@ -17,11 +23,11 @@ const Landing = ({ userName }) => {
       if (progress < 100) {
         setProgress(progress + 1);
       } else {
-        clearInterval(interval); 
+        clearInterval(interval);
         setModalShown(false);
         setTimeout(() => {
           navigate("/landing");
-        }, 0); 
+        }, 0);
       }
     }, 40);
 
@@ -47,28 +53,70 @@ const Landing = ({ userName }) => {
   };
 
   return (
-    <div className={fondoPorEstacion()}>
-      <h1 className="fraseLanding">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </h1>
+    <>
+      <div className={fondoPorEstacion()}>
 
-      <Nav />
-      {/* {!modalShown && (
+        <div className="cuadrado">
+        <img
+        src={Cuadrado}
+        alt="cuadrado"
+        className="cua"
+        />
+        </div>
+
+      {/*   <div className="lineas">
+        <img
+        src={Lineas}
+        alt="lineas"
+        className="lineas"
+        />
+        </div>
+
+        <div className="lineaLoca">
+        <img
+        src={LineaLoca}
+        alt="lineaLoca"
+        className="lineaLoca"
+        />
+        </div>
+
+        <div className="lineaLocaBlanca">
+        <img
+        src={LineaLocaBlanca}
+        alt="lineaLocaBlanca"
+        className="lineaLocaBlanca"
+        />
+        </div> */}
+
+        <div className="cuadros">
+        <img
+        src={Cuadros}
+        alt="cuadros"
+        className="cuadros"
+        />
+        </div>
+
+        
+        <div class="foto-container">
+          <img
+            src={Foto}
+            alt="Foto Pedro Cavataio"
+            className="fotoPedro"
+          />
+          
+        </div>
+        <h1 className="fraseLanding">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h1>
+
+        <Nav />
+        {/* {!modalShown && (
         <h1 className="fraseLanding">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h1>
       )} */}
-
-<div className="images-container">
-        <img
-          src={fotoPedro}
-          alt="Foto Pedro Cavataio"
-          className="profile-image"
-        />
-        </div>
-    </div>
-
-    
+      </div>
+    </>
   );
 };
 

@@ -6,11 +6,11 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(15, 190, 196);
+  background-color: rgb(178, 183, 184);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  z-index: -1;
+  z-index: -2;
 }
 
 
@@ -51,16 +51,16 @@
   background-image: url("../assets/otoño.png");
 }
 
-.otoño .modal-content {
+/* .otoño .modal-content {
   width: 50vw;
-  height: 50vh;
+  height: 50vh; */
   /* background-image: url("../assets/otoño.png"); */
-  background-color: rgb(228, 226, 224);
+ /*  background-color: rgb(228, 226, 224);
   background-size: cover; 
   background-position: center; 
   border-radius: 1%;
   z-index: 9999;
-}
+} */
 
 .invierno {
   background-image: url("../assets/nubesLogin2.jpg");
@@ -68,19 +68,60 @@
  
 .fraseLanding {
   position: fixed;
-  color: #01f80d;
-  font-size: 40px;
+  color: #dee0e0;
+  font-size: 60px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-shadow: 2px 1px 1px #4e4e4e; 
-}
-
-.profile-image {  
-  margin-top: -221%;
-  margin-left: 23%; 
+  width: 30%;
+  margin-left: -25%;
   z-index: 1;
 }
 
- .modal-title {
+.fotoPedro {
+  position: absolute;
+  top: 30%;
+  left: 65%;
+  box-shadow: 2px 2px 1px #4d4d4d;  
+  object-fit: cover; /* Ajusta el comportamiento de la imagen */
+  
+} 
+
+.cua {
+  position: absolute;
+  width: 22%;
+  margin-left: 17%;
+  margin-top: -8%;
+}
+
+.cuadros {
+position: absolute;
+margin-top: 6%;
+margin-left: 33%;
+width: 40%;
+}
+
+/* .lineas {
+  position: absolute;
+  width: 28%;
+  margin-left: 47%;
+  margin-top: -21%;
+} */
+
+/* .lineaLoca {
+  position: absolute;
+  margin-left: -35%;
+  margin-top: 18%;
+}
+
+.lineaLocaBlanca {
+  position: absolute;
+} */
+
+
+
+
+
+/*  .modal-title {
   align-items: center;
   justify-content: center;
   margin-top: 5%;
@@ -92,5 +133,5 @@
   font-size: 1vw;
   color: #646363;
  }
-
+ */
  

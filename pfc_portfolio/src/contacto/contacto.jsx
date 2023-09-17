@@ -54,7 +54,7 @@ const Contacto = () => {
               <input
                 type="text"
                 name="email"
-                placeholder="Introduce tu dirección de correo electrónico"
+                placeholder="Introduzca su dirección de correo electrónico"
                 className="form-control"
               />
             </div>

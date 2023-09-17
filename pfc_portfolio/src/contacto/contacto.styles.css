@@ -5,42 +5,16 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(
-    to bottom,
-    #8fadaa 0%,
-    #c2f7f7 60%,
-    #c2f7f7 40%,
-    #c2f7f7 100%
-  );
+  background: linear-gradient(to right, #b0b0ae 68%,  #333131 32%);    
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   z-index: -1;
 }
 
-.contacto-superior {
-  width: 65%;
-  height: 60%;
-  background: #06e7e7;
-}
-
-.contacto-inferior {
-  width: 65%;
-  height: 40%;
-  background: #06e7e7;
-}
-
- {
-  /* <div className="contacto-container">
-    <div className="contacto-superior"></div>
-    <div className="contacto-inferior"></div>
-
-    
-    </div> */
-}
-
 .container.p-4 {
-  margin-top: 5%;
+  margin-top: 4%;
+  margin-right: 8%;
 }
 
 .form-control {
@@ -54,7 +28,7 @@
   width: 50%;
   box-sizing: border-box;
   height: 50px;
-  background-color: #f8f6f6; 
+  background-color: #edebeb; 
   color: #4e4e4e;
 }
 
@@ -67,10 +41,9 @@
   border-radius: 5px;
   text-align: left;
   width: 50%;
-  box-sizing: border-box;
-  
+  box-sizing: border-box;  
   height: 150px;
-  background-color: #f8f6f6; 
+  background-color: #edebeb; 
   color: #4e4e4e;
 }
 
@@ -81,7 +54,7 @@
 
 .titulo {
   color: #4e4e4e;
-  text-shadow: 2px 1px 1px #f5d313;
+  text-shadow: 2px 1px 1px #e8ebeb;
   font-size: 4rem;
 }
 
@@ -108,16 +81,13 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.redes-container {
-
-}
 
 .linkedin {
   position: absolute;
-  right: 20%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
-  top: 52%; /* Centra verticalmente */
+  right: 12%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
+  top: 32%; /* Centra verticalmente */
   transform: translateY(-50%);
-  height: 150px;
+  height: 70px;
   transition: transform 0.3s ease; 
 }
 .linkedin:hover {
@@ -126,23 +96,22 @@
 
 .github {
   position: absolute;
-  right: 22%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
-  top: 63%; /* Centra verticalmente */
+  right: 12.1%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
+  top: 50.2%; /* Centra verticalmente */
   transform: translateY(-50%);
   height: 70px;
   transition: transform 0.3s ease; 
 }
 .github:hover {
   transform: translateY(-50%) scale(1.2);
-
 }
 
 .whatsapp {
   position: absolute;
-  right: 20%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
-  top: 74%; /* Centra verticalmente */
+  right: 12.2%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
+  top: 68%; /* Centra verticalmente */
   transform: translateY(-50%);
-  height: 150px;
+  height: 70px;
   transition: transform 0.3s ease; 
 }
 .whatsapp:hover {
@@ -151,10 +120,10 @@
 
 .gmail {
   position: absolute;
-  right: 20.2%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
+  right: 11.9%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
   top: 84%; /* Centra verticalmente */
   transform: translateY(-50%);
-  height: 140px;
+  height: 61px;
   transition: transform 0.3s ease; 
 }
 .gmail:hover {
