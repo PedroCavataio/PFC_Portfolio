@@ -37,6 +37,7 @@ function Nav() {
           <h1 className="redirigirAInicio" onClick={redirigirAInicio}>
             <img src={pedroCavataio} alt="Logo" />
           </h1>
+          
 
           <ul>
             <li>

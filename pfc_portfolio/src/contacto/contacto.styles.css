@@ -60,13 +60,14 @@
 
 .sub-titulo {
   color: #686969;
+  text-shadow: 2px 1px 1px #e8ebeb;
 }
 
 .btnEnviar {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: rgb(248, 246, 246);
-  background-color: #3c3d3ccb;
+  background-color: #4e4e4e;
   border-radius: 5px;
   cursor: pointer;
   border: 2px solid #2d2d2e00;

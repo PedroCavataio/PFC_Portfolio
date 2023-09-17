@@ -75,6 +75,12 @@
   width: 30%;
   margin-left: -25%;
   z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.fraseLanding:hover {
+  color: #4e4e4e;
+  text-shadow: 2px 1px 1px #03d3eb;
 }
 
 .fotoPedro {
