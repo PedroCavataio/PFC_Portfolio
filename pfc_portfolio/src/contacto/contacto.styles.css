@@ -5,7 +5,7 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right, #b0b0ae 68%,  #393939 32%);    
+  background: linear-gradient(to right, #efefee 68%,  #393939 32%);    
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -13,8 +13,8 @@
 }
 
 .container.p-4 {
-  margin-top: 4%;
-  margin-right: 8%;
+  margin-top: 7%;
+  margin-right: 28%;
 }
 
 .form-control {
@@ -28,7 +28,7 @@
   width: 50%;
   box-sizing: border-box;
   height: 50px;
-  background-color: #edebeb; 
+  background-color: #04b8b870; 
   color: #4e4e4e;
 }
 
@@ -43,7 +43,7 @@
   width: 50%;
   box-sizing: border-box;  
   height: 150px;
-  background-color: #edebeb; 
+  background-color: #04b8b870; 
   color: #4e4e4e;
 }
 
@@ -54,8 +54,15 @@
 
 .titulo {
   color: #4e4e4e;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-shadow: 2px 1px 1px #e8ebeb;
   font-size: 4rem;
+}
+
+.titulo:hover {
+  color: #4e4e4e;
+  text-shadow: 2px 1px 1px #04b8b8;
+  /* border: 2px solid #03d3eb; */
 }
 
 .sub-titulo {
@@ -71,12 +78,12 @@
   border-radius: 5px;
   cursor: pointer;
   border: 2px solid #2d2d2e00;
-  margin-top: 1rem;
+  margin-top: .5rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .btnEnviar:hover {
-  background-color: #02fdf1ec;
+  background-color: #04b8b8;
   color: #525252;
   border: 2px solid #2d2d2e00;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;

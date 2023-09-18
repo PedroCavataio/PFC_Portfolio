@@ -3,6 +3,7 @@
   position: fixed; /* Ancla la barra en la parte superior */
   top: 0; /* Coloca la barra en la parte superior de la pantalla */
   left: 0; /* Ancla la barra en el lado izquierdo */
+  height: 12%;
   width: 100%; /* Ocupa todo el ancho de la pantalla */
   display: flex; /* Agrega display flex para alinear los elementos */
   justify-content: flex-end; /* Distribuye los elementos a lo largo de la barra */
@@ -14,18 +15,16 @@
   
   .barras {
     display: none;
-  }
+  }  
 
-  .redirigirAInicio {
-    cursor: pointer;
-    margin-bottom: 21px;
-    margin-right: auto; 
-    margin-left: 30px; 
-    max-height: 40px;
-    max-width: 40px; /* Ajusta el ancho máximo de la imagen a tu preferencia */
-    height: auto;
+  .nombreImagenLogo {
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    
+    height: 10%;
+    z-index: 999;
   }
-
      
   ul {
     padding: 0;
@@ -36,8 +35,7 @@
   
   li {
     list-style: none;
-    margin-right: 30px;  
-     
+    margin-right: 30px;      
   }
 
   /* .desplegable ul li a {

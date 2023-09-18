@@ -1,9 +1,7 @@
 .trabajo-container {
   display: flex;
-  flex-direction: column; /* Cambia la dirección de flex a columna */
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-items: center; /* Centra verticalmente */
+  justify-content: space-between; /* Espacio entre los elementos */
   width: 100vw;
   height: 100vh;
   background: linear-gradient(to left, #efefee 50%, #393939 50%);
@@ -11,10 +9,6 @@
   background-position: center center;
   background-repeat: no-repeat;
   z-index: -1;
+  padding: 0 5%; /* Espacio horizontal entre los elementos */
 }
 
-.section + .section {
-  margin-top: 20px; /* Espacio entre las secciones */
-}
-
-  

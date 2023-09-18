@@ -19,7 +19,7 @@ function Nav() {
     navigate("/");
   };
 
-  const redirigirAInicio = () => {
+  const nombreImagenLogo = () => {
     navigate("/landing");
   };
 
@@ -33,32 +33,24 @@ function Nav() {
             id="x"
           ></button>
         </div>
-        <nav id="menu" className="desplegable">
-          <h1 className="redirigirAInicio" onClick={redirigirAInicio}>
-            <img src={pedroCavataio} alt="Logo" />
-          </h1>
-          
 
+        
+        <img src={pedroCavataio} alt="pedroIndex" className="nombreImagenLogo" />
+               
+
+        <nav id="menu" className="desplegable">
           <ul>
             <li>
-            <NavLink to="/landing">
-                Inicio
-              </NavLink>
+              <NavLink to="/landing">Inicio</NavLink>
             </li>
             <li>
-            <NavLink to="/trabajo">
-                Mi trabajo
-              </NavLink>
+              <NavLink to="/trabajo">Mi trabajo</NavLink>
             </li>
             <li>
-              <NavLink to="/about">
-                Mi resumen
-              </NavLink>
+              <NavLink to="/about">Mi resumen</NavLink>
             </li>
             <li>
-            <NavLink to="/contacto">
-                Contacto
-              </NavLink>
+              <NavLink to="/contacto">Contacto</NavLink>
             </li>
             <li>
               <a href onClick={redirigirALogin}>

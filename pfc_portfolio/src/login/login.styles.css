@@ -6,7 +6,7 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right, #608c8d 50%,  #a8f8f8 50%);
+  background: linear-gradient(to right, #393939 50%,  #ebebeb 50%);
   position: absolute;
 }
 
@@ -58,8 +58,7 @@ label {
   padding-bottom: 18%;
   color: #4e4e4e;
   text-shadow: 2px 1px 1px #f5d313; 
-  text-align: center;
-  
+  text-align: center;  
 }
 
 .login-input {
@@ -70,7 +69,7 @@ label {
   border: 2px solid #2d2d2e00;
   border-radius: 5px;
   width: 100%;
-  background-color: #f8f6f67c; 
+  background-color: #04b8b870; 
   color: #4e4e4e;
 }
 
@@ -107,7 +106,7 @@ label {
 }
 
 .login-button:hover {
-  background-color: #02fdf1ec;
+  background-color: #04b8b8;
   color: #4e4e4e;
   border: 2px solid #2d2d2e00;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -147,7 +146,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #02fdf1ec;
+  background-color: #04b8b8;
   color: #525252;
   font-size: 1rem; 
   text-align: center;

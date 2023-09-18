@@ -196,7 +196,7 @@ const About = () => {
             </a>
           </div>
         </div>
-        <hr className="section-divider" />
+        <hr className="section-dividerCV" />
 
         <div className="section">
           <div className="data">
