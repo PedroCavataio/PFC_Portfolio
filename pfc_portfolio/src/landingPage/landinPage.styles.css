@@ -13,7 +13,6 @@
   z-index: -2;
 }
 
-
 .enter-button-landing {
   padding: 1rem 2rem;
   font-size: 1.1rem;
@@ -38,7 +37,7 @@
 .invierno {
   width: 100vw;
   height: 100vh;
-  background-size: 100% 115%; 
+  background-size: 100% 115%;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -54,8 +53,8 @@
 /* .otoño .modal-content {
   width: 50vw;
   height: 50vh; */
-  /* background-image: url("../assets/otoño.png"); */
- /*  background-color: rgb(228, 226, 224);
+/* background-image: url("../assets/otoño.png"); */
+/*  background-color: rgb(228, 226, 224);
   background-size: cover; 
   background-position: center; 
   border-radius: 1%;
@@ -65,15 +64,17 @@
 .invierno {
   background-image: url("../assets/nubesLogin2.jpg");
 }
- 
+
 .fraseLanding {
   position: fixed;
   color: #dee0e0;
-  font-size: 60px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-shadow: 2px 1px 1px #4e4e4e; 
+  font-size: 54px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 2px 1px 1px #4e4e4e;
   width: 30%;
-  margin-left: -25%;
+  margin-left: -34%;
+  margin-top: 7%;
+
   z-index: 1;
   transition: transform 0.3s ease;
 }
@@ -81,51 +82,33 @@
 .fraseLanding:hover {
   color: #4e4e4e;
   text-shadow: 2px 1px 1px #03d3eb;
+  /* border: 2px solid #03d3eb; */
 }
 
 .fotoPedro {
   position: absolute;
   top: 30%;
-  left: 65%;
-  box-shadow: 2px 2px 1px #4d4d4d;  
+  left: 60%;
+  border: 2px solid #03d3eb;  /* Establece el ancho y el color del borde */
+  box-shadow: 2px 2px 1px #fffefe;
   object-fit: cover; /* Ajusta el comportamiento de la imagen */
-  
-} 
+}
 
 .cua {
   position: absolute;
   width: 22%;
   margin-left: 17%;
   margin-top: -8%;
+  border: 2px solid #03d4eb;
 }
 
 .cuadros {
-position: absolute;
-margin-top: 6%;
-margin-left: 33%;
-width: 40%;
+  position: absolute;
+  width: 40%;
+  margin-left: 34%;
+  margin-top: 7%;
+  border: 2px solid #03d4eb;
 }
-
-/* .lineas {
-  position: absolute;
-  width: 28%;
-  margin-left: 47%;
-  margin-top: -21%;
-} */
-
-/* .lineaLoca {
-  position: absolute;
-  margin-left: -35%;
-  margin-top: 18%;
-}
-
-.lineaLocaBlanca {
-  position: absolute;
-} */
-
-
-
-
 
 /*  .modal-title {
   align-items: center;
@@ -140,4 +123,3 @@ width: 40%;
   color: #646363;
  }
  */
- 

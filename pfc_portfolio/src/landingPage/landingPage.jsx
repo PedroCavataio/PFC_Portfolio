@@ -55,67 +55,29 @@ const Landing = ({ userName }) => {
   return (
     <>
       <div className={fondoPorEstacion()}>
-
         <div className="cuadrado">
-        <img
-        src={Cuadrado}
-        alt="cuadrado"
-        className="cua"
-        />
+          <img src={Cuadrado} alt="cuadrado" className="cua" />
         </div>
-
-      {/*   <div className="lineas">
-        <img
-        src={Lineas}
-        alt="lineas"
-        className="lineas"
-        />
-        </div>
-
-        <div className="lineaLoca">
-        <img
-        src={LineaLoca}
-        alt="lineaLoca"
-        className="lineaLoca"
-        />
-        </div>
-
-        <div className="lineaLocaBlanca">
-        <img
-        src={LineaLocaBlanca}
-        alt="lineaLocaBlanca"
-        className="lineaLocaBlanca"
-        />
-        </div> */}
 
         <div className="cuadros">
-        <img
-        src={Cuadros}
-        alt="cuadros"
-        className="cuadros"
-        />
+          <img src={Cuadros} alt="cuadros" className="cuadros" />
         </div>
 
-        
-        <div class="foto-container">
-          <img
-            src={Foto}
-            alt="Foto Pedro Cavataio"
-            className="fotoPedro"
-          />
-          
-        </div>
         <h1 className="fraseLanding">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h1>
 
-        <Nav />
-        {/* {!modalShown && (
+        <div class="foto-container">
+          <img src={Foto} alt="Foto Pedro Cavataio" className="fotoPedro" />
+        </div>
+      </div>
+
+      <Nav />
+      {/* {!modalShown && (
         <h1 className="fraseLanding">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h1>
       )} */}
-      </div>
     </>
   );
 };
