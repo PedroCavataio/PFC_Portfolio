@@ -56,7 +56,7 @@
   color: #4e4e4e;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-shadow: 2px 1px 1px #e8ebeb;
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 .titulo:hover {
@@ -92,10 +92,10 @@
 
 .linkedin {
   position: absolute;
-  right: 12%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
+  right: 14%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
   top: 32%; /* Centra verticalmente */
   transform: translateY(-50%);
-  height: 70px;
+  height: 40px;
   transition: transform 0.3s ease; 
 }
 .linkedin:hover {
@@ -104,10 +104,10 @@
 
 .github {
   position: absolute;
-  right: 12.1%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
+  right: 14%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
   top: 50.2%; /* Centra verticalmente */
   transform: translateY(-50%);
-  height: 70px;
+  height: 40px;
   transition: transform 0.3s ease; 
 }
 .github:hover {
@@ -116,10 +116,10 @@
 
 .whatsapp {
   position: absolute;
-  right: 12.2%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
+  right: 14%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
   top: 68%; /* Centra verticalmente */
   transform: translateY(-50%);
-  height: 70px;
+  height: 40px;
   transition: transform 0.3s ease; 
 }
 .whatsapp:hover {
@@ -128,12 +128,13 @@
 
 .gmail {
   position: absolute;
-  right: 11.9%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
+  right: 13.5%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
   top: 84%; /* Centra verticalmente */
   transform: translateY(-50%);
-  height: 61px;
+  height: 40px;
   transition: transform 0.3s ease; 
 }
+
 .gmail:hover {
   transform: translateY(-50%) scale(1.2);
 }

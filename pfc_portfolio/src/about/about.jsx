@@ -7,10 +7,7 @@ import Henry from "../assets/henry.png";
 import AA2000 from "../assets/aa2000.png";
 import Tecnocasa from "../assets/tecnocasa.png";
 import Umet from "../assets/umet.png";
-import Linkedin from "../assets/linkedin.png";
-import GitHub from "../assets/github.png";
-import Whatsapp from "../assets/whatsapp.png";
-import Gmail from "../assets/gmail.png";
+
 
 const About = () => {
   const navigate = useNavigate();
@@ -33,11 +30,11 @@ const About = () => {
           <div className="data">
             <div className="contAbout-texto">
               <p>
-                <span class="job-role">. Full Stack Web Developer</span>
+                <span class="job-role">Full Stack Web Developer</span>
                 <br />
-                <span class="company-name">. Henry</span>
+                <span class="company-name">Henry</span>
                 <br />
-                <span class="year">. 2023</span>
+                <span class="year">2023</span>
               </p>
             </div>
           </div>
@@ -76,13 +73,13 @@ const About = () => {
           <div className="data">
             <div className="contAbout-texto">
               <p>
-                <span>. Supervisor de Parking</span>
+                <span>Supervisor de Parking</span>
                 <br />
-                <span>. AA 2000 S.A.</span>
+                <span>AA 2000 S.A.</span>
                 <br />
-                <span>. Buenos Aires, Argentina</span>
+                <span>Buenos Aires, Argentina</span>
                 <br />
-                <span>. 2013 - Actualidad</span>
+                <span>2013 - Actualidad</span>
               </p>
             </div>
           </div>
@@ -115,13 +112,13 @@ const About = () => {
           <div className="data">
             <div className="contAbout-texto">
               <p>
-                . Administrador
+                Administrador
                 <br />
-                . Tecnocasa
+                Tecnocasa
                 <br />
-                . Madrid, España.
+                Madrid, España.
                 <br />
-                . 2000 - 2012
+                2000 - 2012
                 <br />
               </p>
             </div>
@@ -158,12 +155,12 @@ const About = () => {
           <div className="data">
             <div className="contAbout-texto">
               <p>
-                . Lic. En Gestión de Organizaciones
+                Lic. En Gestión de Organizaciones
                 <br />
-                . U.M.E.T
+                U.M.E.T
                 <br />
-                . Buenos Aires, Argentina
-                <br />. 2013 - 2018
+                Buenos Aires, Argentina
+                <br />2013 - 2018
               </p>
             </div>
           </div>

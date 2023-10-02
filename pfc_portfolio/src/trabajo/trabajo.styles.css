@@ -1,14 +1,29 @@
-.trabajo-container {
-  display: flex;
-  align-items: center; /* Centra verticalmente */
-  justify-content: space-between; /* Espacio entre los elementos */
+.background {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to left, #efefee 50%, #393939 50%);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background: linear-gradient(to right, #393939 50%,  #393939  50%);
+  position: absolute;
   z-index: -1;
-  padding: 0 5%; /* Espacio horizontal entre los elementos */
+  margin: 0;  
 }
 
+.containerJob {
+  margin-top: 15%; /* Ajusta el valor para aumentar o disminuir la separación */
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px; /* Espacio entre las imágenes */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+.trabajo-container {
+  width: 100%;
+  text-align: center;
+  margin: 3%; /* Ajusta el valor para aumentar o disminuir el espacio entre las imágenes individuales */
+}
+
+.umet {
+  max-width: 100%; /* Asegura que las imágenes no sean más anchas que sus contenedores */
+}
