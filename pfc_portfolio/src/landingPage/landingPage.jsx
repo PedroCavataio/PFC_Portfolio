@@ -63,6 +63,14 @@ const Landing = ({ userName }) => {
           <img src={Cuadros} alt="cuadros" className="cuadros" />
         </div>
 
+        <div className="cuadros2">
+          <img src={Cuadros} alt="cuadros" className="cuadros2" />
+        </div>
+
+        <div className="cuadros3">
+          <img src={Cuadros} alt="cuadros" className="cuadros3" />
+        </div>
+
         <h1 className="fraseLanding">
            Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h1>

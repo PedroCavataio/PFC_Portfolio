@@ -8,6 +8,8 @@ let vacio = "";
 
 function Nav() {
   const navigate = useNavigate();
+  const [activeItem, setActiveItem] = useState(null);
+
   const abrir_cerrar_menu = () => {
     let menu_desplegable = document.getElementById("menu");
     let boton_cerrar = document.getElementById("x");
@@ -21,6 +23,10 @@ function Nav() {
 
   const nombreImagenLogo = () => {
     navigate("/landing");
+  };
+
+  const handleItemClick = (itemName) => {
+    setActiveItem(itemName);
   };
 
   return (
@@ -41,7 +47,11 @@ function Nav() {
         <nav id="menu" className="desplegable">
           <ul>
             <li>
-              <NavLink to="/landing">Inicio</NavLink>
+              <NavLink to="/landing"
+              onClick={() => handleItemClick("Inicio")}
+              className={activeItem === "Inicio" ? "active" : ""}
+              >
+                Inicio</NavLink>
             </li>
             <li>
               <NavLink to="/trabajo">Mi trabajo</NavLink>

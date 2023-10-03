@@ -2,7 +2,7 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right, #393939 50%,  #393939  50%);
+  background: linear-gradient(to right,  #393939 50%,   #393939  50%);
   position: absolute;
   z-index: -1;
   margin: 0;  
@@ -46,7 +46,10 @@
 .deploy .castingAppDeploy,
 .deploy .control {
   max-width: 100%;
-  filter: brightness(0.1); /* Reduce el brillo al 50% para oscurecer la imagen */
+  filter: grayscale(100%) brightness(0.1); /* Transforma la imagen a blanco y negro */
+
+  transition: filter 0.3s ease;
+  
 }
 
 .deploy .countries:hover,
@@ -54,4 +57,5 @@
 .deploy .castingAppDeploy:hover,
 .deploy .control:hover {
   filter: brightness(1); /* Reduce el brillo al 50% para oscurecer la imagen */
+  
 }

@@ -9,7 +9,7 @@
   justify-content: flex-end; /* Distribuye los elementos a lo largo de la barra */
   align-items: center;  
   padding: 10px; /* Añade espaciado interior para los elementos dentro de la barra */
-  cursor: pointer;
+  
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
@@ -27,10 +27,16 @@
   }
      
   ul {
+    cursor: pointer;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: row;
+  }
+
+  li:active a {
+    /* Estilos para li cuando está activo (se hizo clic en un enlace dentro de él) */
+    color: rgb(253, 212, 5);
   }
   
   li {

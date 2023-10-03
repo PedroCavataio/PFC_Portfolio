@@ -6,7 +6,7 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background-color: #efefee;
+  background-color: #393939;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -72,7 +72,7 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-shadow: 2px 1px 1px #4e4e4e;
   width: 30%;
-  margin-left: -25%;
+  margin-left: -35%;
   margin-top: .8%;
   z-index: 1;
   transition: transform 0.3s ease;
@@ -87,27 +87,41 @@
 .fotoPedro {
   position: absolute;
   top: 28%;
-  left: 64%;
+  left: 54%;
   border: 2px solid #03d3eb;  /* Establece el ancho y el color del borde */
-  box-shadow: 2px 2px 1px #fffefe;
+  box-shadow: 2px 2px 1px #fffefe00;
   object-fit: cover; /* Ajusta el comportamiento de la imagen */
+  filter: brightness(0.1); /* Reduce el brillo al 50% para oscurecer la imagen */
+  transition: filter 0.3s ease;
 }
 
-.cua {
+.fotoPedro:hover {
+  filter: brightness(1); /* Reduce el brillo al 50% para oscurecer la imagen */
+  
+}
+
+.cuadrado {
   position: absolute;
   width: 22%;
-  margin-left: 17%;
-  margin-top: -8%;
+  height: 50%;
+  margin-left: 40%;
+  margin-top: 10%;
   border: 2px solid #03d4eb;
+}
+
+
+.cuadros,
+.cuadros2,
+.cuadros3 {
+  max-width: 75%;
+  margin-left: 61%;  
 }
 
 .cuadros {
-  position: absolute;
-  width: 40%;
-  margin-left: 34%;
-  margin-top: 7%;
-  border: 2px solid #03d4eb;
+  margin-top: 5%;
 }
+
+
 
 /*  .modal-title {
   align-items: center;
