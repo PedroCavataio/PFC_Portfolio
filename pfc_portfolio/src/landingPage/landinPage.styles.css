@@ -91,14 +91,13 @@
   border: 2px solid #03d3eb;  /* Establece el ancho y el color del borde */
   box-shadow: 2px 2px 1px #fffefe00;
   object-fit: cover; /* Ajusta el comportamiento de la imagen */
-  filter: brightness(0.1); /* Reduce el brillo al 50% para oscurecer la imagen */
-  transition: filter 0.3s ease;
+  filter: brightness(0.1); /* Transforma la imagen a blanco y negro */
+  transition: filter 0.3s ease;  
 }
 
 .fotoPedro:hover {
-  filter: brightness(1); /* Reduce el brillo al 50% para oscurecer la imagen */
-  
-}
+  filter: brightness(1); /* Reduce el brillo al 50% para oscurecer la imagen */ 
+} 
 
 .cuadrado {
   position: absolute;
@@ -114,14 +113,12 @@
 .cuadros2,
 .cuadros3 {
   max-width: 75%;
-  margin-left: 61%;  
+  margin-left: 60%;  
 }
 
 .cuadros {
   margin-top: 5%;
 }
-
-
 
 /*  .modal-title {
   align-items: center;

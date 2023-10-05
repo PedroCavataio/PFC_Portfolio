@@ -1,5 +1,5 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./nav.styles.css";
 import pedroCavataio from "../assets/pedro.png";
 import { NavLink } from "react-router-dom";
@@ -8,7 +8,12 @@ let vacio = "";
 
 function Nav() {
   const navigate = useNavigate();
-  const [activeItem, setActiveItem] = useState(null);
+  const location = useLocation();
+  const [activeItem, setActiveItem] = useState(location.pathname);
+
+  useEffect(() => {
+    setActiveItem(location.pathname);
+  }, [location.pathname]);
 
   const abrir_cerrar_menu = () => {
     let menu_desplegable = document.getElementById("menu");
@@ -25,9 +30,7 @@ function Nav() {
     navigate("/landing");
   };
 
-  const handleItemClick = (itemName) => {
-    setActiveItem(itemName);
-  };
+ 
 
   return (
     <>
@@ -45,25 +48,29 @@ function Nav() {
                
 
         <nav id="menu" className="desplegable">
-          <ul>
-            <li>
-              <NavLink to="/landing"
-              onClick={() => handleItemClick("Inicio")}
-              className={activeItem === "Inicio" ? "active" : ""}
-              >
-                Inicio</NavLink>
+        <ul>
+            <li className={activeItem === "/landing" ? "active" : ""}>
+              <NavLink to="/landing" onClick={() => setActiveItem("/landing")}>
+                Inicio
+              </NavLink>
+            </li>
+            <li className={activeItem === "/trabajo" ? "active" : ""}>
+              <NavLink to="/trabajo" onClick={() => setActiveItem("/trabajo")}>
+                Mi trabajo
+              </NavLink>
+            </li>
+            <li className={activeItem === "/about" ? "active" : ""}>
+              <NavLink to="/about" onClick={() => setActiveItem("/about")}>
+                Mi resumen
+              </NavLink>
+            </li>
+            <li className={activeItem === "/contacto" ? "active" : ""}>
+              <NavLink to="/contacto" onClick={() => setActiveItem("/contacto")}>
+                Contacto
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/trabajo">Mi trabajo</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">Mi resumen</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contacto">Contacto</NavLink>
-            </li>
-            <li>
-              <a href onClick={redirigirALogin}>
+              <a href="/" onClick={redirigirALogin}>
                 Salir
               </a>
             </li>
