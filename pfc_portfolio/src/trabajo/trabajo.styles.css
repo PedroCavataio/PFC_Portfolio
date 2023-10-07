@@ -30,14 +30,14 @@
 }
 
 .deploy .image-container {
-  margin-left: 10%;
+/*   margin-left: 10%; */
   width: 60%;
   height: 50%;  
 }
 
-/* Añadimos un estilo específico para las imágenes de la izquierda */
+
 .deploy .image-container.left {
-  margin-left: 30%; /* Mueve las imágenes de la izquierda hac7a la izquierda */
+  margin-left: 30%; 
 }
 
 .deploy .countries,
@@ -54,4 +54,25 @@
 .deploy .castingAppDeploy:hover,
 .deploy .control:hover {
   filter: brightness(1); /* Reduce el brillo al 50% para oscurecer la imagen */  
+}
+
+.skill-container {
+  position: absolute;
+  top: 0;
+  right: 130px; /* Alinea el contenedor a la derecha del contenedor padre */
+  background-color: #f4e9e9; /* Color de fondo del rectángulo */
+  padding: 25px; /* Espaciado interior del rectángulo */  
+  display: grid; /* Establece un contenedor flexible para alinear las imágenes horizontalmente */
+  align-items: center; /* Alinea las imágenes verticalmente en el centro */
+  gap: 30px; /* Espacio entre las imágenes de habilidades */
+}
+
+/* Estilo para las imágenes de habilidades dentro del rectángulo */
+.skill-container .skill-group {
+  display: flex; /* Alinea las imágenes de habilidades horizontalmente */
+  align-items: center; /* Alinea las imágenes verticalmente en el centro */
+}
+
+.skill-container img {
+  max-width: 40px; /* Establece el ancho máximo de las imágenes */
 }
