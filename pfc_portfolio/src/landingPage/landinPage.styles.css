@@ -6,7 +6,7 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background-color: #393939;
+  background-color: #0d0d2f;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -73,14 +73,14 @@
   text-shadow: 2px 1px 1px #4e4e4e;
   width: 30%;
   margin-left: -35%;
-  margin-top: .8%;
+  margin-top: 6%;
   z-index: 1;
   transition: transform 0.3s ease;
 }
 
 .fraseLanding:hover {
   color: #4e4e4e;
-  text-shadow: 2px 1px 1px #04b8b8;
+  /* text-shadow: 2px 1px 1px #04b8b8; */
   /* border: 2px solid #03d3eb; */
 }
 

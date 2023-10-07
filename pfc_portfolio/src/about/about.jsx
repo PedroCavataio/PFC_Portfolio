@@ -7,7 +7,7 @@ import Henry from "../assets/henry.png";
 import AA2000 from "../assets/aa2000.png";
 import Tecnocasa from "../assets/tecnocasa.png";
 import Umet from "../assets/umet.png";
-
+import Ubicacion from "../assets/ubicacionEspaña.png";
 
 const About = () => {
   const navigate = useNavigate();
@@ -20,6 +20,11 @@ const About = () => {
     <div className="about-container">
       <div className="sections-container">
         <div className="sectionCV">
+          <div className="ubicacion-container">
+            <img src={Ubicacion} alt="Ubicacion" className="ubicacion" />
+            <p className="españa">España</p>
+          </div>
+
           <a href="URL_DEL_CURRICULUM.pdf" download="NombreDelCurriculum.pdf">
             <img src={DescargaCV} alt="Currículum" className="CV" />
           </a>
@@ -160,7 +165,8 @@ const About = () => {
                 U.M.E.T
                 <br />
                 Buenos Aires, Argentina
-                <br />2013 - 2018
+                <br />
+                2013 - 2018
               </p>
             </div>
           </div>
@@ -201,13 +207,12 @@ const About = () => {
               <p></p>
             </div>
           </div>
-          
-            <div className="contAbout-texto">
-              <p>
-                <img src={figuraPuntos} alt="puntos" className="puntos" />
-              </p>
-               
-              </div>
+
+          <div className="contAbout-texto">
+            <p>
+              <img src={figuraPuntos} alt="puntos" className="puntos" />
+            </p>
+          </div>
         </div>
       </div>
     </div>
