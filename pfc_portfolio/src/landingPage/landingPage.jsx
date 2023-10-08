@@ -55,7 +55,7 @@ const Landing = ({ userName }) => {
   return (
     <>
       <div className={fondoPorEstacion()}>
-        <div className="cuadrado">
+        {/* <div className="cuadrado">
           <img src={Cuadrado} alt="cuadrado" className="cua" />
         </div>
 
@@ -69,7 +69,7 @@ const Landing = ({ userName }) => {
 
         <div className="cuadros3">
           <img src={Cuadros} alt="cuadros" className="cuadros3" />
-        </div>
+        </div> */}
 
         <h1 className="fraseLanding">
            Lorem ipsum dolor sit amet consectetur adipisicing elit.

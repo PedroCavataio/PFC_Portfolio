@@ -5,7 +5,7 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right, #efefee 68%,  #393939 32%);    
+  background: linear-gradient(to right, #030810 68%, #030817 32%);    
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -29,7 +29,7 @@
   box-sizing: border-box;
   height: 50px;
   background-color: #04b8b870; 
-  color: #4e4e4e;
+  color: #e7e6e6;
 }
 
 .formControlMensaje {
@@ -44,7 +44,7 @@
   box-sizing: border-box;  
   height: 150px;
   background-color: #04b8b870; 
-  color: #4e4e4e;
+  color: #e7e6e6;
 }
 
 .texto-encabezado {
@@ -53,21 +53,19 @@
 }
 
 .titulo {
-  color: #4e4e4e;
+  color: #03d3eb;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-shadow: 2px 1px 1px #e8ebeb;
   font-size: 2.5rem;
 }
 
 .titulo:hover {
-  color: #4e4e4e;
-  text-shadow: 2px 1px 1px #04b8b8;
+  /* color: #4e4e4e;
+  text-shadow: 2px 1px 1px #04b8b8; */
   /* border: 2px solid #03d3eb; */
 }
 
 .sub-titulo {
-  color: #686969;
-  text-shadow: 2px 1px 1px #e8ebeb;
+  color: #b6b6b6;
 }
 
 .btnEnviar {

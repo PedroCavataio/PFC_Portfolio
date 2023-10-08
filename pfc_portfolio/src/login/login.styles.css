@@ -6,7 +6,7 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right, #393939 50%,  #ebebeb 50%);
+  background: linear-gradient(to right, #030810 50%,  #04b8b8 50%);
   position: absolute;
 }
 
@@ -69,7 +69,7 @@ label {
   border: 2px solid #2d2d2e00;
   border-radius: 5px;
   width: 100%;
-  background-color: #04b8b870; 
+  background-color: #afafafb6; 
   color: #565555;
 }
 
@@ -146,7 +146,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #04b8b8;
+  background-color: #060632;
   color: #525252;
   font-size: 1rem; 
   text-align: center;
