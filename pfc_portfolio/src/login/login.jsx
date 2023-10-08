@@ -76,7 +76,7 @@ const Login = ({ onLogin, access }) => {
 
   const notify = () => {
     toast.info(
-      //`¡Genial, ${userData.nombre}! ¡Excelente elección!. ${userData.estacion} es una época maravillosa del año.`,
+      `¡Genial, ${userData.nombre}! ¡Excelente elección!. ${userData.estacion} es una época maravillosa del año.`,
       `Ingresando`,
       {
         position: toast.POSITION.TOP_RIGHT,

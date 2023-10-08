@@ -22,7 +22,11 @@ const About = () => {
         <div className="sectionCV">
           <div className="ubicacion-container">
             <img src={Ubicacion} alt="Ubicacion" className="ubicacion" />
-            <p className="españa">España</p>
+            <p className="españa">
+              <span className="es">ES</span>
+              <span className="pa">PA</span>
+              <span className="ña">ÑA</span>
+            </p>
           </div>
 
           <a href="URL_DEL_CURRICULUM.pdf" download="NombreDelCurriculum.pdf">

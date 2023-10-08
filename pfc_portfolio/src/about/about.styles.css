@@ -66,8 +66,19 @@
   font-size: 18px; /* Tamaño de fuente del texto */
   margin-top: -17px; /* Ajusta el espacio entre la imagen y el texto */  
   margin-left: -390%; /* Ajusta el margen derecho para separar las imágenes */
+  }
+
+  .es {
+    color: red;
+  }
   
-}
+  .pa {
+    color: yellow;
+  }
+  
+  .ña {
+    color: red;
+  }
 
 .section p {
   margin: 0; /* Establece los márgenes a cero para eliminar cualquier margen predeterminado */

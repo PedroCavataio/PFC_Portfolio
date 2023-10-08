@@ -2,7 +2,7 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right,  #393939 50%,   #393939  50%);
+  background: linear-gradient(to right,  #030817  50%,   #030817  50%);
   position: absolute;
   z-index: -1;
   margin: 0;  
@@ -38,7 +38,7 @@
 
 
 .deploy .image-container.left {
- /*  margin-left: 30%; */
+  margin-left: 30%;
 }
 
 .deploy .countries,
@@ -60,8 +60,9 @@
 .skill-container {
   position: absolute;
   top: 0;
-  right: 40px; /* Alinea el contenedor a la derecha del contenedor padre */
-  background-color: #ffffff96; /* Color de fondo del rectángulo */
+  right: 60px; /* Alinea el contenedor a la derecha del contenedor padre */
+  top: 5px;
+  background-color: #f50505be; /* Color de fondo del rectángulo */
   padding: 25px; /* Espaciado interior del rectángulo */  
   display: grid; /* Establece un contenedor flexible para alinear las imágenes horizontalmente */
   align-items: center; /* Alinea las imágenes verticalmente en el centro */
