@@ -1,28 +1,29 @@
+/* trabajo.styles.css */
 .background {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 100vw;
-  height: 100vh;
-  background: linear-gradient(to right,  #030817  50%,   #030817  50%);
+  height: auto; /* Cambia a auto */
+  background: linear-gradient(to right, #030817 50%, #030817 50%);
   position: absolute;
   z-index: -1;
-  margin: 0;  
+  margin: 0;
 }
 
 .containerJob {
-  margin-top: 10%; /* Ajusta el valor para aumentar o disminuir la separación */
+  margin-top: 10%;
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px 0; /* Espacio vertical: 20px, Espacio horizontal: 0 */
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: center; /* Centra el contenido verticalmente */ 
-  
+  gap: 60px; /* Espacio entre imágenes */
+  justify-content: center;
+  align-items: center;
 }
 
 .trabajo-container {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin: 0; /* Ajusta el valor para aumentar o disminuir el espacio entre las imágenes individuales */
+  margin: 0;
 }
 
 .deploy {
@@ -30,51 +31,27 @@
   overflow: hidden;
 }
 
-.deploy .image-container {
-  margin-left: 10%;
+.image-container {
   width: 60%;
-  height: 50%;  
 }
 
-
-.deploy .image-container.left {
-  margin-left: 30%;
+.image-container.left {
+  margin-left: 30px; /* Espacio horizontal entre imágenes */
 }
 
-.deploy .countries,
-.deploy .rick,
-.deploy .castingAppDeploy,
-.deploy .control {
+.countries,
+.rick,
+.castingAppDeploy,
+.control,
+.comtrol2 {
   max-width: 100%;
-  filter: grayscale(100%) brightness(0.1); /* Transforma la imagen a blanco y negro */
-  transition: filter 0.3s ease;  
+  filter: grayscale(100%) brightness(0.1);
+  transition: filter 0.3s ease;
 }
 
-.deploy .countries:hover,
-.deploy .rick:hover,
-.deploy .castingAppDeploy:hover,
-.deploy .control:hover {
-  filter: brightness(1); /* Reduce el brillo al 50% para oscurecer la imagen */  
-}
-
-.skill-container {
-  position: absolute;
-  top: 0;
-  right: 60px; /* Alinea el contenedor a la derecha del contenedor padre */
-  top: 5px;
-  background-color: #f50505be; /* Color de fondo del rectángulo */
-  padding: 25px; /* Espaciado interior del rectángulo */  
-  display: grid; /* Establece un contenedor flexible para alinear las imágenes horizontalmente */
-  align-items: center; /* Alinea las imágenes verticalmente en el centro */
-  gap: 30px; /* Espacio entre las imágenes de habilidades */
-}
-
-/* Estilo para las imágenes de habilidades dentro del rectángulo */
-.skill-container .skill-group {
-  display: flex; /* Alinea las imágenes de habilidades horizontalmente */
-  align-items: center; /* Alinea las imágenes verticalmente en el centro */
-}
-
-.skill-container img {
-  max-width: 35px; /* Establece el ancho máximo de las imágenes */
+.countries:hover,
+.rick:hover,
+.castingAppDeploy:hover,
+.control:hover {
+  filter: brightness(1);
 }

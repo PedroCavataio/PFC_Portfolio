@@ -69,7 +69,7 @@ label {
   border: 2px solid #2d2d2e00;
   border-radius: 5px;
   width: 100%;
-  background-color: #04b8b870; 
+  background-color: #c00b0b; 
   color: #d3d1d1;
 }
 
@@ -97,7 +97,7 @@ label {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: rgb(248, 246, 246);
-  background-color: #4e4e4e;
+  background-color: #131db4;
   border-radius: 5px;
   cursor: pointer;
   border: 2px solid #2d2d2e00;
@@ -106,7 +106,7 @@ label {
 }
 
 .login-button:hover {
-  background-color: #04b8b8;
+  background-color: #f6f20f;
   color: #4e4e4e;
   border: 2px solid #2d2d2e00;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -116,7 +116,7 @@ label {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: absolute;
   color: rgb(248, 246, 246);
-  background-color: #4e4e4e;
+  background-color: #131db4;
   cursor: pointer;
   border-radius: 50%; 
   width: 20vw; 
@@ -146,7 +146,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #04b8b8;
+  background-color: #f6f20f;
   color: #525252;
   font-size: 1rem; 
   text-align: center;
