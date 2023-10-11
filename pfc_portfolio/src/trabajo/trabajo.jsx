@@ -24,7 +24,6 @@ const trabajo = () => {
     <>
       <div className="background">
         <div className="containerJob">
-
           <div className="trabajo-container">
             <div className="deploy">
               <a href="https://www.umet.edu.ar" target="_blank">
@@ -47,9 +46,16 @@ const trabajo = () => {
 
           <div className="trabajo-container">
             <div className="deploy">
-              <a href="https://deploy-sprint-2-frontend.onrender.com/" target="_blank">
+              <a
+                href="https://deploy-sprint-2-frontend.onrender.com/"
+                target="_blank"
+              >
                 <div className="image-container left">
-                  <img src={Casting} alt="castingAppDeploy" className="castingAppDeploy" />
+                  <img
+                    src={Casting}
+                    alt="castingAppDeploy"
+                    className="castingAppDeploy"
+                  />
                 </div>
               </a>
             </div>
@@ -57,22 +63,30 @@ const trabajo = () => {
 
           <div className="trabajo-container">
             <div className="deploy">
-              <a href="https://www.umet.edu.ar" target="_blank">              
-                
-                  <div className="image-container">
+              <a href="https://www.umet.edu.ar" target="_blank">
+                <div className="image-container">
                   <img src={Control} alt="control" className="control" />
                 </div>
               </a>
+              <div className="image-container">
                 <img src={Excel} alt="excel" className="excel" />
-                
+                <p className="image-text">Excel</p>
+              </div>
             </div>
           </div>
 
           <div className="trabajo-container">
             <div className="deploy">
-              <a href="https://deploy-sprint-2-frontend.onrender.com/" target="_blank">
+              <a
+                href="https://deploy-sprint-2-frontend.onrender.com/"
+                target="_blank"
+              >
                 <div className="image-container left">
-                  <img src={Casting} alt="castingAppDeploy" className="castingAppDeploy" />
+                  <img
+                    src={Casting}
+                    alt="castingAppDeploy"
+                    className="castingAppDeploy"
+                  />
                 </div>
               </a>
             </div>

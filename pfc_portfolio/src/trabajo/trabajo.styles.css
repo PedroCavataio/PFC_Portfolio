@@ -1,8 +1,7 @@
-/* trabajo.styles.css */
 .background {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 100vw;
-  height: auto; /* Cambia a auto */
+  height: auto; 
   background: linear-gradient(to right, #030817 50%, #030817 50%);
   position: absolute;
   z-index: -1;
@@ -12,14 +11,13 @@
 .containerJob {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 60px; /* Espacio entre imágenes */
+  gap: 60px; 
   justify-content: center;
   align-items: center;
   margin-top: 10%;
   margin-left: 70px;
   margin-right: 70px;
-  margin-bottom: 50px;
-  
+  margin-bottom: 50px;  
 }
 
 .trabajo-container {
@@ -29,17 +27,24 @@
   text-align: center;
   margin: 0;
   background-color: rgba(203, 199, 199, 0.693);  
-  height: 100%; /* Establece la altura al 100% */
+  height: 100%; 
 }
 
 .deploy {
-  position: relative;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  align-items: center;  
+  color: #00000000;  
+}
+
+.deploy:hover {
+  color: #242424;
 }
 
 .image-container {  
-  width: 60%;
+  width: 100%;  
 }
+
 
 .countries,
 .rick,
@@ -57,3 +62,29 @@
 .control:hover {
   filter: brightness(1);
 }
+
+.image-text {
+  margin-top: 1%; /* Ajusta el margen izquierdo según sea necesario */
+  font-size: 14px; /* Ajusta el tamaño de fuente según tus preferencias */  
+  opacity: 0;
+}
+
+.excel {
+  max-width: 10%;
+  filter: grayscale(100%) brightness(0.1);
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  opacity: 0;  
+}
+
+.excel:hover {
+  filter: none; /* Elimina el filtro de grayscale */
+}
+
+.excel:hover + .image-text {  
+  opacity: 1;
+}
+
+.deploy:hover  .excel {  
+  opacity: 1; /* La imagen de Excel se hace visible al hacer hover */  
+}
+
