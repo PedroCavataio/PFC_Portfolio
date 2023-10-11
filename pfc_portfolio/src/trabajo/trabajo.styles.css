@@ -10,12 +10,16 @@
 }
 
 .containerJob {
-  margin-top: 10%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 60px; /* Espacio entre imágenes */
   justify-content: center;
   align-items: center;
+  margin-top: 10%;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 50px;
+  
 }
 
 .trabajo-container {
@@ -24,6 +28,8 @@
   align-items: center;
   text-align: center;
   margin: 0;
+  background-color: rgba(203, 199, 199, 0.693);  
+  height: 100%; /* Establece la altura al 100% */
 }
 
 .deploy {
@@ -31,12 +37,8 @@
   overflow: hidden;
 }
 
-.image-container {
+.image-container {  
   width: 60%;
-}
-
-.image-container.left {
-  margin-left: 30px; /* Espacio horizontal entre imágenes */
 }
 
 .countries,

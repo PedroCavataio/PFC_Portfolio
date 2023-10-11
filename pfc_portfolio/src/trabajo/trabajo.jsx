@@ -14,7 +14,7 @@ import Node from "../assets/node.png";
 import Js from "../assets/js.png";
 import Express from "../assets/express.png";
 import Postgress from "../assets/postgresqlIcono.png";
-import Excel from "../assets/excel.png";
+import Excel from "../assets/excell.png";
 import Bootstrap from "../assets/bootstrap.png";
 import FormsPree from "../assets/formsPree.png";
 import NodeMailer from "../assets/nodeMailer.png";
@@ -24,6 +24,7 @@ const trabajo = () => {
     <>
       <div className="background">
         <div className="containerJob">
+
           <div className="trabajo-container">
             <div className="deploy">
               <a href="https://www.umet.edu.ar" target="_blank">
@@ -56,11 +57,14 @@ const trabajo = () => {
 
           <div className="trabajo-container">
             <div className="deploy">
-              <a href="https://www.umet.edu.ar" target="_blank">
-                <div className="image-container">
+              <a href="https://www.umet.edu.ar" target="_blank">              
+                
+                  <div className="image-container">
                   <img src={Control} alt="control" className="control" />
                 </div>
               </a>
+                <img src={Excel} alt="excel" className="excel" />
+                
             </div>
           </div>
 
