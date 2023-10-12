@@ -31,7 +31,9 @@ const trabajo = () => {
                   <img src={Countries} alt="countries" className="countries" />
                 </div>
               </a>
-              <div className="image-item">
+              <div className="image-container">
+                <div className="image-row">
+                  <div className="image-item">
                       <img src={Excel} alt="excel" className="excel" />
                       <p className="image-text">Excel</p>
                   </div>
@@ -66,7 +68,9 @@ const trabajo = () => {
                   <div className="image-item">
                       <img src={Excel} alt="excel" className="excel" />
                       <p className="image-text">Excel</p>
-                  </div>
+                  </div> 
+                </div>
+              </div>
             </div>
           </div>
 
@@ -76,8 +80,9 @@ const trabajo = () => {
                 <div className="image-container">
                   <img src={Rick} alt="rick" className="rick" />
                 </div>
-              </a>
-              <div className="image-item">
+              </a><div className="image-container">
+                <div className="image-row">
+                  <div className="image-item">
                       <img src={Excel} alt="excel" className="excel" />
                       <p className="image-text">Excel</p>
                   </div>
@@ -112,7 +117,9 @@ const trabajo = () => {
                   <div className="image-item">
                       <img src={Excel} alt="excel" className="excel" />
                       <p className="image-text">Excel</p>
-                  </div>
+                  </div> 
+                </div>
+              </div>
             </div>
           </div>
 
@@ -201,8 +208,50 @@ const trabajo = () => {
                   />
                 </div>
               </a>
+              <div className="image-container">
+                <div className="image-row">
+                  <div className="image-item">
+                      <img src={Excel} alt="excel" className="excel" />
+                      <p className="image-text">Excel</p>
+                  </div>
+                  <div className="image-item">
+                      <img src={Excel} alt="excel" className="excel" />
+                      <p className="image-text">Excel</p>
+                  </div>
+                  <div className="image-item">
+                      <img src={Excel} alt="excel" className="excel" />
+                      <p className="image-text">Excel</p>
+                  </div>
+                  <div className="image-item">
+                      <img src={Excel} alt="excel" className="excel" />
+                      <p className="image-text">Excel</p>
+                  </div>
+                  <div className="image-item">
+                      <img src={Excel} alt="excel" className="excel" />
+                      <p className="image-text">Excel</p>
+                  </div>
+                  <div className="image-item">
+                      <img src={Excel} alt="excel" className="excel" />
+                      <p className="image-text">Excel</p>
+                  </div>
+                  <div className="image-item">
+                      <img src={Excel} alt="excel" className="excel" />
+                      <p className="image-text">Excel</p>
+                  </div>   
+                  <div className="image-item">
+                      <img src={Excel} alt="excel" className="excel" />
+                      <p className="image-text">Excel</p>
+                  </div>
+                  <div className="image-item">
+                      <img src={Excel} alt="excel" className="excel" />
+                      <p className="image-text">Excel</p>
+                  </div> 
+                </div>
+              </div>
             </div>
           </div>
+
+
         </div>
       </div>
     </>
