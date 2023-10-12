@@ -2,7 +2,7 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 100vw;
   height: auto; 
-  background: linear-gradient(to right, #030817 50%, #030817 50%);
+  background: linear-gradient(to right, #e8e9ec 50%, #e8e9ec 50%);
   position: absolute;
   z-index: -1;
   margin: 0;
@@ -26,7 +26,7 @@
   align-items: center;
   text-align: center;
   margin: 0;
-  background-color: rgba(203, 199, 199, 0.693);  
+  background-color: rgba(250, 250, 250, 0);  
   height: 100%; 
 }
 
@@ -42,9 +42,10 @@
 }
 
 .image-container {  
-  width: 100%;  
+  width: 100%;
+  display: flex;
+  flex-direction: column;  
 }
-
 
 .countries,
 .rick,
@@ -63,10 +64,10 @@
   filter: brightness(1);
 }
 
-.image-text {
+.image-text {  
   margin-top: 1%; /* Ajusta el margen izquierdo según sea necesario */
   font-size: 14px; /* Ajusta el tamaño de fuente según tus preferencias */  
-  opacity: 0;
+  opacity: 0;  
 }
 
 .excel {
@@ -87,4 +88,6 @@
 .deploy:hover  .excel {  
   opacity: 1; /* La imagen de Excel se hace visible al hacer hover */  
 }
+
+
 
