@@ -25,6 +25,7 @@ const trabajo = () => {
       <div className="background">
         <div className="containerJob">
           <div className="trabajo-container">
+            <p className="tituloProyectos">SPA Countries Api</p>
             <div className="deploy">
               <a href="https://www.umet.edu.ar" target="_blank">
                 <div className="image-container left">
@@ -34,96 +35,99 @@ const trabajo = () => {
               <div className="image-container">
                 <div className="image-row">
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
-                  </div>   
-                  <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
-                  </div> 
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
+                  </div>
+                  <div className="image-item">
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="trabajo-container">
+          <p className="tituloProyectos">SPA Countries Api</p>
             <div className="deploy">
               <a href="https://www.umet.edu.ar" target="_blank">
                 <div className="image-container">
                   <img src={Rick} alt="rick" className="rick" />
                 </div>
-              </a><div className="image-container">
+              </a>
+              <div className="image-container">
                 <div className="image-row">
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
-                  </div>   
-                  <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
-                  </div> 
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
+                  </div>
+                  <div className="image-item">
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="trabajo-container">
+          <p className="tituloProyectos">SPA Countries Api</p>
             <div className="deploy">
               <a
                 href="https://deploy-sprint-2-frontend.onrender.com/"
@@ -140,47 +144,48 @@ const trabajo = () => {
               <div className="image-container">
                 <div className="image-row">
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
-                  </div>   
-                  <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
-                  </div> 
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
+                  </div>
+                  <div className="image-item">
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="trabajo-container">
+          <p className="tituloProyectos">SPA Countries Api</p>
             <div className="deploy">
               <a href="https://www.umet.edu.ar" target="_blank">
                 <div className="image-container">
@@ -188,13 +193,18 @@ const trabajo = () => {
                 </div>
               </a>
               <div className="image-container">
-                <img src={Excel} alt="excel" className="excel" />
-                <p className="image-text">Excel</p>
+                <div className="image-row">
+                  <div className="image-item">
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           <div className="trabajo-container">
+          <p className="tituloProyectos">SPA Countries Api</p>
             <div className="deploy">
               <a
                 href="https://deploy-sprint-2-frontend.onrender.com/"
@@ -211,47 +221,45 @@ const trabajo = () => {
               <div className="image-container">
                 <div className="image-row">
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
-                  </div>   
-                  <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
                   </div>
                   <div className="image-item">
-                      <img src={Excel} alt="excel" className="excel" />
-                      <p className="image-text">Excel</p>
-                  </div> 
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
+                  </div>
+                  <div className="image-item">
+                    <img src={Excel} alt="excel" className="excel" />
+                    <p className="image-text">Excel</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </>

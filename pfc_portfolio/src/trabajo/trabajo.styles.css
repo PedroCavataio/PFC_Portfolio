@@ -2,7 +2,7 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 100vw;
   height: auto; 
-  background: linear-gradient(to right, #e8e9ec 50%, #e8e9ec 50%);
+  background: linear-gradient(to right, #030810 50%, #030810 50%);
   position: absolute;
   z-index: -1;
   margin: 0;
@@ -13,7 +13,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 60px; 
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   margin-top: 10%;
   margin-left: 70px;
   margin-right: 70px;
@@ -34,7 +34,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr; 
   align-items: center;  
-  color: #00000000;  
+  color: #00000000; 
+  background-color: #04b8b800;  
 }
 
 .deploy:hover {
@@ -45,6 +46,19 @@
   width: 100%;
   display: flex;
   flex-direction: column;  
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Organiza en filas horizontales */
+  align-items: center;
+}
+
+.image-item {
+  flex-basis: calc(33.33% - 3px); /* Ancho de cada elemento */
+  margin-top: 8px; /* Espacio entre filas */
+  
 }
 
 .countries,
@@ -67,18 +81,20 @@
 .image-text {  
   margin-top: 1%; /* Ajusta el margen izquierdo según sea necesario */
   font-size: 14px; /* Ajusta el tamaño de fuente según tus preferencias */  
-  opacity: 0;  
+  opacity: 0; 
+  margin-bottom: 0; 
+  
 }
 
 .excel {
-  max-width: 10%;
+  max-width: 30%;
   filter: grayscale(100%) brightness(0.1);
   transition: filter 0.3s ease, opacity 0.3s ease;
   opacity: 0;  
 }
 
 .excel:hover {
-  filter: none; /* Elimina el filtro de grayscale */
+  filter: none; 
 }
 
 .excel:hover + .image-text {  
@@ -86,8 +102,21 @@
 }
 
 .deploy:hover  .excel {  
-  opacity: 1; /* La imagen de Excel se hace visible al hacer hover */  
+  opacity: 1; 
 }
 
+.tituloProyectos {
+  opacity: 0;
+  color: #565656; 
+  font-size: 24px; 
+  transition: opacity 0.3s ease, color 0.3s ease, font-size 0.3s ease; 
+}
 
+.deploy:hover .tituloProyectos {
+  opacity: 1;
+ }
+
+.trabajo-container:hover  .tituloProyectos {  
+  opacity: 1; /* La imagen de Excel se hace visible al hacer hover */  
+}
 
