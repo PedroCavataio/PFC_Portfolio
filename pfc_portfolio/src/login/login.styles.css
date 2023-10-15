@@ -6,7 +6,7 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right,  #dc1c1c  50%, #d9c405  50%);
+  background: linear-gradient(to right,  #131313  50%, #0b0b0b  50%);
   position: absolute;
 }
 
@@ -48,16 +48,16 @@
 
 label {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.5rem;
-  color: #d3d1d1;
+  font-size: 1.2rem;
+  color: #b6b6b6;
 }
 
 .hola {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 5rem;
   padding-bottom: 18%;
-  color: #04b8b8;
-  text-shadow: 2px 1px 1px  #0b26c3; 
+  color: #aaaaaa;
+  text-shadow: 4px 1px 1px  #f6f7f3; 
   text-align: center;  
 }
 
@@ -66,11 +66,11 @@ label {
   height: 1.5rem;
   padding: 0.5rem;
   font-size: 1rem;
-  border: 2px solid #2d2d2e00;
   border-radius: 5px;
   width: 100%;
-  background-color: #c00b0b; 
-  color: #d3d1d1;
+  background-color: #04b8b870; 
+  color: #e7e6e6;
+  border: 1px solid #11b6b600;
 }
 
 .error-message {
@@ -96,8 +96,8 @@ label {
 .login-button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  color: rgb(248, 246, 246);
-  background-color: #131db4;
+  color: rgb(61, 60, 60);
+  background-color: #f8f5f5;
   border-radius: 5px;
   cursor: pointer;
   border: 2px solid #2d2d2e00;
@@ -106,17 +106,17 @@ label {
 }
 
 .login-button:hover {
-  background-color: #f6f20f;
-  color: #4e4e4e;
-  border: 2px solid #2d2d2e00;
+  background-color: #038a0a;
+  color: rgb(248, 246, 246);
+  border: 2px solid #2d2e2d00;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .Saltar-button {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: absolute;
-  color: rgb(248, 246, 246);
-  background-color: #131db4;
+  color: rgb(61, 60, 60);
+  background-color: #f8f5f5;
   cursor: pointer;
   border-radius: 50%; 
   width: 20vw; 
@@ -146,8 +146,8 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f6f20f;
-  color: #525252;
+  background-color: #038a0a;
+  color: rgb(248, 246, 246);
   font-size: 1rem; 
   text-align: center;
   text-decoration: none;

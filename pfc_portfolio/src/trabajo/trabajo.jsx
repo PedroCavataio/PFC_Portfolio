@@ -25,7 +25,7 @@ const trabajo = () => {
       <div className="background">
         <div className="containerJob">
           <div className="trabajo-container">
-            <p className="tituloProyectos">SPA Countries Api</p>
+            <p className="tituloProyectos">SPA Countries - Api</p>
             <div className="deploy">
               <a href="https://www.umet.edu.ar" target="_blank">
                 <div className="image-container left">
@@ -76,7 +76,7 @@ const trabajo = () => {
           </div>
 
           <div className="trabajo-container">
-          <p className="tituloProyectos">SPA Countries Api</p>
+          <p className="tituloProyectos">SPA Rick & Morty - Api</p>
             <div className="deploy">
               <a href="https://www.umet.edu.ar" target="_blank">
                 <div className="image-container">
@@ -127,7 +127,7 @@ const trabajo = () => {
           </div>
 
           <div className="trabajo-container">
-          <p className="tituloProyectos">SPA Countries Api</p>
+          <p className="tituloProyectos">Casting APP - Proyecto grupal</p>
             <div className="deploy">
               <a
                 href="https://deploy-sprint-2-frontend.onrender.com/"
@@ -185,7 +185,7 @@ const trabajo = () => {
           </div>
 
           <div className="trabajo-container">
-          <p className="tituloProyectos">SPA Countries Api</p>
+          <p className="tituloProyectos">Control PK-AEP AA2000</p>
             <div className="deploy">
               <a href="https://www.umet.edu.ar" target="_blank">
                 <div className="image-container">
@@ -204,7 +204,7 @@ const trabajo = () => {
           </div>
 
           <div className="trabajo-container">
-          <p className="tituloProyectos">SPA Countries Api</p>
+          <p className="tituloProyectos">Portfolio Delfina Deluca - en construcción</p>
             <div className="deploy">
               <a
                 href="https://deploy-sprint-2-frontend.onrender.com/"

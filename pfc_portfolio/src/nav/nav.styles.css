@@ -1,5 +1,5 @@
 .desplegable {
-  background: #071121 ;
+  background: #131313 ;
   position: fixed; /* Ancla la barra en la parte superior */
   top: 0; /* Coloca la barra en la parte superior de la pantalla */
   left: 0; /* Ancla la barra en el lado izquierdo */
@@ -40,7 +40,7 @@
   }
 
  ul li a.active {
-    color: rgb(253, 212, 5);
+    color: rgb(253, 174, 5);
   }
 
  nav a{
@@ -54,7 +54,7 @@
   
   ul li a:hover {
     background: rgba(210, 105, 30, 0);
-    color: rgb(253, 212, 5);
+    color: rgb(160, 160, 160);
   }
   
   @media(max-width: 850px){

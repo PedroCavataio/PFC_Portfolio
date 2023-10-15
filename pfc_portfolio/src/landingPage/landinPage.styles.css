@@ -6,7 +6,7 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background-color: #030810 ;
+  background-color: #0b0b0b ;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -67,10 +67,10 @@
 
 .fraseLanding {
   position: fixed;
-  color: #04b8b8;
+  color: #aaaaaa;
+  text-shadow: 2px 1px 1px  #f6f7f3; 
   font-size: 54px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-shadow: 2px 1px 1px #4e4e4e;
   width: 30%;
   margin-left: -35%;
   margin-top: 6%;
@@ -79,7 +79,7 @@
 }
 
 .fraseLanding:hover {
-  color: #4e4e4e;
+  /* color: #4e4e4e; */
   /* text-shadow: 2px 1px 1px #04b8b8; */
   /* border: 2px solid #03d3eb; */
 }
@@ -93,43 +93,59 @@
   object-fit: cover; /* Ajusta el comportamiento de la imagen */
   filter: brightness(0.1); /* Transforma la imagen a blanco y negro */
   transition: filter 0.3s ease;  
+  width: 60vh;
 }
 
-.fotoPedro:hover {
-  filter: brightness(1); /* Reduce el brillo al 50% para oscurecer la imagen */ 
-} 
+/* .fotoPedro:hover {
+  filter: brightness(1); 
+}  */
 
-/* .cuadrado {
+.light {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: absolute;
-  width: 22%;
-  height: 50%;
-  margin-left: 40%;
-  margin-top: 10%;
-  border: 2px solid #03d4eb;
-} */
-
-
-/* .cuadros,
-.cuadros2,
-.cuadros3 {
-  max-width: 75%;
-  margin-left: 60%;  
-} */
-
-/* .cuadros {
-  margin-top: 5%;
-} */
-
-/*  .modal-title {
+  color: rgb(61, 60, 60);
+  background-color: #f8f5f5;
+  cursor: pointer;
+  border-radius: 50%; 
+  width: 20vw; 
+  height: 20vw; 
+  max-width: 90px; 
+  max-height: 90px; 
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5%;
-  color: #646363;
-  font-size: 1vw;
- }
+  font-size: 1rem; 
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  right: 3%;
+  bottom: 5%;
+}
 
- .modal-body {
-  font-size: 1vw;
-  color: #646363;
- }
- */
+.light:hover {
+  position: absolute;  
+  cursor: pointer;
+  border-radius: 50%; 
+  width: 20vw; 
+  height: 20vw; 
+  max-width: 90px; 
+  max-height: 90px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #038a0a;
+  color: rgb(248, 246, 246);
+  font-size: 1rem; 
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  right: 3%;
+  bottom: 5%;
+}
+
+.light:hover .fotoPedro {
+  filter: brightness(1);
+}
+

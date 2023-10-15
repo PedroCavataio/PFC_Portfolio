@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "./login.styles.css";
 import "react-toastify/dist/ReactToastify.css";
-import pedroCavataio from "../assets/pedro.png";
+import pedroCavataio from "../assets/logoAzul.png";
 
 const Login = ({ onLogin, access }) => {
   const [userData, setUserData] = useState({ nombre: "", estacion: "" });

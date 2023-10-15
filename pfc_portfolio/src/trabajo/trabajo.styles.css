@@ -2,7 +2,7 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 100vw;
   height: auto; 
-  background: linear-gradient(to right, #030810 50%, #030810 50%);
+  background: linear-gradient(to right,  #0b0b0b 50%, #0b0b0b 50%);
   position: absolute;
   z-index: -1;
   margin: 0;
@@ -36,6 +36,7 @@
   align-items: center;  
   color: #00000000; 
   background-color: #04b8b800;  
+  
 }
 
 .deploy:hover {
@@ -45,8 +46,9 @@
 .image-container {  
   width: 100%;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;    
 }
+
 
 .image-row {
   display: flex;
@@ -66,16 +68,18 @@
 .castingAppDeploy,
 .control,
 .comtrol2 {
+  position: static; 
   max-width: 100%;
   filter: grayscale(100%) brightness(0.1);
   transition: filter 0.3s ease;
+  margin: 0;
 }
 
 .countries:hover,
 .rick:hover,
 .castingAppDeploy:hover,
 .control:hover {
-  filter: brightness(1);
+  filter: brightness(1);  
 }
 
 .image-text {  
@@ -83,22 +87,22 @@
   font-size: 14px; /* Ajusta el tamaño de fuente según tus preferencias */  
   opacity: 0; 
   margin-bottom: 0; 
-  
+  color: #dbddda;   
 }
 
 .excel {
   max-width: 30%;
-  filter: grayscale(100%) brightness(0.1);
+  filter: grayscale(100%) brightness(0.3);
   transition: filter 0.3s ease, opacity 0.3s ease;
-  opacity: 0;  
+  opacity: 0;    
 }
 
 .excel:hover {
-  filter: none; 
+  filter: none;   
 }
 
 .excel:hover + .image-text {  
-  opacity: 1;
+  opacity: 1;  
 }
 
 .deploy:hover  .excel {  
@@ -107,7 +111,7 @@
 
 .tituloProyectos {
   opacity: 0;
-  color: #565656; 
+  color: #e6e3e3; 
   font-size: 24px; 
   transition: opacity 0.3s ease, color 0.3s ease, font-size 0.3s ease; 
 }

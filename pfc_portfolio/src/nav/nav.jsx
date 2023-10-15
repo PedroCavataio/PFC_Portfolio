@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./nav.styles.css";
-import pedroCavataio from "../assets/pedro.png";
+import pedroCavataio from "../assets/logoAzul.png";
 import { NavLink } from "react-router-dom";
 
 let vacio = "";

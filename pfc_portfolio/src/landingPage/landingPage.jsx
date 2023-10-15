@@ -17,6 +17,7 @@ const Landing = ({ userName }) => {
   const nombre = new URLSearchParams(window.location.search).get("nombre");
   const [progress, setProgress] = useState(0);
   const [modalShown, setModalShown] = useState(true);
+  const [brightness, setBrightness] = useState(0.1);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -52,6 +53,16 @@ const Landing = ({ userName }) => {
     }
   };
 
+  const handleLightHover = () => {
+    setBrightness(1);
+  };
+
+  const handleLightLeave = () => {
+    setBrightness(0.05);
+  };
+
+  
+
   return (
     <>
       <div className={fondoPorEstacion()}>
@@ -76,9 +87,23 @@ const Landing = ({ userName }) => {
         </h1>
 
         <div class="foto-container">
-          <img src={Foto} alt="Foto Pedro Cavataio" className="fotoPedro" />
-        </div>
+          <img
+            src={Foto}
+            alt="Foto Pedro Cavataio"
+            className="fotoPedro"
+            style={{ filter: `brightness(${brightness})` }}
+          />
+          <button
+            className="light"
+            onMouseEnter={handleLightHover}
+            onMouseLeave={handleLightLeave}
+          >
+            Light
+          </button>
+        </div> 
       </div>
+
+      
 
       <Nav />
       {/* {!modalShown && (
