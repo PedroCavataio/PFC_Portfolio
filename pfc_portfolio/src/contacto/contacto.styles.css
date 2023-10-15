@@ -82,8 +82,8 @@
 }
 
 .btnEnviar:hover {
-  background-color: #038a0a;
-  color: rgb(248, 246, 246);
+  background-color: rgb(253, 174, 5);
+  color: rgb(255, 254, 255);
   border: 2px solid #2d2d2e00;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }

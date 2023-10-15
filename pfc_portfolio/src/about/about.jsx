@@ -7,7 +7,7 @@ import Henry from "../assets/henry.png";
 import AA2000 from "../assets/aa2000.png";
 import Tecnocasa from "../assets/tecnocasa.png";
 import Umet from "../assets/umet.png";
-import Ubicacion from "../assets/ubicacionEspaña.png";
+import Ubicacion from "../assets/ubicacionMapaBlanco.png";
 
 const About = () => {
   const navigate = useNavigate();

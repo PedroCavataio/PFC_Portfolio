@@ -35,8 +35,7 @@
   grid-template-columns: 1fr 1fr; 
   align-items: center;  
   color: #00000000; 
-  background-color: #04b8b800;  
-  
+  background-color: #04b8b800;    
 }
 
 .deploy:hover {
@@ -94,11 +93,13 @@
   max-width: 30%;
   filter: grayscale(100%) brightness(0.3);
   transition: filter 0.3s ease, opacity 0.3s ease;
-  opacity: 0;    
+  opacity: 0;  
+  transition: transform 0.4s ease;  
 }
 
 .excel:hover {
   filter: none;   
+  
 }
 
 .excel:hover + .image-text {  
@@ -107,20 +108,23 @@
 
 .deploy:hover  .excel {  
   opacity: 1; 
+  transform: scale(1.2);
 }
 
 .tituloProyectos {
   opacity: 0;
   color: #e6e3e3; 
   font-size: 24px; 
-  transition: opacity 0.3s ease, color 0.3s ease, font-size 0.3s ease; 
-}
+  transition: opacity 0.3s ease, color 0.3s ease, font-size 0.3s ease, transform 0.3s ease; 
+ }
 
 .deploy:hover .tituloProyectos {
   opacity: 1;
+  
  }
 
 .trabajo-container:hover  .tituloProyectos {  
   opacity: 1; /* La imagen de Excel se hace visible al hacer hover */  
+  transform: scale(1.1);
 }
 

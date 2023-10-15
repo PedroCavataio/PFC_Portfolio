@@ -54,21 +54,29 @@
 }
 
 .ubicacion {
-  height: 90px;  
+  height: 60px;  
   transition: transform 0.3s ease;
   margin-left: -395%; /* Ajusta el margen derecho para separar las imágenes */
+  margin-bottom: 25%;
+  margin-top: 55%;
 }
 
 .ubicacion:hover {
   transform: scale(1.2);
 }
 
+.ubicacion:hover + .españa {
+  opacity: 1;  
+
+}
 
 .españa {
   color: #f5f4f4; /* Color del texto */
   font-size: 18px; /* Tamaño de fuente del texto */
   margin-top: -17px; /* Ajusta el espacio entre la imagen y el texto */  
   margin-left: -390%; /* Ajusta el margen derecho para separar las imágenes */
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
   }
 
   .es {
