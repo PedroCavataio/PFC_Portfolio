@@ -17,11 +17,12 @@ function App() {
   const navigate = useNavigate();
 
   async function login(userData) {
-    const { nombre, estacion } = userData;
+    const { nombre/* , estacion  */} = userData;
     const URL = "http://localhost:3001/login/";
     try {
       const { data } = await axios.get(
-        URL + `?nombre=${nombre}&estacion=${estacion}`
+        /* URL + `?nombre=${nombre}&estacion=${estacion}` */
+        URL + `?nombre=${nombre}`
       );
       const { access } = data;
       setAccess(access);
@@ -33,7 +34,7 @@ function App() {
   
   return (
     <div className="App">
-      {window.location.pathname == "/landing/:estacion" && <Nav className="styles-nav" />}
+      {/* {window.location.pathname == "/landing/:estacion" && <Nav className="styles-nav" />} */}
       {window.location.pathname == "/about" && <Nav className="styles-nav" />}
       {window.location.pathname == "/trabajo" && <Nav className="styles-nav" />}
       {window.location.pathname == "/contacto" && <Nav className="styles-nav" />}
@@ -42,7 +43,7 @@ function App() {
         <Route path="/" element={<Login onLogin={login} access={access} />} />
         <Route path="/nav" element={<Nav />} />
         <Route path="/landing" element={<Landing userName={userName} />} /> 
-        <Route path="/landing/:estacion" element={<Landing userName={userName} />} />
+        {/* <Route path="/landing/:estacion" element={<Landing userName={userName} />} /> */}
         <Route path="/about" element={<About />} />
         <Route path="/trabajo" element={<Trabajo />} />
         <Route path="/contacto" element={<Contacto />} />

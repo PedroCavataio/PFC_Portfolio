@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import pedroCavataio from "../assets/logoAzul.png";
 
 const Login = ({ onLogin, access }) => {
-  const [userData, setUserData] = useState({ nombre: "", estacion: "" });
+  const [userData, setUserData] = useState({ nombre: ""/* , estacion: ""  */});
   const [errors, setErrors] = useState({});
   const navigate = useNavigate();
 
@@ -14,12 +14,21 @@ const Login = ({ onLogin, access }) => {
     navigate('/landing'); 
   }
 
-  const handleChange = (event) => {
+/*   const handleChange = (event) => {
     const { name, value } = event.target;
     const formattedValue =
       name === "nombre"
         ? value.charAt(0).toUpperCase() + value.slice(1)
         : value.charAt(0).toUpperCase() + value.slice(1).toLowerCase(); 
+    setUserData((prevUserData) => ({
+      ...prevUserData,
+      [name]: formattedValue,
+    }));
+  }; */
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    const formattedValue = value.charAt(0).toUpperCase() + value.slice(1);
     setUserData((prevUserData) => ({
       ...prevUserData,
       [name]: formattedValue,
@@ -32,17 +41,18 @@ const Login = ({ onLogin, access }) => {
     if (Object.keys(validationErrors).length === 0) {
       notify();
       onLogin(userData);
-      setUserData({ nombre: "", estacion: "" });
+      setUserData({ nombre: ""/* , estacion: "" */ });
       setErrors({});
       setTimeout(() => {
-        navigate(`/landing/${userData.estacion}?nombre=${userData.nombre}`);        
-      }, 1000);
+        /* navigate(`/landing/${userData.estacion}?nombre=${userData.nombre}`); */        
+        navigate(`/landing/?nombre=${userData.nombre}`);        
+      }, 5000);
     } else {
       setErrors(validationErrors);
     }
   };
 
-  const validateLogin = () => {
+ /*  const validateLogin = () => {
     const errors = {};
 
     if (!userData.nombre) {
@@ -51,8 +61,23 @@ const Login = ({ onLogin, access }) => {
       errors.nombre = "El nombre no es válido";
     } else if (userData.nombre.length > 35) {
       errors.nombre = "El nombre no puede tener más de 35 caracteres";
-    }
+    } */
 
+
+    const validateLogin = () => {
+      const errors = {};
+  
+      if (!userData.nombre) {
+        errors.nombre = "El nombre es requerido";
+      } else if (userData.nombre.length > 35) {
+        errors.nombre = "El nombre no puede tener más de 35 caracteres";
+      }
+  
+      return errors;
+    };
+
+
+/* 
     if (!userData.estacion) {
       errors.estacion = "La estación del año es requerida";
     } else if (userData.estacion.length < 5 || userData.estacion.length > 10) {
@@ -67,8 +92,8 @@ const Login = ({ onLogin, access }) => {
       errors.estacion =
         "Esa no es una estación del año válida, te doy una pista (invierno/primavera/verano/otoño)";
     }
-    return errors;
-  };
+    return errors; */
+  /* }; */
 
   const isValidNombre = (nombre) => {
     return true;
@@ -76,7 +101,7 @@ const Login = ({ onLogin, access }) => {
 
   const notify = () => {
     toast.info(
-      `¡Genial, ${userData.nombre}! ¡Excelente elección!. ${userData.estacion} es una época maravillosa del año.`,
+      `¡Hola, ${userData.nombre}! ¡Gracias por estar aquí. Tu interés en mi trabajo es una fuente de motivación.!.`,
       `Ingresando`,
       {
         position: toast.POSITION.TOP_RIGHT,
@@ -117,7 +142,7 @@ const Login = ({ onLogin, access }) => {
             </span>
           )}
         </div>
-        <div className="login-group">
+        {/* <div className="login-group">
           <label htmlFor="estacion">
             ¿Cuál es tu estación del año favorita?
           </label>
@@ -139,7 +164,7 @@ const Login = ({ onLogin, access }) => {
               {errors.estacion}
             </span>
           )}
-        </div>
+        </div> */}
         <button className="login-button" disabled={access}>
           Ingresar
         </button>   

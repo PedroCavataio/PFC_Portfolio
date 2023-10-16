@@ -54,7 +54,7 @@
 }
 
 .ubicacion {
-  height: 60px;  
+  height: 70px;  
   transition: transform 0.3s ease;
   margin-left: -395%; /* Ajusta el margen derecho para separar las imágenes */
   margin-bottom: 25%;

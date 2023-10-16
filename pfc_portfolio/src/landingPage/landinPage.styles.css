@@ -69,7 +69,7 @@
   position: fixed;
   color: #aaaaaa;
   text-shadow: 2px 1px 1px  #f6f7f3; 
-  font-size: 54px;
+  font-size: 40px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   width: 30%;
   margin-left: -35%;
@@ -88,8 +88,8 @@
   position: absolute;
   top: 28%;
   left: 60%;
-  border: 2px solid #03d3eb;  /* Establece el ancho y el color del borde */
-  box-shadow: 2px 2px 1px #fffefe00;
+  border: 1px solid #03d3eb;  /* Establece el ancho y el color del borde */
+  box-shadow: 2px 2px 8px 4px #0d0e0e;
   object-fit: cover; /* Ajusta el comportamiento de la imagen */
   filter: brightness(0.1); /* Transforma la imagen a blanco y negro */
   transition: filter 0.3s ease;  

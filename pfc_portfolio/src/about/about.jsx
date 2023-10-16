@@ -8,6 +8,8 @@ import AA2000 from "../assets/aa2000.png";
 import Tecnocasa from "../assets/tecnocasa.png";
 import Umet from "../assets/umet.png";
 import Ubicacion from "../assets/ubicacionMapaBlanco.png";
+import Curriculum from "../assets/CVpedroCavataio_fullStackDeveloper.pdf";
+
 
 const About = () => {
   const navigate = useNavigate();
@@ -28,13 +30,11 @@ const About = () => {
               <span className="ña">ÑA</span>
             </p>
           </div>
-
-          <a href="URL_DEL_CURRICULUM.pdf" download="NombreDelCurriculum.pdf">
-            <img src={DescargaCV} alt="Currículum" className="CV" />
+          <a href={Curriculum} download>
+             <img src={DescargaCV} alt="CV" className="CV" />
           </a>
         </div>
         <hr className="section-dividerCV" />
-
         <div className="section">
           <div className="data">
             <div className="contAbout-texto">
@@ -60,13 +60,9 @@ const About = () => {
                 comunicación y resolución de problemas. Uno de los aspectos más
                 destacados fue el apoyo constante que recibí de los instructores
                 y mentores altamente calificados. Esto hizo que mi proceso de
-                aprendizaje fuera más efectivo y gratificante. En resumen, el
-                bootcamp de Soy Henry me ha preparado de manera sólida para una
-                carrera exitosa en el mundo del desarrollo web, brindándome las
-                habilidades técnicas y las habilidades blandas necesarias para
-                tener éxito en esta industria en constante evolución. Estoy
-                emocionado por lo que el futuro tiene reservado para mí gracias
-                a esta experiencia educativa.
+                aprendizaje fuera más efectivo y gratificante. Estoy emocionado
+                por lo que el futuro tiene reservado para mí gracias a esta
+                experiencia educativa.
               </p>
             </div>
           </div>
@@ -95,18 +91,19 @@ const About = () => {
           <div className="info">
             <div className="contAbout-texto">
               <p>
-                Desde el año 2013, he desempeñado el rol de Supervisor en
-                Aeropuertos Argentina 2000 S.A., una empresa líder en el sector.
-                Mi principal responsabilidad ha sido supervisar y liderar un
-                equipo de 30 personas en el Aeropuerto Jorge Newbery. Este
-                entorno de trabajo es altamente dinámico y se caracteriza por
-                mantener un exigente estándar de calidad tanto en las
-                operaciones de caja como en el servicio al cliente, abarcando
-                más de 747,000 transacciones anuales. Además de mis tareas
-                habituales como Jefe de Estacionamiento, he tenido la
-                oportunidad de formarme y ejercer como Coach de Agilidad, lo que
-                me ha permitido contribuir al desarrollo profesional y al éxito
-                del equipo.
+                Desde el año 2013, he ocupado el puesto de Supervisor en
+                Aeropuertos Argentina 2000 S.A., una destacada empresa en el
+                sector aeroportuario. Mi función principal ha sido la
+                supervisión y liderazgo de un equipo de 30 personas en el
+                Aeropuerto Jorge Newbery. Este entorno de trabajo es sumamente
+                dinámico y se caracteriza por mantener elevados estándares de
+                calidad tanto en las operaciones de caja como en el servicio al
+                cliente, abarcando más de 747,000 transacciones anuales. Además
+                de mis responsabilidades habituales como Jefe de
+                Estacionamiento, he tenido la oportunidad de formarme y ejercer
+                como Coach de Agilidad. Esto me ha permitido contribuir al
+                desarrollo profesional y al éxito del equipo de manera
+                significativa..
               </p>
             </div>
           </div>
@@ -135,20 +132,21 @@ const About = () => {
           <div className="info">
             <div className="contAbout-texto">
               <p>
-                En mi trayectoria inmobiliaria, he desempeñado diversas
-                funciones, desde intermediar en transacciones hasta gestionar
-                valiosas propiedades. Mi enfoque principal fue brindar un
-                servicio excepcional al cliente, incluyendo atención
-                personalizada y resolución eficiente de problemas. He realizado
-                un análisis exhaustivo del mercado inmobiliario, pronostico
-                movimientos y toma decisiones estratégicas basadas en tendencias
-                y demanda. Soy un hábil negociador, logrando acuerdos
-                beneficiosos para todas las partes. La gestión de documentación
-                ha sido clave en mi trabajo, garantizando su integridad. He
-                aplicado estrategias de marketing efectivas para promover
-                propiedades. Me he mantenido actualizado con regulaciones y
-                tendencias a través de formación continua, comprometiéndome con
-                la excelencia y el éxito en cada proyecto.
+                En mi carrera en el sector inmobiliario, he desempeñado diversas
+                funciones, desde la intermediación en transacciones hasta la
+                gestión de valiosas propiedades. Mi enfoque siempre ha sido
+                proporcionar un servicio excepcional al cliente, ofreciendo
+                atención personalizada y resolviendo problemas de manera
+                eficiente. Gracias a un análisis de mercado exhaustivo,
+                pronostico movimientos y tomo decisiones estratégicas basadas en
+                las tendencias y la demanda del sector. Como hábil negociador,
+                he logrado acuerdos beneficiosos para todas las partes
+                involucradas. La gestión minuciosa de la documentación ha sido
+                fundamental en mi trabajo para garantizar su integridad. Además,
+                he aplicado estrategias de marketing efectivas para promover
+                propiedades. Mi compromiso con la excelencia y el éxito en cada
+                proyecto se refleja en mi constante formación y actualización en
+                regulaciones y tendencias del sector.
               </p>
             </div>
           </div>
@@ -177,23 +175,24 @@ const About = () => {
           <div className="info">
             <div className="contAbout-texto">
               <p>
-                "Mi Licenciatura en Gestión de Organizaciones ha sido un viaje
-                académico y profesional muy enriquecedor. Durante mi tiempo en
-                la universidad, adquirí una base sólida en una amplia gama de
-                disciplinas relacionadas con la gestión, desde la planificación
-                estratégica hasta la gestión de recursos humanos y el análisis
-                financiero. Estos conocimientos me han proporcionado las
-                herramientas esenciales para abordar con confianza los desafíos
-                empresariales en el mundo real. Lo que hace que esta experiencia
-                sea aún más valiosa es la oportunidad de establecer conexiones
-                significativas con profesores y compañeros de clase. Estas
-                conexiones no solo enriquecieron mi aprendizaje, sino que
-                también crearon una red de contactos que sigue siendo
+                Mi Licenciatura en Gestión de Organizaciones ha sido un viaje
+                académico y profesional profundamente enriquecedor. Durante mi
+                tiempo en la universidad, adquirí una base sólida en una amplia
+                gama de disciplinas relacionadas con la gestión, que abarcan
+                desde la planificación estratégica hasta la gestión de recursos
+                humanos y el análisis financiero. Estos conocimientos me han
+                proporcionado las herramientas esenciales para abordar con
+                confianza los desafíos empresariales del mundo real. Lo que hace
+                que esta experiencia sea aún más valiosa son las conexiones
+                significativas que establecí con profesores y compañeros de
+                clase. Estas conexiones no solo enriquecieron mi aprendizaje,
+                sino que también crearon una red de contactos que sigue siendo
                 fundamental en mi carrera profesional. En resumen, mi
                 Licenciatura en Gestión de Organizaciones no solo me proporcionó
-                una sólida base académica, sino que también me dio la
-                oportunidad de crecer personal y profesionalmente a través de
-                conexiones significativas y experiencias enriquecedoras."
+                una sólida base académica, sino que también me brindó la
+                oportunidad de crecer tanto a nivel personal como profesional a
+                través de conexiones significativas y experiencias
+                enriquecedoras.
               </p>
             </div>
           </div>

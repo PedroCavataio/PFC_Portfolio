@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 
 const ModalComponent = ({ nombre, estacion, progress }) => {
 
@@ -43,3 +43,4 @@ const ModalComponent = ({ nombre, estacion, progress }) => {
 };
 
 export default ModalComponent;
+ */

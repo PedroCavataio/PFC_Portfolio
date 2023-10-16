@@ -80,7 +80,7 @@ const Landing = ({ userName }) => {
         </div> */}
 
         <h1 className="fraseLanding">
-           Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        A continuación, te muestro una selección de trabajos en los que he estado involucrado.
         </h1>
 
         <div class="foto-container">
@@ -95,7 +95,7 @@ const Landing = ({ userName }) => {
             onMouseEnter={handleLightHover}
             onMouseLeave={handleLightLeave}
           >
-            Luz
+            Iluminar img.
           </button>
         </div> 
       </div>

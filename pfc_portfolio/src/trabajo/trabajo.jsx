@@ -5,6 +5,7 @@ import Countries from "../assets/countriesDeploy.png";
 import Rick from "../assets/rickDeploy.png";
 import Casting from "../assets/castingAppDeploy.png";
 import Control from "../assets/controlDeploy.png";
+import Proximamente from "../assets/proximamente.png";
 import Redux from "../assets/reduxIcono.png";
 import ReactIcono from "../assets/react.png";
 import Sequelize from "../assets/sequelizeIcono.png";
@@ -228,12 +229,12 @@ const trabajo = () => {
           <p className="tituloProyectos">Portfolio Delfina Deluca - en construcción</p>
             <div className="deploy">
               <a
-                href="https://deploy-sprint-2-frontend.onrender.com/"
+                /* href="https://deploy-sprint-2-frontend.onrender.com/" */
                 target="_blank"
               >
                 <div className="image-container left">
                   <img
-                    src={Casting}
+                    src={Proximamente}
                     alt="castingAppDeploy"
                     className="castingAppDeploy"
                   />
