@@ -48,18 +48,16 @@
   flex-direction: column;    
 }
 
-
 .image-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Organiza en filas horizontales */
+  justify-content: space-between; 
   align-items: center;
 }
 
 .image-item {
-  flex-basis: calc(33.33% - 3px); /* Ancho de cada elemento */
-  margin-top: 8px; /* Espacio entre filas */
-  
+  flex-basis: calc(33.33% - 3px); 
+  margin-top: 8px;   
 }
 
 .countries,
@@ -82,33 +80,11 @@
 }
 
 .image-text {  
-  margin-top: 1%; /* Ajusta el margen izquierdo según sea necesario */
-  font-size: 14px; /* Ajusta el tamaño de fuente según tus preferencias */  
+  margin-top: 1%; 
+  font-size: 14px;   
   opacity: 0; 
   margin-bottom: 0; 
   color: #dbddda;   
-}
-
-.excel {
-  max-width: 30%;
-  filter: grayscale(100%) brightness(0.3);
-  transition: filter 0.3s ease, opacity 0.3s ease;
-  opacity: 0;  
-  transition: transform 0.4s ease;  
-}
-
-.excel:hover {
-  filter: none;   
-  
-}
-
-.excel:hover + .image-text {  
-  opacity: 1;  
-}
-
-.deploy:hover  .excel {  
-  opacity: 1; 
-  transform: scale(1.2);
 }
 
 .tituloProyectos {
@@ -119,12 +95,284 @@
  }
 
 .deploy:hover .tituloProyectos {
-  opacity: 1;
-  
+  opacity: 1;  
  }
 
 .trabajo-container:hover  .tituloProyectos {  
-  opacity: 1; /* La imagen de Excel se hace visible al hacer hover */  
+  opacity: 1; 
   transform: scale(1.1);
 }
 
+.excel {
+  margin-top: 5%; 
+  max-width: 40%;
+  filter: grayscale(100%) brightness(0.3);
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  opacity: 0;  
+  transition: transform 0.4s ease;  
+}
+
+.excel:hover {
+  filter: none;    
+}
+
+.excel:hover + .image-text {  
+  opacity: 1;  
+}
+
+.deploy:hover .excel {  
+  opacity: 1; 
+  transform: scale(1.2);
+}
+
+.sequelize {
+  max-width: 40%;
+  filter: grayscale(100%) brightness(0.3);
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transition: transform 0.4s ease;
+}
+
+.sequelize:hover {
+  filter: none;
+}
+
+.sequelize:hover + .image-text {
+  opacity: 1;
+}
+
+.deploy:hover .sequelize {  
+  opacity: 1; 
+  transform: scale(1.2);
+}
+
+.formspree {
+  max-width: 40%;
+  filter: grayscale(100%) brightness(0.3);
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transition: transform 0.4s ease;
+}
+
+.formspree:hover {
+  filter: none;
+}
+
+.formspree:hover + .image-text {
+  opacity: 1;
+}
+
+.deploy:hover .formspree {  
+  opacity: 1; 
+  transform: scale(1.2);
+}
+
+.nodemailer {
+  max-width: 40%;
+  filter: grayscale(100%) brightness(0.3);
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transition: transform 0.4s ease;
+}
+
+.nodemailer:hover {
+  filter: none;
+}
+
+.nodemailer:hover + .image-text {
+  opacity: 1;
+}
+
+.deploy:hover .nodemailer {  
+  opacity: 1; 
+  transform: scale(1.2);
+}
+
+.js{
+  max-width: 40%;
+  filter: grayscale(100%) brightness(0.3);
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transition: transform 0.4s ease;
+}
+
+.js:hover {
+  filter: none;
+}
+
+.js:hover + .image-text {
+  opacity: 1;
+}
+
+.deploy:hover .js {  
+  opacity: 1; 
+  transform: scale(1.2);
+}
+
+.react{
+  max-width: 35%;
+  filter: grayscale(100%) brightness(0.3);
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transition: transform 0.4s ease;
+}
+
+.react:hover {
+  filter: none;
+}
+
+.react:hover + .image-text {
+  opacity: 1;
+}
+
+.deploy:hover .react {  
+  opacity: 1; 
+  transform: scale(1.2);
+}
+
+.htmlIcono {
+  max-width: 30%;
+  filter: grayscale(100%) brightness(0.3);
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transition: transform 0.4s ease;
+}
+
+.htmlIcono:hover {
+  filter: none;
+}
+
+.htmlIcono:hover + .image-text {
+  opacity: 1;
+}
+
+.deploy:hover .htmlIcono {  
+  opacity: 1; 
+  transform: scale(1.2);
+}
+
+.cssIcono {
+  max-width: 30%;
+  filter: grayscale(100%) brightness(0.3);
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transition: transform 0.4s ease;
+}
+
+.cssIcono:hover {
+  filter: none;
+}
+
+.cssIcono:hover + .image-text {
+  opacity: 1;
+}
+
+.deploy:hover .cssIcono {  
+  opacity: 1; 
+  transform: scale(1.2);
+}
+
+.bootstrap {
+  max-width: 35%;
+  filter: grayscale(100%) brightness(0.3);
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transition: transform 0.4s ease;
+}
+
+.bootstrap:hover {
+  filter: none;
+}
+
+.bootstrap:hover + .image-text {
+  opacity: 1;
+}
+
+.deploy:hover .bootstrap {  
+  opacity: 1; 
+  transform: scale(1.2);
+}
+
+.reduxIcono {
+  max-width: 35%;
+  filter: grayscale(100%) brightness(0.3);
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transition: transform 0.4s ease;
+}
+
+.reduxIcono:hover {
+  filter: none;
+}
+
+.reduxIcono:hover + .image-text {
+  opacity: 1;
+}
+
+.deploy:hover .reduxIcono {  
+  opacity: 1; 
+  transform: scale(1.2);
+}
+
+.nodeJs {
+  max-width: 35%;
+  filter: grayscale(100%) brightness(0.3);
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transition: transform 0.4s ease;
+}
+
+.nodeJs:hover {
+  filter: none;
+}
+
+.nodeJs:hover + .image-text {
+  opacity: 1;
+}
+
+.deploy:hover .nodeJs {  
+  opacity: 1; 
+  transform: scale(1.2);
+}
+
+.postgreSQL {
+  max-width: 35%;
+  filter: grayscale(100%) brightness(0.3);
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transition: transform 0.4s ease;
+}
+
+.postgreSQL:hover {
+  filter: none;
+}
+
+.postgreSQL:hover + .image-text {
+  opacity: 1;
+}
+
+.deploy:hover .postgreSQL {  
+  opacity: 1; 
+  transform: scale(1.2);
+}
+
+.express {
+  max-width: 35%;
+  filter: grayscale(100%) brightness(0.3);
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transition: transform 0.4s ease;
+}
+
+.express:hover {
+  filter: none;
+}
+
+.express:hover + .image-text {
+  opacity: 1;
+}
+
+.deploy:hover .express {  
+  opacity: 1; 
+  transform: scale(1.2);
+}

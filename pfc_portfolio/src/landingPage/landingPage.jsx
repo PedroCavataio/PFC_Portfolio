@@ -6,10 +6,7 @@ import ModalComponent from "../modal/modal";
 import Foto from "../assets/fotoPedro.jpg";
 import Cuadrado from "../assets/cuadrado.png";
 import Petalos from "../assets/petalos.png";
-import Cuadros from "../assets/cuadros.png";
-import Lineas from "../assets/lineas.png";
-import LineaLoca from "../assets/lineaLoca.png";
-import LineaLocaBlanca from "../assets/lineaLocaBlanca.png";
+
 
 const Landing = ({ userName }) => {
   const navigate = useNavigate();
@@ -98,7 +95,7 @@ const Landing = ({ userName }) => {
             onMouseEnter={handleLightHover}
             onMouseLeave={handleLightLeave}
           >
-            Light
+            Luz
           </button>
         </div> 
       </div>
