@@ -10,7 +10,6 @@ import Umet from "../assets/umet.png";
 import Ubicacion from "../assets/ubicacionMapaBlanco.png";
 import Curriculum from "../assets/CVpedroCavataio_fullStackDeveloper.pdf";
 
-
 const About = () => {
   const navigate = useNavigate();
 
@@ -30,7 +29,7 @@ const About = () => {
               <span className="ña">ÑA</span>
             </p>
           </div>
-          <a href={Curriculum} download>
+          <a href={Curriculum} target="_blank">
              <img src={DescargaCV} alt="CV" className="CV" />
           </a>
         </div>

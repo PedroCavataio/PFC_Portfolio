@@ -101,7 +101,7 @@ const Login = ({ onLogin, access }) => {
 
   const notify = () => {
     toast.info(
-      `¡Hola, ${userData.nombre}! ¡Gracias por estar aquí. Tu interés en mi trabajo es una fuente de motivación.!.`,
+      `¡Hola, ${userData.nombre}! ¡Gracias por estar aquí. Tu interés en mi trabajo es una fuente de motivación!.`,
       `Ingresando`,
       {
         position: toast.POSITION.TOP_RIGHT,

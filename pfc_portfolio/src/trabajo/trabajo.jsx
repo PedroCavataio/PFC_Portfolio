@@ -19,15 +19,15 @@ import Excel from "../assets/excell.png";
 import Bootstrap from "../assets/bootstrap.png";
 import FormsPree from "../assets/formsPree.png";
 import NodeMailer from "../assets/nodeMailer.png";
+import ControlAep from "../assets/ControlAEP.xlsx";
 
 const trabajo = () => {
   return (
     <>
       <div className="background">
         <div className="containerJob">
-
-        <div className="trabajo-container">
-          <p className="tituloProyectos">Casting APP - Proyecto grupal</p>
+          <div className="trabajo-container">
+            <p className="tituloProyectos">Casting APP - Proyecto grupal</p>
             <div className="deploy">
               <a
                 href="https://deploy-sprint-2-frontend.onrender.com/"
@@ -64,19 +64,35 @@ const trabajo = () => {
                     <p className="image-text">CSS</p>
                   </div>
                   <div className="image-item">
-                    <img src={Bootstrap} alt="bootstrap" className="bootstrap" />
+                    <img
+                      src={Bootstrap}
+                      alt="bootstrap"
+                      className="bootstrap"
+                    />
                     <p className="image-text">Bootstrap</p>
                   </div>
                   <div className="image-item">
-                    <img src={FormsPree} alt="formspree" className="formspree" />
+                    <img
+                      src={FormsPree}
+                      alt="formspree"
+                      className="formspree"
+                    />
                     <p className="image-text">Formspree</p>
                   </div>
                   <div className="image-item">
-                    <img src={NodeMailer} alt="nodemailer" className="nodemailer" />
+                    <img
+                      src={NodeMailer}
+                      alt="nodemailer"
+                      className="nodemailer"
+                    />
                     <p className="image-text">Nodemailer</p>
                   </div>
                   <div className="image-item">
-                    <img src={Sequelize} alt="sequelize" className="sequelize" />
+                    <img
+                      src={Sequelize}
+                      alt="sequelize"
+                      className="sequelize"
+                    />
                     <p className="image-text">Sequelize</p>
                   </div>
                   <div className="image-item">
@@ -88,15 +104,17 @@ const trabajo = () => {
                     <p className="image-text">Express</p>
                   </div>
                   <div className="image-item">
-                    <img src={PostgreSQL} alt="postgreSQL" className="postgreSQL" />
+                    <img
+                      src={PostgreSQL}
+                      alt="postgreSQL"
+                      className="postgreSQL"
+                    />
                     <p className="image-text">PostgreSQL</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-
 
           <div className="trabajo-container">
             <p className="tituloProyectos">SPA Countries - Api</p>
@@ -129,11 +147,19 @@ const trabajo = () => {
                     <p className="image-text">CSS</p>
                   </div>
                   <div className="image-item">
-                    <img src={Bootstrap} alt="bootstrap" className="bootstrap" />
+                    <img
+                      src={Bootstrap}
+                      alt="bootstrap"
+                      className="bootstrap"
+                    />
                     <p className="image-text">Bootstrap</p>
                   </div>
                   <div className="image-item">
-                    <img src={Sequelize} alt="sequelize" className="sequelize" />
+                    <img
+                      src={Sequelize}
+                      alt="sequelize"
+                      className="sequelize"
+                    />
                     <p className="image-text">Sequelize</p>
                   </div>
                   <div className="image-item">
@@ -145,7 +171,11 @@ const trabajo = () => {
                     <p className="image-text">Express</p>
                   </div>
                   <div className="image-item">
-                    <img src={PostgreSQL} alt="postgreSQL" className="postgreSQL" />
+                    <img
+                      src={PostgreSQL}
+                      alt="postgreSQL"
+                      className="postgreSQL"
+                    />
                     <p className="image-text">PostgreSQL</p>
                   </div>
                 </div>
@@ -154,7 +184,7 @@ const trabajo = () => {
           </div>
 
           <div className="trabajo-container">
-          <p className="tituloProyectos">SPA Rick & Morty - Api</p>
+            <p className="tituloProyectos">SPA Rick & Morty - Api</p>
             <div className="deploy">
               <a href="https://www.umet.edu.ar" target="_blank">
                 <div className="image-container">
@@ -184,7 +214,11 @@ const trabajo = () => {
                     <p className="image-text">CSS</p>
                   </div>
                   <div className="image-item">
-                    <img src={Sequelize} alt="sequelize" className="sequelize" />
+                    <img
+                      src={Sequelize}
+                      alt="sequelize"
+                      className="sequelize"
+                    />
                     <p className="image-text">Sequelize</p>
                   </div>
                   <div className="image-item">
@@ -196,7 +230,11 @@ const trabajo = () => {
                     <p className="image-text">Express</p>
                   </div>
                   <div className="image-item">
-                    <img src={PostgreSQL} alt="postgreSQL" className="postgreSQL" />
+                    <img
+                      src={PostgreSQL}
+                      alt="postgreSQL"
+                      className="postgreSQL"
+                    />
                     <p className="image-text">PostgreSQL</p>
                   </div>
                 </div>
@@ -204,16 +242,15 @@ const trabajo = () => {
             </div>
           </div>
 
-        
-
           <div className="trabajo-container">
-          <p className="tituloProyectos">Control PK-AEP AA2000</p>
+            <p className="tituloProyectos">Control PK-AEP AA2000</p>
             <div className="deploy">
-              <a href="https://www.umet.edu.ar" target="_blank">
+              <a href={ControlAep} target="_blank">
                 <div className="image-container">
                   <img src={Control} alt="control" className="control" />
                 </div>
               </a>
+
               <div className="image-container">
                 <div className="image-row">
                   <div className="image-item">
@@ -226,7 +263,9 @@ const trabajo = () => {
           </div>
 
           <div className="trabajo-container">
-          <p className="tituloProyectos">Portfolio Delfina Deluca - en construcción</p>
+            <p className="tituloProyectos">
+              Portfolio Delfina Deluca - en construcción
+            </p>
             <div className="deploy">
               <a
                 /* href="https://deploy-sprint-2-frontend.onrender.com/" */
@@ -263,16 +302,23 @@ const trabajo = () => {
                     <p className="image-text">CSS</p>
                   </div>
                   <div className="image-item">
-                    <img src={Bootstrap} alt="bootstrap" className="bootstrap" />
+                    <img
+                      src={Bootstrap}
+                      alt="bootstrap"
+                      className="bootstrap"
+                    />
                     <p className="image-text">Bootstrap</p>
                   </div>
                   <div className="image-item">
-                    <img src={FormsPree} alt="formspree" className="formspree" />
+                    <img
+                      src={FormsPree}
+                      alt="formspree"
+                      className="formspree"
+                    />
                     <p className="image-text">Formspree</p>
                   </div>
-                  </div>
+                </div>
               </div>
-
             </div>
           </div>
         </div>
