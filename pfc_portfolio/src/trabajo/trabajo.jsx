@@ -1,9 +1,13 @@
 /* trabajo.jsx */
-import React from "react";
+import React, { useRef } from "react";
 import "./trabajo.styles.css";
+import CountriesGris from "../assets/countriesDeployGris.png";
 import Countries from "../assets/countriesDeploy.png";
+import RickGris from "../assets/rickDeployGris.png";
 import Rick from "../assets/rickDeploy.png";
+import CastingGris from "../assets/castingAppDeployGris.png";
 import Casting from "../assets/castingAppDeploy.png";
+import ControlGris from "../assets/controlDeployGris.png";
 import Control from "../assets/controlDeploy.png";
 import Proximamente from "../assets/proximamente.png";
 import Redux from "../assets/reduxIcono.png";
@@ -22,6 +26,14 @@ import NodeMailer from "../assets/nodeMailer.png";
 import ControlAep from "../assets/ControlAEP.xlsx";
 
 const trabajo = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Scroll suave
+    });
+  };
+
+
   return (
     <>
       <div className="background">
@@ -35,82 +47,73 @@ const trabajo = () => {
               >
                 <div className="image-container left">
                   <img
+                    src={CastingGris}
+                    alt="castingDeployGris"
+                    className="image-gris"
+                  />
+                  <img
                     src={Casting}
-                    alt="castingAppDeploy"
-                    className="castingAppDeploy"
+                    alt="castingDeploy"
+                    className="image-color"
                   />
                 </div>
               </a>
-              <div className="image-container">
-                <div className="image-row">
-                  <div className="image-item">
-                    <img src={Js} alt="js" className="js" />
-                    <p className="image-text">JavaScript</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={ReactIcono} alt="react" className="react" />
-                    <p className="image-text">React</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={Redux} alt="reduxIcono" className="reduxIcono" />
-                    <p className="image-text">Redux</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={Html} alt="htmlIcono" className="htmlIcono" />
-                    <p className="image-text">HTML</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={Css} alt="cssIcono" className="cssIcono" />
-                    <p className="image-text">CSS</p>
-                  </div>
-                  <div className="image-item">
-                    <img
-                      src={Bootstrap}
-                      alt="bootstrap"
-                      className="bootstrap"
-                    />
-                    <p className="image-text">Bootstrap</p>
-                  </div>
-                  <div className="image-item">
-                    <img
-                      src={FormsPree}
-                      alt="formspree"
-                      className="formspree"
-                    />
-                    <p className="image-text">Formspree</p>
-                  </div>
-                  <div className="image-item">
-                    <img
-                      src={NodeMailer}
-                      alt="nodemailer"
-                      className="nodemailer"
-                    />
-                    <p className="image-text">Nodemailer</p>
-                  </div>
-                  <div className="image-item">
-                    <img
-                      src={Sequelize}
-                      alt="sequelize"
-                      className="sequelize"
-                    />
-                    <p className="image-text">Sequelize</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={Node} alt="nodeJs" className="nodeJs" />
-                    <p className="image-text">NodeJs</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={Express} alt="express" className="express" />
-                    <p className="image-text">Express</p>
-                  </div>
-                  <div className="image-item">
-                    <img
-                      src={PostgreSQL}
-                      alt="postgreSQL"
-                      className="postgreSQL"
-                    />
-                    <p className="image-text">PostgreSQL</p>
-                  </div>
+              <div className="image-row">
+                <div className="image-item">
+                  <img src={Js} alt="js" className="js" />
+                  <p className="image-text">JavaScript</p>
+                </div>
+                <div className="image-item">
+                  <img src={ReactIcono} alt="react" className="react" />
+                  <p className="image-text">React</p>
+                </div>
+                <div className="image-item">
+                  <img src={Redux} alt="reduxIcono" className="reduxIcono" />
+                  <p className="image-text">Redux</p>
+                </div>
+                <div className="image-item">
+                  <img src={Html} alt="htmlIcono" className="htmlIcono" />
+                  <p className="image-text">HTML</p>
+                </div>
+                <div className="image-item">
+                  <img src={Css} alt="cssIcono" className="cssIcono" />
+                  <p className="image-text">CSS</p>
+                </div>
+                <div className="image-item">
+                  <img src={Bootstrap} alt="bootstrap" className="bootstrap" />
+                  <p className="image-text">Bootstrap</p>
+                </div>
+                <div className="image-item">
+                  <img src={FormsPree} alt="formspree" className="formspree" />
+                  <p className="image-text">Formspree</p>
+                </div>
+                <div className="image-item">
+                  <img
+                    src={NodeMailer}
+                    alt="nodemailer"
+                    className="nodemailer"
+                  />
+                  <p className="image-text">Nodemailer</p>
+                </div>
+                <div className="image-item">
+                  <img src={Sequelize} alt="sequelize" className="sequelize" />
+                  <p className="image-text">Sequelize</p>
+                </div>
+                <div className="image-item">
+                  <img src={Node} alt="nodeJs" className="nodeJs" />
+                  <p className="image-text">NodeJs</p>
+                </div>
+                <div className="image-item">
+                  <img src={Express} alt="express" className="express" />
+                  <p className="image-text">Express</p>
+                </div>
+                <div className="image-item">
+                  <img
+                    src={PostgreSQL}
+                    alt="postgreSQL"
+                    className="postgreSQL"
+                  />
+                  <p className="image-text">PostgreSQL</p>
                 </div>
               </div>
             </div>
@@ -121,63 +124,58 @@ const trabajo = () => {
             <div className="deploy">
               <a href="https://www.umet.edu.ar" target="_blank">
                 <div className="image-container left">
-                  <img src={Countries} alt="countries" className="countries" />
+                  <img
+                    src={CountriesGris}
+                    alt="countriesDeployGris"
+                    className="image-gris"
+                  />
+                  <img
+                    src={Countries}
+                    alt="countriesDeploy"
+                    className="image-color"
+                  />
                 </div>
               </a>
-              <div className="image-container">
-                <div className="image-row">
-                  <div className="image-item">
-                    <img src={Js} alt="js" className="js" />
-                    <p className="image-text">JavaScript</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={ReactIcono} alt="react" className="react" />
-                    <p className="image-text">React</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={Redux} alt="reduxIcono" className="reduxIcono" />
-                    <p className="image-text">Redux</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={Html} alt="htmlIcono" className="htmlIcono" />
-                    <p className="image-text">HTML</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={Css} alt="cssIcono" className="cssIcono" />
-                    <p className="image-text">CSS</p>
-                  </div>
-                  <div className="image-item">
-                    <img
-                      src={Bootstrap}
-                      alt="bootstrap"
-                      className="bootstrap"
-                    />
-                    <p className="image-text">Bootstrap</p>
-                  </div>
-                  <div className="image-item">
-                    <img
-                      src={Sequelize}
-                      alt="sequelize"
-                      className="sequelize"
-                    />
-                    <p className="image-text">Sequelize</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={Node} alt="nodeJs" className="nodeJs" />
-                    <p className="image-text">NodeJs</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={Express} alt="express" className="express" />
-                    <p className="image-text">Express</p>
-                  </div>
-                  <div className="image-item">
-                    <img
-                      src={PostgreSQL}
-                      alt="postgreSQL"
-                      className="postgreSQL"
-                    />
-                    <p className="image-text">PostgreSQL</p>
-                  </div>
+              <div className="image-row">
+                <div className="image-item">
+                  <img src={Js} alt="js" className="js" />
+                  <p className="image-text">JavaScript</p>
+                </div>
+                <div className="image-item">
+                  <img src={ReactIcono} alt="react" className="react" />
+                  <p className="image-text">React</p>
+                </div>
+                <div className="image-item">
+                  <img src={Redux} alt="reduxIcono" className="reduxIcono" />
+                  <p className="image-text">Redux</p>
+                </div>
+                <div className="image-item">
+                  <img src={Html} alt="htmlIcono" className="htmlIcono" />
+                  <p className="image-text">HTML</p>
+                </div>
+                <div className="image-item">
+                  <img src={Css} alt="cssIcono" className="cssIcono" />
+                  <p className="image-text">CSS</p>
+                </div>
+                <div className="image-item">
+                  <img src={Bootstrap} alt="bootstrap" className="bootstrap" />
+                  <p className="image-text">Bootstrap</p>
+                </div>
+                <div className="image-item">
+                  <img src={Sequelize} alt="sequelize" className="sequelize" />
+                  <p className="image-text">Sequelize</p>
+                </div>
+                <div className="image-item">
+                  <img src={Node} alt="nodeJs" className="nodeJs" />
+                  <p className="image-text">NodeJs</p>
+                </div>
+                <div className="image-item">
+                  <img src={Express} alt="express" className="express" />
+                  <p className="image-text">Express</p>
+                </div>
+                <div className="image-item">
+                  <img src={PostgreSQL} alt="postgreSQL" className="postgreSQL" />
+                  <p className="image-text">PostgreSQL</p>
                 </div>
               </div>
             </div>
@@ -186,57 +184,56 @@ const trabajo = () => {
           <div className="trabajo-container">
             <p className="tituloProyectos">SPA Rick & Morty - Api</p>
             <div className="deploy">
-              <a href="https://www.umet.edu.ar" target="_blank">
-                <div className="image-container">
-                  <img src={Rick} alt="rick" className="rick" />
+              <a href="https://pedrocavataio.github.io/rick_and_morty/" target="_blank">
+                <div className="image-container left">
+                  <img
+                    src={RickGris}
+                    alt="rickDeployGris"
+                    className="image-gris"
+                  />
+                  <img src={Rick} alt="rickDeploy" className="image-color" />
                 </div>
               </a>
-              <div className="image-container">
-                <div className="image-row">
-                  <div className="image-item">
-                    <img src={Js} alt="js" className="js" />
-                    <p className="image-text">JavaScript</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={ReactIcono} alt="react" className="react" />
-                    <p className="image-text">React</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={Redux} alt="reduxIcono" className="reduxIcono" />
-                    <p className="image-text">Redux</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={Html} alt="htmlIcono" className="htmlIcono" />
-                    <p className="image-text">HTML</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={Css} alt="cssIcono" className="cssIcono" />
-                    <p className="image-text">CSS</p>
-                  </div>
-                  <div className="image-item">
-                    <img
-                      src={Sequelize}
-                      alt="sequelize"
-                      className="sequelize"
-                    />
-                    <p className="image-text">Sequelize</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={Node} alt="nodeJs" className="nodeJs" />
-                    <p className="image-text">NodeJs</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={Express} alt="express" className="express" />
-                    <p className="image-text">Express</p>
-                  </div>
-                  <div className="image-item">
-                    <img
-                      src={PostgreSQL}
-                      alt="postgreSQL"
-                      className="postgreSQL"
-                    />
-                    <p className="image-text">PostgreSQL</p>
-                  </div>
+              <div className="image-row">
+                <div className="image-item">
+                  <img src={Js} alt="js" className="js" />
+                  <p className="image-text">JavaScript</p>
+                </div>
+                <div className="image-item">
+                  <img src={ReactIcono} alt="react" className="react" />
+                  <p className="image-text">React</p>
+                </div>
+                <div className="image-item">
+                  <img src={Redux} alt="reduxIcono" className="reduxIcono" />
+                  <p className="image-text">Redux</p>
+                </div>
+                <div className="image-item">
+                  <img src={Html} alt="htmlIcono" className="htmlIcono" />
+                  <p className="image-text">HTML</p>
+                </div>
+                <div className="image-item">
+                  <img src={Css} alt="cssIcono" className="cssIcono" />
+                  <p className="image-text">CSS</p>
+                </div>
+                <div className="image-item">
+                  <img src={Sequelize} alt="sequelize" className="sequelize" />
+                  <p className="image-text">Sequelize</p>
+                </div>
+                <div className="image-item">
+                  <img src={Node} alt="nodeJs" className="nodeJs" />
+                  <p className="image-text">NodeJs</p>
+                </div>
+                <div className="image-item">
+                  <img src={Express} alt="express" className="express" />
+                  <p className="image-text">Express</p>
+                </div>
+                <div className="image-item">
+                  <img
+                    src={PostgreSQL}
+                    alt="postgreSQL"
+                    className="postgreSQL"
+                  />
+                  <p className="image-text">PostgreSQL</p>
                 </div>
               </div>
             </div>
@@ -246,17 +243,24 @@ const trabajo = () => {
             <p className="tituloProyectos">Control PK-AEP AA2000</p>
             <div className="deploy">
               <a href={ControlAep} target="_blank">
-                <div className="image-container">
-                  <img src={Control} alt="control" className="control" />
+                <div className="image-container left">
+                  <img
+                    src={ControlGris}
+                    alt="controlDeployGris"
+                    className="image-gris"
+                  />
+                  <img
+                    src={Control}
+                    alt="controlDeploy"
+                    className="image-color"
+                  />
                 </div>
               </a>
 
-              <div className="image-container">
-                <div className="image-row">
-                  <div className="image-item">
-                    <img src={Excel} alt="excel" className="excel" />
-                    <p className="image-text">Excel</p>
-                  </div>
+              <div className="image-row">
+                <div className="image-item">
+                  <img src={Excel} alt="excel" className="excel" />
+                  <p className="image-text">Excel</p>
                 </div>
               </div>
             </div>
@@ -267,60 +271,56 @@ const trabajo = () => {
               Portfolio Delfina Deluca - en construcción
             </p>
             <div className="deploy">
-              <a
-                /* href="https://deploy-sprint-2-frontend.onrender.com/" */
-                target="_blank"
-              >
-                <div className="image-container left">
-                  <img
-                    src={Proximamente}
-                    alt="castingAppDeploy"
-                    className="castingAppDeploy"
-                  />
+              <div className="image-container left">
+                <img
+                  src={Proximamente}
+                  alt="proximamenteGris"
+                  className="image-gris image-gris-proximamente"
+                />
+                <img
+                  src={Proximamente}
+                  alt="proximamente"
+                  className="image-color"
+                />
+              </div>
+              <div className="image-row">
+                <div className="image-item">
+                  <img src={Js} alt="js" className="js" />
+                  <p className="image-text">JavaScript</p>
                 </div>
-              </a>
-              <div className="image-container">
-                <div className="image-row">
-                  <div className="image-item">
-                    <img src={Js} alt="js" className="js" />
-                    <p className="image-text">JavaScript</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={ReactIcono} alt="react" className="react" />
-                    <p className="image-text">React</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={Redux} alt="reduxIcono" className="reduxIcono" />
-                    <p className="image-text">Redux</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={Html} alt="htmlIcono" className="htmlIcono" />
-                    <p className="image-text">HTML</p>
-                  </div>
-                  <div className="image-item">
-                    <img src={Css} alt="cssIcono" className="cssIcono" />
-                    <p className="image-text">CSS</p>
-                  </div>
-                  <div className="image-item">
-                    <img
-                      src={Bootstrap}
-                      alt="bootstrap"
-                      className="bootstrap"
-                    />
-                    <p className="image-text">Bootstrap</p>
-                  </div>
-                  <div className="image-item">
-                    <img
-                      src={FormsPree}
-                      alt="formspree"
-                      className="formspree"
-                    />
-                    <p className="image-text">Formspree</p>
-                  </div>
+                <div className="image-item">
+                  <img src={ReactIcono} alt="react" className="react" />
+                  <p className="image-text">React</p>
+                </div>
+                <div className="image-item">
+                  <img src={Redux} alt="reduxIcono" className="reduxIcono" />
+                  <p className="image-text">Redux</p>
+                </div>
+                <div className="image-item">
+                  <img src={Html} alt="htmlIcono" className="htmlIcono" />
+                  <p className="image-text">HTML</p>
+                </div>
+                <div className="image-item">
+                  <img src={Css} alt="cssIcono" className="cssIcono" />
+                  <p className="image-text">CSS</p>
+                </div>
+                <div className="image-item">
+                  <img src={Bootstrap} alt="bootstrap" className="bootstrap" />
+                  <p className="image-text">Bootstrap</p>
+                </div>
+                <div className="image-item">
+                  <img src={FormsPree} alt="formspree" className="formspree" />
+                  <p className="image-text">Formspree</p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+
+         <div className="footer">
+          <button onClick={scrollToTop} className="scroll-button">
+            Volver arriba
+          </button>
         </div>
       </div>
     </>
