@@ -40,7 +40,7 @@ function App() {
       {window.location.pathname == "/contacto" && <Nav className="styles-nav" />}
 
       <Routes>
-        <Route path="/" element={<Login onLogin={login} access={access} />} />
+        <Route path="/PFC_Portfolio" element={<Login onLogin={login} access={access} />} />
         <Route path="/nav" element={<Nav />} />
         <Route path="/landing" element={<Landing userName={userName} />} /> 
         {/* <Route path="/landing/:estacion" element={<Landing userName={userName} />} /> */}

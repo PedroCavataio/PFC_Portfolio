@@ -23,7 +23,7 @@ function Nav() {
   };
 
   const redirigirALogin = () => {
-    navigate("/");
+    navigate("/PFC_Portfolio");
   };
 
   const nombreImagenLogo = () => {
@@ -70,7 +70,7 @@ function Nav() {
               </NavLink>
             </li>
             <li>
-              <a href="/" onClick={redirigirALogin}>
+              <a href="/PFC_Portfolio" onClick={redirigirALogin}>
                 Salir
               </a>
             </li>
