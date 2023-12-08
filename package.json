@@ -1,4 +1,5 @@
 {
+  "homepage": "https://pedrocavataio.github.io/PFC_Portfolio/",
   "name": "pfc_portfolio",
   "version": "0.1.0",
   "private": true,
@@ -22,8 +23,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm start",
-    "deploy": "main -d start"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
