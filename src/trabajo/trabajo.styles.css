@@ -10,11 +10,11 @@
 
 .containerJob {
   display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center; 
-  margin-top: 10%;
-   
+  margin-top: 10%;   
 }
 
 .trabajo-container {
@@ -407,25 +407,65 @@
 }
 
 .footer {
-  height: 30vh;/* Ajusta la altura según tus necesidades */
+  height: 30vh;
 }
 
 .scroll-button {
-  position: fixed; /* Añade posición fija para mantenerlo en la parte inferior de la ventana */
-  right: 1%; /* Ajusta la distancia desde el borde derecho */
-  bottom: 20px; /* Ajusta la distancia desde el borde inferior */
+  position: fixed; 
+  left: 50%; /* Establece el 50% del ancho del contenedor como el punto de referencia para el margen izquierdo */
+  transform: translateX(-50%); /* Mueve el botón hacia la izquierda en un 50% de su propio ancho */
+  bottom: 20px; 
+  font-size: 1rem;
   color: rgb(61, 60, 60);
-  background-color: #f8f5f5;
-  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(2, 150, 155, 1);
+  border: 2px solid #2d2d2e00;
   padding: 10px 20px;
   border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
+  cursor: pointer;  
   margin: 10px;
-  transition: background-color 0.3s, transform 0.3s;
+  /* transition: background-color 0.3s, transform 0.3s; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .scroll-button:hover {
-  background-color: rgb(248, 73, 4);
+  background-color: rgba(248, 73, 4, 0);
   color: rgb(255, 254, 255);
+  border: 2px solid #2d2d2e00;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
+
+@media (max-width: 768px) {
+  .trabajo-container {
+    margin-top: 5%; 
+  }
+
+  .containerJob {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 10%;   
+  }
+
+  .image-row {
+    max-width: 100%; 
+    margin-left: 0; 
+    margin-top: 15px; 
+  }
+
+  .image-container {
+    margin-left: 0; 
+  }
+
+  .footer {
+    height: auto; 
+  }
+
+  .scroll-button {
+    bottom: 10px; 
+    right: 5%; 
+  }
+}
+

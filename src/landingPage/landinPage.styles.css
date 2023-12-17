@@ -71,8 +71,8 @@
   text-shadow: 2px 1px 1px  #f6f7f3; 
   font-size: 40px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  width: 30%;
-  margin-left: -35%;
+  width: 40%;
+  margin-left: -30%;
   margin-top: 6%;
   z-index: 1;
   transition: transform 0.3s ease;
@@ -102,6 +102,8 @@
   object-fit: cover;
   filter: brightness(0.1);
   transition: filter 0.3s ease;
+  box-shadow: 0 0 5px rgb(5, 5, 5);
+  border-radius: 1%;
 }
 
 /* .fotoPedro:hover {
@@ -132,7 +134,8 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: absolute;
   color: rgb(61, 60, 60);
-  background-color: #f8f5f5;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(2, 150, 155, 1);
   cursor: pointer;
   border-radius: 50%;
   width: 60px;
@@ -172,8 +175,11 @@
   bottom: 5%; */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: absolute;
-  background-color: rgb(248, 73, 4);
+  /* background-color: rgb(248, 73, 4);
+  color: rgb(255, 254, 255); */
+  background-color: rgba(248, 73, 4, 0);
   color: rgb(255, 254, 255);
+  box-shadow: 0 0 15px rgb(2, 150, 155);
   cursor: pointer;
   border-radius: 50%;
   width: 60px;

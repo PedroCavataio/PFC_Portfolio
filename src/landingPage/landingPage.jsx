@@ -80,7 +80,7 @@ const Landing = ({ userName }) => {
         </div> */}
 
         <h1 className="fraseLanding">
-        A continuación, te muestro una selección de trabajos en los que he estado involucrado.
+        Si haces click en "Mi trabajo", verás una selección de proyectos en los que he estado involucrado.
         </h1>
 
         <div class="foto-container">

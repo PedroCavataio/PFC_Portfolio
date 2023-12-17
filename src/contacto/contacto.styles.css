@@ -73,7 +73,8 @@
   padding: 0.5rem 1rem;
   font-size: 1rem;
   color: rgb(61, 60, 60);
-  background-color: #f8f5f5;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(2, 150, 155, 1);
   border-radius: 5px;
   cursor: pointer;
   border: 2px solid #2d2d2e00;
@@ -82,7 +83,7 @@
 }
 
 .btnEnviar:hover {
-  background-color: rgb(248, 73, 4);
+  background-color: rgba(248, 73, 4, 0);
   color: rgb(255, 254, 255);
   border: 2px solid #2d2d2e00;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
