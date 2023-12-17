@@ -158,7 +158,7 @@ label {
   bottom: 5%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .login-container {
     align-items: flex-start;
   }
@@ -169,11 +169,35 @@ label {
   }
 
   .contenedor {
+    padding: 20px; 
+    margin: 0 auto; 
     margin-left: 2%;
   }
 
-  .nombre-image{
-    height: 13vh;
-    margin-top: 0;
+  
+  .nombre-image {
+    height: 10vh;
+    top: 0;
+    left: 0;
   }
+
+  .hola {
+    font-size: 3rem; 
+    padding-bottom: 10%; 
+  }
+
+  .login-input {
+    margin-top: 5%; 
+  }
+
+  .Saltar-button {
+    width: 15vw;
+    height: 15vw;
+    max-width: 70px;
+    max-height: 70px;
+    font-size: 0.8rem;
+    right: 5%;
+    bottom: 2%;
+  }
+
 }
