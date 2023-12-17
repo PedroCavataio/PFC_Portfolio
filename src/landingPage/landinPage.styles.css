@@ -66,7 +66,7 @@
 }
 
 .fraseLanding {
-  position: fixed;
+  /* position: fixed; */
   color: #aaaaaa;
   text-shadow: 2px 1px 1px  #f6f7f3; 
   font-size: 40px;
@@ -85,15 +85,23 @@
 }
 
 .fotoPedro {
-  position: absolute;
+ /*  position: absolute;
   top: 28%;
   left: 60%;
-  border: 1px solid #03d3eb;  /* Establece el ancho y el color del borde */
+  border: 1px solid #03d3eb;  
   box-shadow: 2px 2px 8px 4px #0d0e0e;
-  object-fit: cover; /* Ajusta el comportamiento de la imagen */
-  filter: brightness(0.1); /* Transforma la imagen a blanco y negro */
+  object-fit: cover; 
+  filter: brightness(0.1); 
   transition: filter 0.3s ease;  
-  width: 60vh;
+  width: 60vh; */
+  position: relative;
+  width: 80vw;
+  max-width: 300px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 8px 4px #0d0e0e;
+  object-fit: cover;
+  filter: brightness(0.1);
+  transition: filter 0.3s ease;
 }
 
 /* .fotoPedro:hover {
@@ -101,7 +109,7 @@
 }  */
 
 .light {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ /*  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: absolute;
   color: rgb(61, 60, 60);
   background-color: #f8f5f5;
@@ -120,11 +128,30 @@
   border: none;
   outline: none;
   right: 3%;
+  bottom: 5%; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  color: rgb(61, 60, 60);
+  background-color: #f8f5f5;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
   bottom: 5%;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .light:hover {
-  position: absolute;  
+  /* position: absolute;  
   cursor: pointer;
   border-radius: 50%; 
   width: 20vw; 
@@ -142,10 +169,62 @@
   border: none;
   outline: none;
   right: 3%;
+  bottom: 5%; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  background-color: rgb(248, 73, 4);
+  color: rgb(255, 254, 255);
+  cursor: pointer;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
   bottom: 5%;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .light:hover .fotoPedro {
   filter: brightness(1);
 }
 
+@media (max-width: 768px) {
+  .fraseLanding {
+    width: 90%;
+    margin-top: 18%;
+  }
+
+  .fotoPedro {
+    width: 90vw;
+  }
+
+  .light {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Consulta de medios para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+  .fraseLanding {
+    font-size: 18px;
+    margin-top: 25%;
+  }
+
+  .fotoPedro {
+    width: 90vw;
+  }
+
+  .light {
+    width: 40px;
+    height: 40px;
+    font-size: 0.7rem;
+  }
+}
