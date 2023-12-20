@@ -135,7 +135,7 @@
   position: absolute;
   color: rgb(61, 60, 60);
   background-color: #ffffff;
-  box-shadow: 0 0 15px rgba(2, 150, 155, 1);
+  box-shadow: 0 0 15px rgba(2, 150, 155, 0);
   cursor: pointer;
   border-radius: 50%;
   width: 60px;

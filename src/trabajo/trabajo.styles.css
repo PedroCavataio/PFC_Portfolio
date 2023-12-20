@@ -418,7 +418,7 @@
   font-size: 1rem;
   color: rgb(61, 60, 60);
   background-color: #ffffff;
-  box-shadow: 0 0 15px rgba(2, 150, 155, 1);
+  box-shadow: 0 0 15px rgba(2, 150, 155, 0);
   border: 2px solid #2d2d2e00;
   padding: 10px 20px;
   border-radius: 5px;
@@ -432,6 +432,7 @@
   background-color: rgba(248, 73, 4, 0);
   color: rgb(255, 254, 255);
   border: 2px solid #2d2d2e00;
+  box-shadow: 0 0 15px rgb(2, 150, 155);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
