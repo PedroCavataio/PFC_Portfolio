@@ -120,6 +120,65 @@ const trabajo = () => {
           </div>
 
           <div className="trabajo-container">
+            <p className="tituloProyectos">SPA Rick & Morty - Api</p>
+            <div className="deploy">
+              <a href="https://pedrocavataio.github.io/rick_and_morty/" target="_blank">
+                <div className="image-container left">
+                  <img
+                    src={RickGris}
+                    alt="rickDeployGris"
+                    className="image-gris"
+                  />
+                  <img src={Rick} alt="rickDeploy" className="image-color" />
+                </div>
+              </a>
+              <div className="image-row">
+                <div className="image-item">
+                  <img src={Js} alt="js" className="js" />
+                  <p className="image-text">JavaScript</p>
+                </div>
+                <div className="image-item">
+                  <img src={ReactIcono} alt="react" className="react" />
+                  <p className="image-text">React</p>
+                </div>
+                <div className="image-item">
+                  <img src={Redux} alt="reduxIcono" className="reduxIcono" />
+                  <p className="image-text">Redux</p>
+                </div>
+                <div className="image-item">
+                  <img src={Html} alt="htmlIcono" className="htmlIcono" />
+                  <p className="image-text">HTML</p>
+                </div>
+                <div className="image-item">
+                  <img src={Css} alt="cssIcono" className="cssIcono" />
+                  <p className="image-text">CSS</p>
+                </div>
+                <div className="image-item">
+                  <img src={Sequelize} alt="sequelize" className="sequelize" />
+                  <p className="image-text">Sequelize</p>
+                </div>
+                <div className="image-item">
+                  <img src={Node} alt="nodeJs" className="nodeJs" />
+                  <p className="image-text">NodeJs</p>
+                </div>
+                <div className="image-item">
+                  <img src={Express} alt="express" className="express" />
+                  <p className="image-text">Express</p>
+                </div>
+                <div className="image-item">
+                  <img
+                    src={PostgreSQL}
+                    alt="postgreSQL"
+                    className="postgreSQL"
+                  />
+                  <p className="image-text">PostgreSQL</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="trabajo-container">
             <p className="tituloProyectos">SPA Countries - Api</p>
             <div className="deploy">
               <a href="https://www.umet.edu.ar" target="_blank">
@@ -181,63 +240,7 @@ const trabajo = () => {
             </div>
           </div>
 
-          <div className="trabajo-container">
-            <p className="tituloProyectos">SPA Rick & Morty - Api</p>
-            <div className="deploy">
-              <a href="https://pedrocavataio.github.io/rick_and_morty/" target="_blank">
-                <div className="image-container left">
-                  <img
-                    src={RickGris}
-                    alt="rickDeployGris"
-                    className="image-gris"
-                  />
-                  <img src={Rick} alt="rickDeploy" className="image-color" />
-                </div>
-              </a>
-              <div className="image-row">
-                <div className="image-item">
-                  <img src={Js} alt="js" className="js" />
-                  <p className="image-text">JavaScript</p>
-                </div>
-                <div className="image-item">
-                  <img src={ReactIcono} alt="react" className="react" />
-                  <p className="image-text">React</p>
-                </div>
-                <div className="image-item">
-                  <img src={Redux} alt="reduxIcono" className="reduxIcono" />
-                  <p className="image-text">Redux</p>
-                </div>
-                <div className="image-item">
-                  <img src={Html} alt="htmlIcono" className="htmlIcono" />
-                  <p className="image-text">HTML</p>
-                </div>
-                <div className="image-item">
-                  <img src={Css} alt="cssIcono" className="cssIcono" />
-                  <p className="image-text">CSS</p>
-                </div>
-                <div className="image-item">
-                  <img src={Sequelize} alt="sequelize" className="sequelize" />
-                  <p className="image-text">Sequelize</p>
-                </div>
-                <div className="image-item">
-                  <img src={Node} alt="nodeJs" className="nodeJs" />
-                  <p className="image-text">NodeJs</p>
-                </div>
-                <div className="image-item">
-                  <img src={Express} alt="express" className="express" />
-                  <p className="image-text">Express</p>
-                </div>
-                <div className="image-item">
-                  <img
-                    src={PostgreSQL}
-                    alt="postgreSQL"
-                    className="postgreSQL"
-                  />
-                  <p className="image-text">PostgreSQL</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
           <div className="trabajo-container">
             <p className="tituloProyectos">Control PK-AEP AA2000</p>
