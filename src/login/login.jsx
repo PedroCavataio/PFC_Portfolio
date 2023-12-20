@@ -124,7 +124,12 @@ const Login = ({ onLogin, access }) => {
       <div className="contenedor">
         <div className="hola">ALOHA!! </div>
         <div className="login-group">
-          <label htmlFor="nombre"> ¿Cuál es tu nombre?</label>
+          <label htmlFor="nombre">- Soy, Pedro</label>
+          <br />
+          <br />
+          <label htmlFor="nombre">- ¿Cuál es tu nombre?</label>
+          <br />
+          <br />
           <input
             placeholder="nombre"
             type="text"
