@@ -21,9 +21,9 @@
 
 .nombre-image {
   position: absolute;
-  top: 2%;
-  left: 2%;
-  height: 10%;
+  top: 5%;
+  left: 5%;
+  height: 13%;
 }
 
 .contenedor {
@@ -90,13 +90,12 @@ label {
 .error-message.active {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   visibility: visible; 
-  height: 1.5rem;
-  
+  height: 1.5rem;  
 }
 
 .login-button {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
+  padding: 0.7rem 1.7rem;
+  font-size: 0.8rem;
   color: rgb(61, 60, 60);
   background-color: #f8f5f5;
   border-radius: 5px;
@@ -104,9 +103,11 @@ label {
   border: 2px solid #2d2d2e00;
   margin-top: 1rem; 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  margin-left: 13%;
 }
 
-.login-button:hover {
+.login-button:hover {  
+  font-size: 0.8rem;
   background-color: rgba(248, 73, 4, 0);
   color: rgb(255, 254, 255);
   box-shadow: 0 0 15px rgb(2, 150, 155);
@@ -120,15 +121,12 @@ label {
   color: rgb(61, 60, 60);
   background-color: #f8f5f5;
   cursor: pointer;
-  border-radius: 50%; 
-  width: 20vw; 
-  height: 20vw; 
-  max-width: 90px; 
-  max-height: 90px; 
+  border-radius: 5px;   
+  padding: 0.8rem 1.2rem; 
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem; 
+  font-size: 0.8rem;
   text-align: center;
   text-decoration: none;
   border: none;
@@ -140,18 +138,14 @@ label {
 .Saltar-button:hover {
   position: absolute;  
   cursor: pointer;
-  border-radius: 50%; 
-  width: 20vw; 
-  height: 20vw; 
-  max-width: 90px; 
-  max-height: 90px; 
+  border-radius: 5px; 
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(248, 73, 4, 0);
   color: rgb(255, 254, 255);
   box-shadow: 0 0 15px rgb(2, 150, 155);
-  font-size: 1rem; 
+  font-size: 0.8rem; 
   text-align: center;
   text-decoration: none;
   border: none;
