@@ -90,7 +90,7 @@ const Contacto = () => {
         <a href="https://github.com/PedroCavataio" target="_blank"> 
           <img src={GitHub} alt="GitHub" className="github" />
         </a>
-        <a href="https://wa.me/1159547777" target="_blank">
+        <a href="https://wa.me/611854700" target="_blank">
           <img src={Whatsapp} alt="whatsapp" className="whatsapp" />
         </a>
         <a href="https://gmail.com" target="_blank">

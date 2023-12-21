@@ -20,20 +20,26 @@ const About = () => {
   return (
     <div className="about-container">
       <div className="sections-container">
-        <div className="sectionCV">
-          <div className="ubicacion-container">
-            <img src={Ubicacion} alt="Ubicacion" className="ubicacion" />
-            <p className="españa">
-              <span className="es">ES</span>
-              <span className="pa">PA</span>
-              <span className="ña">ÑA</span>
-            </p>
+        <div className="section">
+          <div className="info">
+            <div className="contAbout-texto">
+              <div className="sectionCV">
+                <img src={Ubicacion} alt="Ubicacion" className="ubicacion" />
+                <p className="españa">
+                  <span className="es">ES</span>
+                  <span className="pa">PA</span>
+                  <span className="ña">ÑA</span>
+                </p>
+                <a href={Curriculum} target="_blank">
+                  <img src={DescargaCV} alt="CV" className="CV" />
+                </a>
+              </div>
+            </div>
           </div>
-          <a href={Curriculum} target="_blank">
-             <img src={DescargaCV} alt="CV" className="CV" />
-          </a>
         </div>
+
         <hr className="section-dividerCV" />
+
         <div className="section">
           <div className="data">
             <div className="contAbout-texto">
@@ -46,7 +52,6 @@ const About = () => {
               </p>
             </div>
           </div>
-
           <div className="info">
             <div className="contAbout-texto">
               <p>
@@ -71,6 +76,7 @@ const About = () => {
             </a>
           </div>
         </div>
+
         <hr className="section-divider" />
 
         <div className="section">
@@ -112,7 +118,9 @@ const About = () => {
             </a>
           </div>
         </div>
+
         <hr className="section-divider" />
+
         <div className="section">
           <div className="data">
             <div className="contAbout-texto">
@@ -155,6 +163,7 @@ const About = () => {
             </a>
           </div>
         </div>
+
         <hr className="section-divider" />
 
         <div className="section">
@@ -201,6 +210,7 @@ const About = () => {
             </a>
           </div>
         </div>
+
         <hr className="section-dividerCV" />
 
         <div className="section">

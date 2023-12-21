@@ -7,11 +7,11 @@
   background: linear-gradient(
     to right,
     #030810,
-    #030810 20%, /* Ancho del 20% para el primer color */
-    #0b0b0b 20%, /* Ancho del 20% para el segundo color */
-    #0b0b0b 80%, /* Ancho del 80% para el tercer color */
-    #e0dfdf 80%, /* Ancho del 80% para el cuarto color */
-    #e0dfdf 100% /* Ancho del 100% para el quinto color */
+    #030810 20%, 
+    #0b0b0b 20%, 
+    #0b0b0b 80%, 
+    #e0dfdf 80%, 
+    #e0dfdf 100% 
   );
   background-size: cover;
   background-position: center center;
@@ -36,8 +36,7 @@
 }
 
 .sectionCV {
-  display: flex;
-  justify-content: center; /* Alinea horizontalmente los elementos */
+  display: flex;  
   align-items: center;
   text-align: center;
 }
@@ -45,8 +44,6 @@
 .CV {
   height: 150px;
   transition: transform 0.3s ease;
-  margin-right: -20vw; /* Ajusta el margen derecho para separar las imágenes */  
-
 }
 
 .CV:hover {
@@ -56,9 +53,7 @@
 
 .ubicacion {
   height: 60px;  
-  transition: transform 0.3s ease;
-  margin-left: -30vw; /* Ajusta el margen izquierdo */
-  margin-right: -5vw; /* Ajusta el margen derecho */
+  transition: transform 0.3s ease;  
 }
 
 .ubicacion:hover {
@@ -66,15 +61,13 @@
 }
 
 .ubicacion:hover + .españa {
-  opacity: 1;  
-
+  opacity: 1; 
 }
 
 .españa {
-  color: #f5f4f4; /* Color del texto */
-  font-size: 18px; /* Tamaño de fuente del texto */
-  margin-top: -17px; /* Ajusta el espacio entre la imagen y el texto */  
-  margin-left: -15vw; /* Ajusta el margen izquierdo */
+  color: #f5f4f4; 
+  font-size: 18px;   
+  
   opacity: 0; 
   transition: opacity 0.3s ease; 
   }
@@ -93,9 +86,8 @@
 
  
   .section p {
-  margin: 0; /* Establece los márgenes a cero para eliminar cualquier margen predeterminado */
-  padding: 15px; /* Aplica un relleno si es necesario */
-  
+  margin: 0;
+  padding: 15px;   
 }
 
 .contAbout-texto {
@@ -141,7 +133,7 @@
   background-color: rgb(100, 100, 98);
   border: none;
   margin: 50px 0;
-  margin-left: -20%; /* Agrega este margen izquierdo */
+  margin-left: -20%; 
 }
 
 .henry {
