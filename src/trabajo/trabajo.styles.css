@@ -415,7 +415,7 @@
   left: 50%; /* Establece el 50% del ancho del contenedor como el punto de referencia para el margen izquierdo */
   transform: translateX(-50%); /* Mueve el botón hacia la izquierda en un 50% de su propio ancho */
   bottom: 20px; 
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: rgb(61, 60, 60);
   background-color: #ffffff;
   box-shadow: 0 0 15px rgba(2, 150, 155, 0);
@@ -424,7 +424,6 @@
   border-radius: 5px;
   cursor: pointer;  
   margin: 10px;
-  /* transition: background-color 0.3s, transform 0.3s; */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 

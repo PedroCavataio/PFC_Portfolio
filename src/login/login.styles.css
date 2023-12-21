@@ -8,6 +8,7 @@
   height: 100vh;
   background: linear-gradient(to right,  #131313  50%, #0b0b0b  50%);
   position: absolute;
+  margin: 0;
 }
 
 .planetLogin-image {

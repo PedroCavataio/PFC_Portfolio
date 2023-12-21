@@ -3,14 +3,15 @@
   align-items: center;
   justify-content: space-between;
   width: 100vw;
+  overflow-x: hidden;
   background: linear-gradient(
     to right,
     #030810,
-    #030810 20%,
-    #0b0b0b  20%,
-    #0b0b0b  80%,
-    #e0dfdf 20%,
-    #e0dfdf
+    #030810 20%, /* Ancho del 20% para el primer color */
+    #0b0b0b 20%, /* Ancho del 20% para el segundo color */
+    #0b0b0b 80%, /* Ancho del 80% para el tercer color */
+    #e0dfdf 80%, /* Ancho del 80% para el cuarto color */
+    #e0dfdf 100% /* Ancho del 100% para el quinto color */
   );
   background-size: cover;
   background-position: center center;
@@ -44,7 +45,7 @@
 .CV {
   height: 150px;
   transition: transform 0.3s ease;
-  margin-right: -160%; /* Ajusta el margen derecho para separar las imágenes */  
+  margin-right: -20vw; /* Ajusta el margen derecho para separar las imágenes */  
 
 }
 
@@ -54,11 +55,10 @@
 }
 
 .ubicacion {
-  height: 70px;  
+  height: 60px;  
   transition: transform 0.3s ease;
-  margin-left: -395%; /* Ajusta el margen derecho para separar las imágenes */
-  margin-bottom: 25%;
-  margin-top: 55%;
+  margin-left: -30vw; /* Ajusta el margen izquierdo */
+  margin-right: -5vw; /* Ajusta el margen derecho */
 }
 
 .ubicacion:hover {
@@ -74,7 +74,7 @@
   color: #f5f4f4; /* Color del texto */
   font-size: 18px; /* Tamaño de fuente del texto */
   margin-top: -17px; /* Ajusta el espacio entre la imagen y el texto */  
-  margin-left: -390%; /* Ajusta el margen derecho para separar las imágenes */
+  margin-left: -15vw; /* Ajusta el margen izquierdo */
   opacity: 0; 
   transition: opacity 0.3s ease; 
   }
@@ -103,24 +103,26 @@
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: left;
+  margin: 0;
  }
 
 .data {
   flex: 1;
   max-width: 12%;
-  margin-right: 3%;
-  margin-left: 3%;   
+  margin-right: 3vw;
+  margin-left: 3vw;   
 }
 
 .info {
   flex: 3;
   max-width: 75%;
-  margin-right: 5%;
-  margin-left: 5%;
+  margin-right: 5vw;
+  margin-left: 5vw;
 }
 
 .images-container {
-  flex: 1;    
+  flex: 1;   
+  margin-left: 1vw;
 }
 
 .section-dividerCV {
@@ -139,27 +141,27 @@
   background-color: rgb(100, 100, 98);
   border: none;
   margin: 50px 0;
-  margin-left: -21%; /* Agrega este margen izquierdo */
+  margin-left: -20%; /* Agrega este margen izquierdo */
 }
 
 .henry {
-  height: 45px;
+  height: 40px;
 }
 
 .aa2000 {
-  height: 70px;  
+  height: 60px;  
 }
 
 .umet {
-  height: 70px;
+  height: 60px;
 }
 
 .tecnocasa {
-  height: 70px;  
+  height: 60px;  
 }
 
 .puntos {
-  height: 70px;
+  height: 60px;
   margin-bottom: 10%;
   margin-top: -102%;
 }
