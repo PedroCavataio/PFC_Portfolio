@@ -59,12 +59,6 @@
   font-size: 2.5rem;
 }
 
-.titulo:hover {
-  /* color: #4e4e4e;
-  text-shadow: 2px 1px 1px #04b8b8; */
-  /* border: 2px solid #03d3eb; */
-}
-
 .sub-titulo {
   color: #b6b6b6;
 }
@@ -93,8 +87,8 @@
 
 .linkedin {
   position: absolute;
-  right: 14%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
-  top: 32%; /* Centra verticalmente */
+  right: 14%; 
+  top: 32%; 
   transform: translateY(-50%);
   height: 40px;
   transition: transform 0.3s ease; 
@@ -105,8 +99,8 @@
 
 .github {
   position: absolute;
-  right: 14%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
-  top: 50.2%; /* Centra verticalmente */
+  right: 14%; 
+  top: 50.2%; 
   transform: translateY(-50%);
   height: 40px;
   transition: transform 0.3s ease; 
@@ -117,8 +111,8 @@
 
 .whatsapp {
   position: absolute;
-  right: 14%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
-  top: 68%; /* Centra verticalmente */
+  right: 14%; 
+  top: 68%; 
   transform: translateY(-50%);
   height: 40px;
   transition: transform 0.3s ease; 
@@ -129,8 +123,8 @@
 
 .gmail {
   position: absolute;
-  right: 13.5%; /* Ajusta la distancia desde el borde derecho según tu preferencia */
-  top: 84%; /* Centra verticalmente */
+  right: 13.5%; 
+  top: 84%; 
   transform: translateY(-50%);
   height: 40px;
   transition: transform 0.3s ease; 

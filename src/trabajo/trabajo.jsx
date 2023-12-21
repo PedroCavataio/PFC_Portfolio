@@ -29,7 +29,7 @@ const trabajo = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Scroll suave
+      behavior: "smooth", 
     });
   };
 

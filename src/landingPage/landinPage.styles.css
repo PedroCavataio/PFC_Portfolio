@@ -31,42 +31,8 @@
   transform: scale(1.1);
 }
 
-.primavera,
-.verano,
-.otoño,
-.invierno {
-  width: 100vw;
-  height: 100vh;
-  background-size: 100% 115%;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.primavera {
-  background-image: url("../assets/nubesLogin2.jpg");
-}
-
-.verano {
-  background-image: url("../assets/otoño.png");
-}
-
-/* .otoño .modal-content {
-  width: 50vw;
-  height: 50vh; */
-/* background-image: url("../assets/otoño.png"); */
-/*  background-color: rgb(228, 226, 224);
-  background-size: cover; 
-  background-position: center; 
-  border-radius: 1%;
-  z-index: 9999;
-} */
-
-.invierno {
-  background-image: url("../assets/nubesLogin2.jpg");
-}
 
 .fraseLanding {
-  /* position: fixed; */
   color: #aaaaaa;
   text-shadow: 2px 1px 1px  #f6f7f3; 
   font-size: 40px;
@@ -78,22 +44,7 @@
   transition: transform 0.3s ease;
 }
 
-.fraseLanding:hover {
-  /* color: #4e4e4e; */
-  /* text-shadow: 2px 1px 1px #04b8b8; */
-  /* border: 2px solid #03d3eb; */
-}
-
 .fotoPedro {
- /*  position: absolute;
-  top: 28%;
-  left: 60%;
-  border: 1px solid #03d3eb;  
-  box-shadow: 2px 2px 8px 4px #0d0e0e;
-  object-fit: cover; 
-  filter: brightness(0.1); 
-  transition: filter 0.3s ease;  
-  width: 60vh; */
   position: relative;
   width: 80vw;
   max-width: 300px;
@@ -105,7 +56,6 @@
   box-shadow: 0 0 5px rgb(5, 5, 5);
   border-radius: 1%;
 }
-
 
 .light {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -170,7 +120,7 @@
   }
 }
 
-/* Consulta de medios para pantallas aún más pequeñas */
+
 @media (max-width: 480px) {
   .fraseLanding {
     font-size: 18px;

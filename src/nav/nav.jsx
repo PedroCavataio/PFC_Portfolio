@@ -29,24 +29,21 @@ function Nav() {
   const nombreImagenLogo = () => {
     navigate("/landing");
   };
-
  
 
   return (
     <>
-      <header>
-        <div className="barras">
+    <div className="barras">
           <button
             onClick={abrir_cerrar_menu}
             className="boton_menu"
             id="x"
           ></button>
         </div>
-
+      <header>        
         
         <img src={pedroCavataio} alt="pedroIndex" className="nombreImagenLogo" />
                
-
         <nav id="menu" className="desplegable">
         <ul>
             <li className={activeItem === "/landing" ? "active" : ""}>

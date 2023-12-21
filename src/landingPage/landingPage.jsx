@@ -2,11 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./landinPage.styles.css";
 import Nav from "../nav/nav";
-import ModalComponent from "../modal/modal";
 import Foto from "../assets/fotoPedro.jpg";
-import Cuadrado from "../assets/cuadrado.png";
-import Petalos from "../assets/petalos.png";
-
 
 const Landing = ({ userName }) => {
   const navigate = useNavigate();
@@ -58,29 +54,12 @@ const Landing = ({ userName }) => {
     setBrightness(0.05);
   };
 
-  
-
   return (
     <>
       <div className={fondoPorEstacion()}>
-        {/* <div className="cuadrado">
-          <img src={Cuadrado} alt="cuadrado" className="cua" />
-        </div>
-
-        <div className="cuadros">
-          <img src={Cuadros} alt="cuadros" className="cuadros" />
-        </div>
-
-        <div className="cuadros2">
-          <img src={Cuadros} alt="cuadros" className="cuadros2" />
-        </div>
-
-        <div className="cuadros3">
-          <img src={Cuadros} alt="cuadros" className="cuadros3" />
-        </div> */}
-
         <h1 className="fraseLanding">
-        Si haces click en "Mi trabajo", verás una selección de proyectos en los que he estado involucrado.
+          Si haces click en "Mi trabajo", verás una selección de proyectos en
+          los que he estado involucrado.
         </h1>
 
         <div class="foto-container">
@@ -97,17 +76,10 @@ const Landing = ({ userName }) => {
           >
             Iluminar img.
           </button>
-        </div> 
+        </div>
       </div>
 
-      
-
       <Nav />
-      {/* {!modalShown && (
-        <h1 className="fraseLanding">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </h1>
-      )} */}
     </>
   );
 };

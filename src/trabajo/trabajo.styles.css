@@ -10,7 +10,6 @@
 
 .containerJob {
   display: grid;
-  /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center; 
@@ -412,8 +411,8 @@
 
 .scroll-button {
   position: fixed; 
-  left: 50%; /* Establece el 50% del ancho del contenedor como el punto de referencia para el margen izquierdo */
-  transform: translateX(-50%); /* Mueve el botón hacia la izquierda en un 50% de su propio ancho */
+  left: 50%; 
+  transform: translateX(-50%); 
   bottom: 20px; 
   font-size: 0.8rem;
   color: rgb(61, 60, 60);

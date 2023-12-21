@@ -10,7 +10,6 @@
   align-items: center;  
   padding: 10px; /* Añade espaciado interior para los elementos dentro de la barra */  
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  /* box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); */
   }
   
   .barras {
@@ -59,7 +58,7 @@
   
   @media(max-width: 850px){
     .barras{
-        background: cornflowerblue;
+        background: rgb(237, 100, 100);
         display: block;
     }
   
