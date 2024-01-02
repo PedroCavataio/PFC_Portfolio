@@ -14,18 +14,6 @@ const Login = ({ onLogin, access }) => {
     navigate('/landing'); 
   }
 
-/*   const handleChange = (event) => {
-    const { name, value } = event.target;
-    const formattedValue =
-      name === "nombre"
-        ? value.charAt(0).toUpperCase() + value.slice(1)
-        : value.charAt(0).toUpperCase() + value.slice(1).toLowerCase(); 
-    setUserData((prevUserData) => ({
-      ...prevUserData,
-      [name]: formattedValue,
-    }));
-  }; */
-
   const handleChange = (event) => {
     const { name, value } = event.target;
     const formattedValue = value.charAt(0).toUpperCase() + value.slice(1);
@@ -52,18 +40,7 @@ const Login = ({ onLogin, access }) => {
     }
   };
 
- /*  const validateLogin = () => {
-    const errors = {};
-
-    if (!userData.nombre) {
-      errors.nombre = "El nombre es requerido";
-    } else if (!isValidNombre(userData.nombre)) {
-      errors.nombre = "El nombre no es válido";
-    } else if (userData.nombre.length > 35) {
-      errors.nombre = "El nombre no puede tener más de 35 caracteres";
-    } */
-
-
+ 
     const validateLogin = () => {
       const errors = {};
   
@@ -71,29 +48,10 @@ const Login = ({ onLogin, access }) => {
         errors.nombre = "El nombre es requerido";
       } else if (userData.nombre.length > 35) {
         errors.nombre = "El nombre no puede tener más de 35 caracteres";
-      }
-  
+      }  
       return errors;
     };
 
-
-/* 
-    if (!userData.estacion) {
-      errors.estacion = "La estación del año es requerida";
-    } else if (userData.estacion.length < 5 || userData.estacion.length > 10) {
-      errors.estacion =
-        "La estación del año, debe tener entre 5 y 10 caracteres";
-    } else if (
-      userData.estacion !== "Verano" &&
-      userData.estacion !== "Otoño" &&
-      userData.estacion !== "Primavera" &&
-      userData.estacion !== "Invierno"
-    ) {
-      errors.estacion =
-        "Esa no es una estación del año válida, te doy una pista (invierno/primavera/verano/otoño)";
-    }
-    return errors; */
-  /* }; */
 
   const isValidNombre = (nombre) => {
     return true;
@@ -123,14 +81,10 @@ const Login = ({ onLogin, access }) => {
       </div>
       <div className="contenedor">
         <div className="hola">ALOHA!! </div>
-        <div className="login-group">
-          <label htmlFor="nombre">- Soy, Pedro</label>
-          <br />
-          <br />
-          <label htmlFor="nombre">- ¿Cuál es tu nombre?</label>
-          <br />
-          <br />
-          <input
+        <div className="login-groupD">- Soy, Pedro </div>
+        <div className="login-groupD">- ¿Cuál es tu nombre?</div>
+        <div className="login-group">        
+           <input
             placeholder="nombre"
             type="text"
             id="nombre"
@@ -147,39 +101,13 @@ const Login = ({ onLogin, access }) => {
             </span>
           )}
         </div>
-        {/* <div className="login-group">
-          <label htmlFor="estacion">
-            ¿Cuál es tu estación del año favorita?
-          </label>
-          <input
-            placeholder="estación"
-            type="text"
-            id="estacion"
-            name="estacion"
-            value={userData.estacion}
-            onChange={handleChange}
-            className="login-input"
-            disabled={access}
-            autoFocus
-          />
-          {errors.estacion && (
-            <span
-              className={`error-message ${errors.estacion ? "active" : ""}`}
-            >
-              {errors.estacion}
-            </span>
-          )}
-        </div> */}
         <button className="login-button" disabled={access}>
           Ingresar
-        </button>   
-            
-      </div>
-      <div>
-      <button className="Saltar-button"  onClick={redirigirAInicio}>
+        </button>  
+        <button className="login-button"  onClick={redirigirAInicio}>
           Saltar Intro
-        </button> 
-      </div>
+        </button>             
+      </div>    
 
       <div>
         <ToastContainer />
