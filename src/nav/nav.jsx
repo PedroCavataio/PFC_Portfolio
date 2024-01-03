@@ -42,10 +42,22 @@ function Nav() {
         </div>
       <header>        
         
-        <img src={pedroCavataio} alt="pedroIndex" className="nombreImagenLogo" />
-               
         <nav id="menu" className="desplegable">
         <ul>
+        <li>
+              <NavLink
+                to="/PFC_Portfolio"
+                onClick={() => setActiveItem("/landing")}
+              >
+                <img
+                  src={pedroCavataio}
+                  alt="pedroIndex"
+                  className="nombreImagenLogo"
+                />
+              </NavLink>
+            </li>
+
+
             <li className={activeItem === "/landing" ? "active" : ""}>
               <NavLink to="/landing" onClick={() => setActiveItem("/landing")}>
                 Inicio

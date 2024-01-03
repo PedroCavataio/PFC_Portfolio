@@ -4,7 +4,6 @@ import "./landinPage.styles.css";
 import Nav from "../nav/nav";
 import Foto from "../assets/fotoPedro.jpg";
 
-
 const Landing = ({ userName }) => {
   const navigate = useNavigate();
   const { estacion } = useParams();
@@ -13,21 +12,6 @@ const Landing = ({ userName }) => {
   const [modalShown, setModalShown] = useState(true);
   const [brightness, setBrightness] = useState(0.1);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (progress < 100) {
-        setProgress(progress + 1);
-      } else {
-        clearInterval(interval);
-        setModalShown(false);
-        setTimeout(() => {
-          navigate("/landing");
-        }, 0);
-      }
-    }, 40);
-
-    return () => clearInterval(interval);
-  }, [progress, navigate]);
 
   const handleEnter = () => {
     navigate("/landing");
@@ -55,19 +39,21 @@ const Landing = ({ userName }) => {
     setBrightness(0.05);
   };
 
-  
-
   return (
-    
     <>
-    <Nav />
+      <Nav />
       <div className={fondoPorEstacion()}>
-      
         <h1 className="fraseLanding">
-        Si haces click en "Mi trabajo", verás una selección de proyectos en los que he estado involucrado.
+          Con más de 20 años de experiencia en el mundo laboral, mi espíritu
+          emprendedor transitó con éxito hacia el sector informático como
+          Frontend Developer.
+          <span className="destacado">
+            He seleccionado especialmente para tí, algunos de los proyectos en
+            los que he estado involucrado.
+          </span>
         </h1>
 
-        <div class="foto-container">
+        <div className="foto-container">
           <img
             src={Foto}
             alt="Foto Pedro Cavataio"
@@ -81,11 +67,8 @@ const Landing = ({ userName }) => {
           >
             Iluminar img.
           </button>
-        </div> 
+        </div>
       </div>
-      
-      
-     
     </>
   );
 };

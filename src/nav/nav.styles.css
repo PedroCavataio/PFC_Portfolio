@@ -1,5 +1,5 @@
 .desplegable {
-  background: #131313 ;
+  background: #02253a ;
   position: fixed; /* Ancla la barra en la parte superior */
   top: 0; /* Coloca la barra en la parte superior de la pantalla */
   left: 0; /* Ancla la barra en el lado izquierdo */
@@ -18,7 +18,7 @@
 
   .nombreImagenLogo {
     position: fixed;
-    top: 1%;
+    top: 0.6%;
     left: 4%;    
     height: 14%;
     z-index: 999;
