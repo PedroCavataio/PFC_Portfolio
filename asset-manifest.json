@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PFC_Portfolio/static/css/main.d1875b88.css",
-    "main.js": "/PFC_Portfolio/static/js/main.e1ae360c.js",
+    "main.js": "/PFC_Portfolio/static/js/main.5f423aee.js",
     "static/js/787.137c8416.chunk.js": "/PFC_Portfolio/static/js/787.137c8416.chunk.js",
     "static/media/ControlAEP.xlsx": "/PFC_Portfolio/static/media/ControlAEP.526ab3ece94cb69ffb74.xlsx",
     "static/media/countriesDeploy.png": "/PFC_Portfolio/static/media/countriesDeploy.e8225880ad62cd2e29b2.png",
@@ -21,7 +21,7 @@
     "static/media/reduxIcono.png": "/PFC_Portfolio/static/media/reduxIcono.335ad5f2e3db6368e4f7.png",
     "static/media/nodeJs.png": "/PFC_Portfolio/static/media/nodeJs.1e79c8e470df6d41bc92.png",
     "static/media/aa2000.png": "/PFC_Portfolio/static/media/aa2000.45431b95e6084a71fcc3.png",
-    "static/media/INBA.png": "/PFC_Portfolio/static/media/INBA.5e1b4f392580b14c5507.png",
+    "static/media/ivba.png": "/PFC_Portfolio/static/media/ivba.5e1b4f392580b14c5507.png",
     "static/media/github.png": "/PFC_Portfolio/static/media/github.096c8daee8a61165a4e8.png",
     "static/media/bootstrap.png": "/PFC_Portfolio/static/media/bootstrap.5d0a3226e4c5e6e8d078.png",
     "static/media/formsPree.png": "/PFC_Portfolio/static/media/formsPree.22eb11595d8e927c71f2.png",
@@ -40,11 +40,11 @@
     "static/media/tecnocasa.png": "/PFC_Portfolio/static/media/tecnocasa.d0a6b8dfa38a017a11ca.png",
     "index.html": "/PFC_Portfolio/index.html",
     "main.d1875b88.css.map": "/PFC_Portfolio/static/css/main.d1875b88.css.map",
-    "main.e1ae360c.js.map": "/PFC_Portfolio/static/js/main.e1ae360c.js.map",
+    "main.5f423aee.js.map": "/PFC_Portfolio/static/js/main.5f423aee.js.map",
     "787.137c8416.chunk.js.map": "/PFC_Portfolio/static/js/787.137c8416.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d1875b88.css",
-    "static/js/main.e1ae360c.js"
+    "static/js/main.5f423aee.js"
   ]
 }
