@@ -1,4 +1,4 @@
-import React  from "react";
+import React, { useRef, useEffect } from "react";
 import "./trabajo.styles.css";
 import CountriesGris from "../assets/countriesDeployGris.png";
 import Countries from "../assets/countriesDeploy.png";
@@ -24,21 +24,35 @@ import Bootstrap from "../assets/bootstrap.png";
 import FormsPree from "../assets/formsPree.png";
 import NodeMailer from "../assets/nodeMailer.png";
 import ControlAep from "../assets/ControlAEP.xlsx";
+import { useNavigate } from "react-router-dom";
 
-const trabajo = () => {
+export const CastingRef = React.createRef();
+export const RickMortyRef = React.createRef();
+export const SPAcountriesRef = React.createRef();
+export const ControlRef = React.createRef();
+export const ProximamenteRef = React.createRef();
+
+
+
+const Trabajo = () => {
+  const navigate = useNavigate();
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", 
+      behavior: "smooth",
     });
   };
 
+
+  useEffect(() => {
+    navigate("/trabajo#astingRef");
+  }, [navigate]);
 
   return (
     <>
       <div className="background">
         <div className="containerJob">
-          <div className="trabajo-container">
+          <div className="trabajo-container" id="castingRef" ref={CastingRef}>
             <p className="tituloProyectos">Casting APP - Proyecto grupal</p>
             <div className="deploy">
               <a
@@ -119,7 +133,10 @@ const trabajo = () => {
             </div>
           </div>
 
-          <div className="trabajo-container">
+          <div  className="trabajo-container"
+            id="rickMortyRef"
+            ref={RickMortyRef}>
+            
             <p className="tituloProyectos">SPA Rick & Morty - Api</p>
             <div className="deploy">
               <a href="https://pedrocavataio.github.io/rick_and_morty/" target="_blank">
@@ -178,7 +195,10 @@ const trabajo = () => {
           </div>
 
 
-          <div className="trabajo-container">
+          <div  className="trabajo-container"
+            id="SPAcountriesRef"
+            ref={SPAcountriesRef}>
+
             <p className="tituloProyectos">SPA Countries - Api</p>
             <div className="deploy">
               <a href="https://www.umet.edu.ar" target="_blank">
@@ -242,7 +262,7 @@ const trabajo = () => {
 
           
 
-          <div className="trabajo-container">
+          <div className="trabajo-container" id="controlRef" ref={ControlRef}>
             <p className="tituloProyectos">Control PK-AEP AA2000</p>
             <div className="deploy">
               <a href={ControlAep} target="_blank">
@@ -269,7 +289,9 @@ const trabajo = () => {
             </div>
           </div>
 
-          <div className="trabajo-container">
+          <div className="trabajo-container"
+            id="proximamenteRef"
+            ref={ProximamenteRef}>
             <p className="tituloProyectos">
               Portfolio Delfina Deluca - en construcción
             </p>
@@ -330,4 +352,4 @@ const trabajo = () => {
   );
 };
 
-export default trabajo;
+export default Trabajo;
