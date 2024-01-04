@@ -4,7 +4,7 @@ import "./about.styles.css";
 import figuraPuntos from "../assets/figuraPuntos.png";
 import DescargaCV from "../assets/descargaCV.png";
 import Henry from "../assets/henry.png";
-import INBA from "../assets/INBA.png";
+import Ivba from "../assets/ivba.png";
 import AA2000 from "../assets/aa2000.png";
 import Tecnocasa from "../assets/tecnocasa.png";
 import Umet from "../assets/umet.png";
@@ -86,7 +86,7 @@ const About = () => {
               <p>
                 <span class="job-role">Frontend Developer</span>
                 <br />
-                <span class="company-name">INBA</span>
+                <span class="company-name">IVBA</span>
                 <br />
                 <span>Buenos Aires, Argentina</span>
                 <br />
@@ -119,7 +119,7 @@ const About = () => {
           </div>
           <div className="images-container">
             <a href="https://www.gba.gob.ar/vivienda" target="_blank">
-              <img src={INBA} alt="inba" className="inba" />
+              <img src={Ivba} alt="ivba" className="ivba" />
             </a>
           </div>
         </div>
