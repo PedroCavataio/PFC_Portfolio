@@ -403,6 +403,7 @@
 }
 
 .scroll-button {
+  width: 10vw;
   position: fixed; 
   left: 50%; 
   transform: translateX(-50%); 

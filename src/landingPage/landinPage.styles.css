@@ -50,20 +50,24 @@
 
 .light {
   padding: 0.7rem 1.7rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #04b8b8;
   background-color: #242923;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 1rem; 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-  width: 11vw;  
+  width: 10vw;  
 }
 
 .light:hover {
   color: #04b8b8;
   background-color: #242923;
   box-shadow: 0 0 15px rgba(2, 150, 155, 0);
+}
+
+.light:hover .arrow{
+  color: #f8f6f6;
 }
 
 @media (max-width: 768px) {
@@ -86,7 +90,7 @@
     height: 50px;
   }
 
-  
+
 }
 
 

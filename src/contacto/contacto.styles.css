@@ -5,7 +5,7 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to right, #030810 68%, #0b0b0b 32%);    
+  background: linear-gradient(to right, #030810 68%, #003c5f 32%);    
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -54,34 +54,29 @@
 
 .titulo {
   color: #aaaaaa;
-  text-shadow: 2px 1px 1px  #f6f7f3;  
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2.5rem;
 }
 
 .sub-titulo {
-  color: #b6b6b6;
+  color: #f3f3f3;
 }
 
 .btnEnviar {
-  padding: 0.5rem 1.7rem;
-  font-size: 1rem;
-  color: rgb(61, 60, 60);
-  background-color: #ffffff;
-  box-shadow: 0 0 15px rgba(2, 150, 155, 0);
+  padding: 0.7rem 1.7rem;
+  font-size: 0.8rem;
+  color: #04b8b8;
+  background-color: #242923;
   border-radius: 5px;
-  cursor: pointer;
-  border: 2px solid #2d2d2e00;
-  margin-top: .5rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;  
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  width: 10vw;
 }
 
 .btnEnviar:hover {
-  background-color: rgba(248, 73, 4, 0);
-  color: rgb(255, 254, 255);
-  border: 2px solid #2d2d2e00;
-  box-shadow: 0 0 15px rgb(2, 150, 155);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #04b8b8;
+  background-color: #242923;
+  box-shadow: 0 0 15px rgba(2, 150, 155, 0);
 }
 
 

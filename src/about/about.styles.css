@@ -7,12 +7,12 @@
   overflow-x: hidden;
   background: linear-gradient(
     to right,
-    #022f4d,
-    #022f4d 20%, 
-    #012136  20%, 
-    #012136  80%, 
-    #04b8b870 80%, 
-    #04b8b870 100% 
+    #0a2841 ,
+    #0a2841  20%, 
+    #003c5f  20%, 
+    #003c5f  80%, 
+    #c9caca 80%, 
+    #c9caca 100% 
   );
   background-size: cover;
   background-position: center center;
@@ -39,7 +39,7 @@
 .sectionCV {
   display: flex;  
   align-items: center;
-  text-align: center;
+  text-align: center;  
 }
 
 .CV {

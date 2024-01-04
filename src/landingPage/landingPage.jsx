@@ -66,7 +66,7 @@ const Landing = ({ userName }) => {
             onMouseEnter={handleLightHover}
             onMouseLeave={handleLightLeave}
           >
-            Este soy yo!&nbsp;&nbsp; ▲             
+            Este soy yo!&nbsp;&nbsp; <span className="arrow">▲</span>              
           </button>
         </div>
       </div>
