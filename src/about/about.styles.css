@@ -1,3 +1,4 @@
+
 .about-container {
   display: flex;
   align-items: center;
@@ -6,12 +7,12 @@
   overflow-x: hidden;
   background: linear-gradient(
     to right,
-    #030810,
-    #030810 20%, 
-    #0b0b0b 20%, 
-    #0b0b0b 80%, 
-    #e0dfdf 80%, 
-    #e0dfdf 100% 
+    #022f4d,
+    #022f4d 20%, 
+    #012136  20%, 
+    #012136  80%, 
+    #04b8b870 80%, 
+    #04b8b870 100% 
   );
   background-size: cover;
   background-position: center center;
@@ -138,6 +139,10 @@
 
 .henry {
   height: 40px;
+}
+
+.inba {
+  height: 70px;
 }
 
 .aa2000 {

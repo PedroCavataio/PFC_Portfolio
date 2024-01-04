@@ -4,6 +4,7 @@ import "./about.styles.css";
 import figuraPuntos from "../assets/figuraPuntos.png";
 import DescargaCV from "../assets/descargaCV.png";
 import Henry from "../assets/henry.png";
+import INBA from "../assets/INBA.png";
 import AA2000 from "../assets/aa2000.png";
 import Tecnocasa from "../assets/tecnocasa.png";
 import Umet from "../assets/umet.png";
@@ -55,7 +56,7 @@ const About = () => {
           <div className="info">
             <div className="contAbout-texto">
               <p>
-                Mi participación en el bootcamp de Soy Henry ha sido una
+                Mi participación en el bootcamp de Henry ha sido una
                 experiencia transformadora. A lo largo del programa, he
                 adquirido conocimientos sólidos en programación y desarrollo web
                 a través de un enfoque práctico y colaborativo. Los proyectos
@@ -83,13 +84,59 @@ const About = () => {
           <div className="data">
             <div className="contAbout-texto">
               <p>
-                <span>Supervisor de Parking</span>
+                <span class="job-role">Frontend Developer</span>
+                <br />
+                <span class="company-name">INBA</span>
+                <br />
+                <span>Buenos Aires, Argentina</span>
+                <br />
+                <span>2022 - 2023</span>
+              </p>
+            </div>
+          </div>
+          <div className="info">
+            <div className="contAbout-texto">
+              <p>
+                Durante mi periodo como desarrollador en el Departamento de
+                Sistemas del Instituto de Vivienda de Buenos Aires, desde
+                octubre de 2022 hasta noviembre de 2023, me he centrado en el
+                mantenimiento de sistemas, aplicando actualizaciones y parches
+                con lenguajes como HTML, CSS, JavaScript y ReactJS. Mis
+                responsabilidades incluyeron desde corregir bugs para garantizar
+                estabilidad hasta realizar historias de usuario y mejoras de
+                rendimiento. En un entorno ágil, he participado activamente en
+                reuniones diarias, sprints, demos y retrospectivas. Colaboré
+                estrechamente con analistas para agregar nuevas funcionalidades
+                y mejorar las existentes, utilizando tecnologías como React para
+                el desarrollo frontend. Además, he resuelto problemas técnicos
+                en colaboración con usuarios finales. La documentación
+                detallada, que abarcaba la descripción de implementaciones
+                específicas y casos de uso, desempeñó un papel clave en mi rol
+                al facilitar la colaboración y establecer bases sólidas para
+                futuros desarrollos.
+              </p>
+            </div>
+          </div>
+          <div className="images-container">
+            <a href="https://www.gba.gob.ar/vivienda" target="_blank">
+              <img src={INBA} alt="inba" className="inba" />
+            </a>
+          </div>
+        </div>
+
+        <hr className="section-divider" />
+
+        <div className="section">
+          <div className="data">
+            <div className="contAbout-texto">
+              <p>
+                <span>Supervisor Experiencia al Cliente</span>
                 <br />
                 <span>AA 2000 S.A.</span>
                 <br />
                 <span>Buenos Aires, Argentina</span>
                 <br />
-                <span>2013 - Actualidad</span>
+                <span>2013 - 2022</span>
               </p>
             </div>
           </div>
@@ -98,17 +145,21 @@ const About = () => {
               <p>
                 Desde el año 2013, he ocupado el puesto de Supervisor en
                 Aeropuertos Argentina 2000 S.A., una destacada empresa en el
-                sector aeroportuario. Mi función principal ha sido la
-                supervisión y liderazgo de un equipo de 30 personas en el
-                Aeropuerto Jorge Newbery. Este entorno de trabajo es sumamente
-                dinámico y se caracteriza por mantener elevados estándares de
-                calidad tanto en las operaciones de caja como en el servicio al
-                cliente, abarcando más de 747,000 transacciones anuales. Además
-                de mis responsabilidades habituales como Jefe de
-                Estacionamiento, he tenido la oportunidad de formarme y ejercer
-                como Coach de Agilidad. Esto me ha permitido contribuir al
-                desarrollo profesional y al éxito del equipo de manera
-                significativa..
+                sector aeroportuario. En mis primeros años en atención al
+                cliente, gestionaba transacciones complejas de cobro para
+                diversos perfiles y modos de pago. Desde 2016 hasta 2022, asumí
+                el rol de Supervisor en la gerencia de Experiencia al Cliente,
+                liderando un equipo de 30 personas en el Aeropuerto Jorge
+                Newbery. En este entorno aeroportuario altamente dinámico, con
+                más de 747,000 transacciones anuales, mantuve altos estándares
+                de calidad. A partir de 2016, además de mis responsabilidades
+                como Supervisor, me formé y desempeñé el rol de Coach de
+                Agilidad. Esta doble función me ha permitido contribuir al
+                desarrollo de mi equipo, fomentando la adaptabilidad en un
+                entorno dinámico. Mi trayectoria refleja habilidades sólidas en
+                la gestión de operaciones, resolución de problemas, atención al
+                detalle, adaptación a cambios y estabilidad profesional;
+                elementos fundamentales para el éxito en mi carrera.
               </p>
             </div>
           </div>

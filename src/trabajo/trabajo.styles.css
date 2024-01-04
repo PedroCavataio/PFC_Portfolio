@@ -2,7 +2,7 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 100vw;
   height: auto; 
-  background: linear-gradient(to right,  #0b0b0b 50%, #0b0b0b 50%);
+  background: linear-gradient(to right,  #0a2841 50%, #003c5f 50%);
   position: absolute;
   z-index: -1;
   margin: 0;
@@ -10,17 +10,15 @@
 
 .containerJob {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center; 
-  margin-top: 10%;   
+  grid-template-columns: repeat(2, 1fr);   
+  margin-top: 15%;   
 }
 
 .trabajo-container {
   display: flex;
   flex-direction: column;
   background-color: rgba(250, 250, 250, 0);  
-  height: 100%; 
+  margin-bottom: 15%;
 }
 
 .deploy {  
@@ -42,10 +40,21 @@
   align-items: center;
 }
 
+.image-text {  
+  margin-top: 2%; 
+  margin-bottom: 2%;
+  font-size: 14px;   
+  opacity: 0; 
+  margin-bottom: 0; 
+  color: #dbddda;   
+}
+
 .image-item {
   flex-basis: calc(25% - 3px); 
-  margin-top: 5px;   
+  margin-top: 15px;   
 }
+
+
 
 .image-container {
   position: relative;
@@ -63,8 +72,7 @@
   height: auto;
   transition: opacity 0.3s ease;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0;  
 }
 
 .image-gris {
@@ -97,19 +105,12 @@
   margin-left: 20px; 
 }
 
-.image-text {  
-  margin-top: 2%; 
-  margin-bottom: 2%;
-  font-size: 14px;   
-  opacity: 0; 
-  margin-bottom: 0; 
-  color: #dbddda;   
-}
+
 
 .tituloProyectos {
   opacity: 0;
   color: #e6e3e3; 
-  font-size: 24px; 
+  font-size: 1.2rem; 
   transition: opacity 0.3s ease, color 0.3s ease, font-size 0.3s ease, transform 0.3s ease; 
  }
 
@@ -122,14 +123,6 @@
   transform: scale(1.1);
 }
 
-.image-gris-proximamente {
-  filter: grayscale(100%);
-  transition: filter 0.3s ease;
-}
-
-.deploy:hover .image-gris-proximamente {
-  filter: none;
-}
 
 .excel {
   margin-top: 5%; 
@@ -415,27 +408,28 @@
   transform: translateX(-50%); 
   bottom: 20px; 
   font-size: 0.8rem;
-  color: rgb(61, 60, 60);
-  background-color: #ffffff;
-  box-shadow: 0 0 15px rgba(2, 150, 155, 0);
-  border: 2px solid #2d2d2e00;
+  color: #04b8b8;
+  background-color: #242923;
+  border-radius: 5px;
+  cursor: pointer;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;  
   margin: 10px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  z-index: 999;
 }
 
 .scroll-button:hover {
-  background-color: rgba(248, 73, 4, 0);
-  color: rgb(255, 254, 255);
-  border: 2px solid #2d2d2e00;
-  box-shadow: 0 0 15px rgb(2, 150, 155);
+  color: #04b8b8;
+  background-color: #242923;
+  box-shadow: 0 0 15px rgba(2, 150, 155, 0);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 
 @media (max-width: 768px) {
+  
   .trabajo-container {
     margin-top: 5%; 
   }
@@ -443,28 +437,90 @@
   .containerJob {
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: center;
+    justify-content:center; 
     align-items: center; 
-    margin-top: 10%;   
-  }
-
-  .image-row {
-    max-width: 100%; 
-    margin-left: 0; 
-    margin-top: 15px; 
+    margin-top: 10%;      
+    text-align: center; 
   }
 
   .image-container {
-    margin-left: 0; 
+    margin-left: 0;
+    justify-content:center; 
+    align-items: center; 
   }
+
+  .image-color { 
+    width: 70vw;   
+    opacity: 1;
+    z-index: 2;
+    justify-content:center; 
+    align-items: center;
+    margin-left: 5%;
+  }
+
+  .image-gris {
+    opacity: 0;
+  }
+  
+
+  .tituloProyectos {
+    font-size: 1rem;
+    opacity: 1;
+    justify-content:center; 
+    align-items: center;
+  }
+  
 
   .footer {
     height: auto; 
   }
 
   .scroll-button {
+    position: fixed;
     bottom: 10px; 
     right: 5%; 
+    z-index: 999;
   }
-}
 
+  .image-row {
+    max-width: 50%;  
+    margin-top: 30%;      
+    justify-content:center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+  }
+  
+  .image-text {  
+    margin-top: 2%; 
+    font-size: 12px;   
+    opacity: 1;   
+       
+  }
+  
+  .image-item {
+    flex-basis: calc(25% - 3px); 
+    margin-top: 60px;  
+    padding: 5px; 
+  }
+   
+  .excel,
+  .sequelize,
+  .formspree,
+  .nodemailer,
+  .js, 
+  .react,
+  .htmlIcono,
+  .cssIcono,
+  .bootstrap,
+  .reduxIcono,
+  .nodeJs,
+  .postgreSQL,
+  .express,
+  .sequelize { 
+    filter: none; 
+    opacity: 1; 
+    max-width: 65%;
+   transform: scale(1);
+  }
+
+}

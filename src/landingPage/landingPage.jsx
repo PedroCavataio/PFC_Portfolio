@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import "./landinPage.styles.css";
 import Nav from "../nav/nav";
 import Foto from "../assets/fotoPedro.jpg";
+import Flecha from "../assets/flechaSoy.png";
 
 const Landing = ({ userName }) => {
   const navigate = useNavigate();
@@ -11,7 +12,6 @@ const Landing = ({ userName }) => {
   const [progress, setProgress] = useState(0);
   const [modalShown, setModalShown] = useState(true);
   const [brightness, setBrightness] = useState(0.1);
-
 
   const handleEnter = () => {
     navigate("/landing");
@@ -36,7 +36,7 @@ const Landing = ({ userName }) => {
   };
 
   const handleLightLeave = () => {
-    setBrightness(0.05);
+    setBrightness(0.03);
   };
 
   return (
@@ -47,12 +47,13 @@ const Landing = ({ userName }) => {
           Con más de 20 años de experiencia en el mundo laboral, mi espíritu
           emprendedor transitó con éxito hacia el sector informático como
           Frontend Developer.
+          <br />
           <span className="destacado">
-            He seleccionado especialmente para tí, algunos de los proyectos en
-            los que he estado involucrado.
+          He seleccionado especialmente para tí, algunos de los proyectos en los que he estado involucrado.
           </span>
         </h1>
 
+       
         <div className="foto-container">
           <img
             src={Foto}
@@ -65,7 +66,7 @@ const Landing = ({ userName }) => {
             onMouseEnter={handleLightHover}
             onMouseLeave={handleLightLeave}
           >
-            Iluminar img.
+            Este soy yo!&nbsp;&nbsp; ▲             
           </button>
         </div>
       </div>

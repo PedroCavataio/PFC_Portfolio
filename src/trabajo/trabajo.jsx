@@ -1,5 +1,4 @@
-/* trabajo.jsx */
-import React, { useRef } from "react";
+import React  from "react";
 import "./trabajo.styles.css";
 import CountriesGris from "../assets/countriesDeployGris.png";
 import Countries from "../assets/countriesDeploy.png";
@@ -10,6 +9,7 @@ import Casting from "../assets/castingAppDeploy.png";
 import ControlGris from "../assets/controlDeployGris.png";
 import Control from "../assets/controlDeploy.png";
 import Proximamente from "../assets/proximamente.png";
+import ProximamenteGris from "../assets/proximamenteGris.png";
 import Redux from "../assets/reduxIcono.png";
 import ReactIcono from "../assets/react.png";
 import Sequelize from "../assets/sequelizeIcono.png";
@@ -276,9 +276,9 @@ const trabajo = () => {
             <div className="deploy">
               <div className="image-container left">
                 <img
-                  src={Proximamente}
+                  src={ProximamenteGris}
                   alt="proximamenteGris"
-                  className="image-gris image-gris-proximamente"
+                  className="image-gris "
                 />
                 <img
                   src={Proximamente}
