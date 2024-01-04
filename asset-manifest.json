@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/PFC_Portfolio/static/css/main.f71b997f.css",
-    "main.js": "/PFC_Portfolio/static/js/main.6ef4ce5a.js",
+    "main.css": "/PFC_Portfolio/static/css/main.d1875b88.css",
+    "main.js": "/PFC_Portfolio/static/js/main.e1ae360c.js",
     "static/js/787.137c8416.chunk.js": "/PFC_Portfolio/static/js/787.137c8416.chunk.js",
     "static/media/ControlAEP.xlsx": "/PFC_Portfolio/static/media/ControlAEP.526ab3ece94cb69ffb74.xlsx",
     "static/media/countriesDeploy.png": "/PFC_Portfolio/static/media/countriesDeploy.e8225880ad62cd2e29b2.png",
     "static/media/rickDeploy.png": "/PFC_Portfolio/static/media/rickDeploy.04595055600826e74628.png",
-    "static/media/CVpedroCavataio_fullStackDeveloper.pdf": "/PFC_Portfolio/static/media/CVpedroCavataio_fullStackDeveloper.3b4956c983beef62ee82.pdf",
     "static/media/LogoPFC.png": "/PFC_Portfolio/static/media/LogoPFC.63dfa0166ca774114d93.png",
+    "static/media/CVpedroCavataio_fullStackDeveloper.pdf": "/PFC_Portfolio/static/media/CVpedroCavataio_fullStackDeveloper.6528aa4af82a2da6f72f.pdf",
     "static/media/rickDeployGris.png": "/PFC_Portfolio/static/media/rickDeployGris.89b541ef03e2edd2ed3c.png",
     "static/media/countriesDeployGris.png": "/PFC_Portfolio/static/media/countriesDeployGris.9619468b35a53b4c0c2d.png",
     "static/media/castingAppDeployGris.png": "/PFC_Portfolio/static/media/castingAppDeployGris.614a3ce7eb2c55772d52.png",
@@ -21,6 +21,7 @@
     "static/media/reduxIcono.png": "/PFC_Portfolio/static/media/reduxIcono.335ad5f2e3db6368e4f7.png",
     "static/media/nodeJs.png": "/PFC_Portfolio/static/media/nodeJs.1e79c8e470df6d41bc92.png",
     "static/media/aa2000.png": "/PFC_Portfolio/static/media/aa2000.45431b95e6084a71fcc3.png",
+    "static/media/INBA.png": "/PFC_Portfolio/static/media/INBA.5e1b4f392580b14c5507.png",
     "static/media/github.png": "/PFC_Portfolio/static/media/github.096c8daee8a61165a4e8.png",
     "static/media/bootstrap.png": "/PFC_Portfolio/static/media/bootstrap.5d0a3226e4c5e6e8d078.png",
     "static/media/formsPree.png": "/PFC_Portfolio/static/media/formsPree.22eb11595d8e927c71f2.png",
@@ -29,6 +30,7 @@
     "static/media/excell.png": "/PFC_Portfolio/static/media/excell.16b81c2e02423ce28cc8.png",
     "static/media/ubicacionMapaBlanco.png": "/PFC_Portfolio/static/media/ubicacionMapaBlanco.c2e28b2bc4d60787a71b.png",
     "static/media/react.png": "/PFC_Portfolio/static/media/react.5895bf05a70ea01f55c9.png",
+    "static/media/proximamenteGris.png": "/PFC_Portfolio/static/media/proximamenteGris.bc99f999db21992af530.png",
     "static/media/nodeMailer.png": "/PFC_Portfolio/static/media/nodeMailer.cea0895ca072cb64e5a6.png",
     "static/media/fotoPedro.jpg": "/PFC_Portfolio/static/media/fotoPedro.9bf7ce958055286234fb.jpg",
     "static/media/javaScriptIcono.png": "/PFC_Portfolio/static/media/javaScriptIcono.9eaa33f70ecc1b7e79c3.png",
@@ -37,12 +39,12 @@
     "static/media/iconoMenuSinFondo.png": "/PFC_Portfolio/static/media/iconoMenuSinFondo.988a917abf5449c21827.png",
     "static/media/tecnocasa.png": "/PFC_Portfolio/static/media/tecnocasa.d0a6b8dfa38a017a11ca.png",
     "index.html": "/PFC_Portfolio/index.html",
-    "main.f71b997f.css.map": "/PFC_Portfolio/static/css/main.f71b997f.css.map",
-    "main.6ef4ce5a.js.map": "/PFC_Portfolio/static/js/main.6ef4ce5a.js.map",
+    "main.d1875b88.css.map": "/PFC_Portfolio/static/css/main.d1875b88.css.map",
+    "main.e1ae360c.js.map": "/PFC_Portfolio/static/js/main.e1ae360c.js.map",
     "787.137c8416.chunk.js.map": "/PFC_Portfolio/static/js/787.137c8416.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f71b997f.css",
-    "static/js/main.6ef4ce5a.js"
+    "static/css/main.d1875b88.css",
+    "static/js/main.e1ae360c.js"
   ]
 }
