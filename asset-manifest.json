@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PFC_Portfolio/static/css/main.329e19ac.css",
-    "main.js": "/PFC_Portfolio/static/js/main.58814a34.js",
+    "main.css": "/PFC_Portfolio/static/css/main.e99e4a3d.css",
+    "main.js": "/PFC_Portfolio/static/js/main.843ca083.js",
     "static/js/787.137c8416.chunk.js": "/PFC_Portfolio/static/js/787.137c8416.chunk.js",
     "static/media/ControlAEP.xlsx": "/PFC_Portfolio/static/media/ControlAEP.526ab3ece94cb69ffb74.xlsx",
     "static/media/countriesDeploy.png": "/PFC_Portfolio/static/media/countriesDeploy.e8225880ad62cd2e29b2.png",
@@ -36,15 +36,15 @@
     "static/media/javaScriptIcono.png": "/PFC_Portfolio/static/media/javaScriptIcono.9eaa33f70ecc1b7e79c3.png",
     "static/media/whatsapp.png": "/PFC_Portfolio/static/media/whatsapp.e00b71fb082abf76ee95.png",
     "static/media/cerrarSinFondo.png": "/PFC_Portfolio/static/media/cerrarSinFondo.7825e3988f260d40a9c6.png",
-    "static/media/iconoMenuSinFondo.png": "/PFC_Portfolio/static/media/iconoMenuSinFondo.988a917abf5449c21827.png",
     "static/media/tecnocasa.png": "/PFC_Portfolio/static/media/tecnocasa.d0a6b8dfa38a017a11ca.png",
     "index.html": "/PFC_Portfolio/index.html",
-    "main.329e19ac.css.map": "/PFC_Portfolio/static/css/main.329e19ac.css.map",
-    "main.58814a34.js.map": "/PFC_Portfolio/static/js/main.58814a34.js.map",
+    "static/media/cerrar.svg": "/PFC_Portfolio/static/media/cerrar.b445ab8278e1807914708abede2ba2f6.svg",
+    "main.e99e4a3d.css.map": "/PFC_Portfolio/static/css/main.e99e4a3d.css.map",
+    "main.843ca083.js.map": "/PFC_Portfolio/static/js/main.843ca083.js.map",
     "787.137c8416.chunk.js.map": "/PFC_Portfolio/static/js/787.137c8416.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.329e19ac.css",
-    "static/js/main.58814a34.js"
+    "static/css/main.e99e4a3d.css",
+    "static/js/main.843ca083.js"
   ]
 }
