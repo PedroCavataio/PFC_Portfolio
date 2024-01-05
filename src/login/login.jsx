@@ -81,8 +81,8 @@ const Login = ({ onLogin, access }) => {
       </div>
       <div className="contenedor">
         <div className="hola">ALOHA!! </div>
-        <div className="login-groupD">- Soy, Pedro </div>
-        <div className="login-groupD">- ¿Cuál es tu nombre?</div>
+        <div className="login-groupD">Soy, Pedro </div>
+        <div className="login-groupD">¿Cuál es tu nombre?</div>
         <div className="login-group">        
            <input
             placeholder="nombre"

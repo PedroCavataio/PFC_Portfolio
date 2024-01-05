@@ -4,6 +4,7 @@ import "./landinPage.styles.css";
 import Nav from "../nav/nav";
 import Foto from "../assets/fotoPedro.jpg";
 import Flecha from "../assets/flechaSoy.png";
+import pedroCavataio from "../assets/LogoPFC.png";
 
 const Landing = ({ userName }) => {
   const navigate = useNavigate();
@@ -41,6 +42,10 @@ const Landing = ({ userName }) => {
 
   return (
     <>
+
+<div className="image-logo">
+        <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" />
+      </div>
       <Nav />
       <div className={fondoPorEstacion()}>
         <h1 className="fraseLanding">

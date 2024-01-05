@@ -471,8 +471,6 @@
     align-items: center;
   }  
 
-  
-
   .image-row {
     max-width: 50%;  
     margin-top: 30%;      
@@ -484,8 +482,7 @@
   .image-text {  
     margin-top: 2%; 
     font-size: 12px;   
-    opacity: 1;   
-       
+    opacity: 1;         
   }
   
   .image-item {
@@ -515,9 +512,9 @@
   }
 
   .scroll-button {
+    max-width: none;
     width: 100%;
     height: 8%;
-    position: fixed;
     bottom: 0;
     right: 0;    
     margin: 0;       

@@ -13,6 +13,14 @@
   z-index: -2;
 }
 
+.nombre-image {
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  height: 12%;
+}
+
+
 .fraseLanding {
   color: #f1f1f1;
   font-size: 1.5rem;
@@ -30,6 +38,7 @@
 
 
 .foto-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;  
@@ -70,6 +79,14 @@
 }
 
 @media (max-width: 768px) {
+
+  .nombre-image {
+    position: absolute;
+    top: 1%;
+    left: 10%;
+    height: 12%;
+  }
+
   .fraseLanding {
     width: 90%;
     margin-top: 12%;
@@ -81,17 +98,32 @@
   }
 
   .fotoPedro {
-    width: 90vw;
+    margin-top: 1%;
+    width: 50vw;
   }
 
-  .light {
-    width: 30vw;
-    height: 50px;
+  .light {   
+    width: 100%;
+    position: fixed;
+    height: 8%;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    color: #04b8b8;
+    background-color: #242923;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
   }
 }
 
 
 @media (max-width: 480px) {
+
+  .nombre-image {
+    position: absolute;
+    top: 2%;
+    left: 10%;
+    height: 8%;
+  }
 
   .destacado {
     width: 90%;
@@ -101,12 +133,7 @@
   }
 
   .fotoPedro {
-    width: 90vw;
+    width: 60vw;
   }
 
-  .light {
-    width: 50vw;
-    height: 40px;
-    font-size: 0.7rem;
-  }  
-}
+ }
