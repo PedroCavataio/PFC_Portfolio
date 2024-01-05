@@ -72,7 +72,7 @@
 @media (max-width: 768px) {
   .fraseLanding {
     width: 90%;
-    margin-top: 18%;
+    margin-top: 12%;
   }
 
   .destacado {
@@ -88,16 +88,10 @@
     width: 30vw;
     height: 50px;
   }
-
-
 }
 
 
 @media (max-width: 480px) {
-  .fraseLanding {
-    font-size: 18px;
-    margin-top: 25%;
-  }
 
   .destacado {
     width: 90%;
@@ -114,7 +108,5 @@
     width: 50vw;
     height: 40px;
     font-size: 0.7rem;
-  }
-
-  
+  }  
 }

@@ -45,7 +45,7 @@ const Trabajo = () => {
 
 
   useEffect(() => {
-    navigate("/trabajo#astingRef");
+    navigate("/trabajo#CastingRef");
   }, [navigate]);
 
   return (

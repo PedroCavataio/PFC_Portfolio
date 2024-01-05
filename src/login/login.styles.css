@@ -90,62 +90,53 @@
 
 
 @media (max-width: 780px) {
+
+  .nombre-image {
+    top: 5%;
+    left: 50%; 
+    transform: translateX(-55%); 
+    z-index: 999;
+  }  
+ 
+   .hola {
+    font-size: 3rem; 
+    margin-top: 20vw;
+    max-width: none;
+    text-align:left;
+  }
+
   .login-groupD {
-    font-size: 5vw;
-    width: 100%;       
+    font-size: 1rem;
+    width: 100%; 
+    max-width: none; 
+    text-align:left; 
+    margin-left: 0;     
   }
 
   .login-button{
-    font-size: 4vw;
-    width: 30vw;
+    font-size: 1rem;
+    width: 100%;
   }
-
-  .hola {
-    font-size: 3rem; 
-    margin-top: 40vw;
-    align-items: center;
-  }
-
-  .login-input {    
-    width: 50vw;    
-  }
-
 }
 
 @media (max-width: 480px) {  
-
-  .contenedor {    
-    margin: 0 auto;
-    }
-  
-  .nombre-image {
-  position: absolute;
-  top: 5vw;
-  left: 5vw;
-  height: 9%;
-  }
-
-  .hola {
-    font-size: 2rem; 
-    margin-top: 40vw;
-    align-items: center;
-  }
+   
+   .nombre-image {
+    top: 5%;
+    left: 50%; 
+    transform: translateX(-55%); 
+    z-index: 999;
+  }  
 
   .login-input {
     margin-top: 5%; 
     width: 60vw;
     align-items: center;
-  }
-
-  .login-groupD {
-    font-size: 4vw;
-    width: 90%; 
-    align-items: center;
-  }
+  } 
 
   .login-button{
-    font-size: 4vw;
-    width: 40vw;
+    font-size: 1rem;
+    width: 100%;
   }
 
 }

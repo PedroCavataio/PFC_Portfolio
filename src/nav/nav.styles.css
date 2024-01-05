@@ -1,196 +1,141 @@
 .desplegable {
-  background: #02253a ;
-  position: fixed; /* Ancla la barra en la parte superior */
-  top: 0; /* Coloca la barra en la parte superior de la pantalla */
-  /* left: 0;  *//* Ancla la barra en el lado izquierdo */
+  background: #02253a;
+  position: fixed;
+  top: 0;
   height: 12%;
-  width: 100%; /* Ocupa todo el ancho de la pantalla */
-  display: flex; /* Agrega display flex para alinear los elementos */
-  justify-content: flex-end; /* Distribuye los elementos a lo largo de la barra */
-  align-items: center;  
-  padding: 10px; /* Añade espaciado interior para los elementos dentro de la barra */  
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  opacity: 0; 
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  opacity: 0;
   animation: fade-in 1s ease-in-out forwards;
-  z-index: 1;   
+  z-index: 1;
 }
-  
+
 .barras {
-  background: rgb(237, 100, 100);
-  display: none; 
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
   padding: 10px;
   z-index: 999;
-} 
-
+}
 
 @keyframes fade-in {
   from {
-    opacity: 0;
+    opacity: 1;
   }
   to {
     opacity: 1;
   }
 }
 
-.desplegableMiTrabajo ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: -1vw;
-  background-color: #07789477;
-  width: 15vw;  
- }
-
-.desplegableMiTrabajo .open ul {
-  display: flex;
-  flex-direction: column;  
+.nombreImagenLogo {
+  position: fixed;
+  top: 0.6%;
+  left: 4%;
+  height: 14%;
+  z-index: 999;
 }
 
-.desplegableMiTrabajo:hover ul {
-  display: flex;
-  flex-direction: column;  
-}
-
-.desplegableMiTrabajo ul li {
-  padding: 10px;
-}
-
-.submenu {
-  list-style: none;
+ul {
+  cursor: pointer;
   padding: 0;
-  margin-left: 67.5vw;
-  margin-top: -2vw;
+  margin: 0;
   display: flex;
-  flex-direction: column; 
-  width: 10vw; 
+  flex-direction: row;
 }
 
-.desplegableMiTrabajo .submenu a {
-  color: #e9ebee; 
+li {
+  list-style: none;
+  margin-right: 30px;
+  transition: color 0.3s;
+}
+
+ul li a.active {
+  color: rgba(2, 150, 155, 1);
+}
+
+nav a {
+  color: rgb(250, 247, 247);
   text-decoration: none;
-  font-size: 1rem; 
-  padding: 8px;
-  transition: background 0.3s, color 0.3s;
-  text-align: left;
-  margin-left: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px;
+  display: block;
 }
 
-.desplegableMiTrabajo .submenu a:hover {
-  background: rgba(226, 106, 27, 0); 
-  color: rgb(26, 25, 25);
-  text-decoration: underline;
+ul li a:hover {
+  background: rgba(210, 105, 30, 0);
+  color: rgb(160, 160, 160);
 }
 
-  .nombreImagenLogo {
-    position: fixed;
-    top: 0.6%;
-    left: 4%;    
-    height: 14%;
-    z-index: 999;
-  }
-     
-  ul {
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-  }  
-  
-  li {
-    list-style: none;
-    margin-right: 30px;
-    transition: color 0.3s; 
-  }
+@media (max-width: 850px) {  
 
- ul li a.active {
-    color: rgba(2, 150, 155, 1);
-  }
-
- nav a{
-    color: rgb(250, 247, 247);
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 10px;
+  .barras {
     display: block;
   }
-  
-  ul li a:hover {
-    background: rgba(210, 105, 30, 0);
-    color: rgb(160, 160, 160);
+
+  .desplegable {
+    transform: translate(-100%);
+    font-size: 1.5rem;
+    width: 100%;
+    z-index: 999;
   }
-  
-  
-  @media(max-width: 850px){
-    .barras{
-        background: rgba(237, 100, 100, 0);
-        display: block;
-    }
-  
-    .desplegable {
-        transform:  translate(-100%);
-        transition: 0.5s;
-        font-size: 1.5rem;
-        width: 50%;
-        background: rgba(red, green, blue, alpha);
-    }
-  
-    ul {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-  
-    button {
-        margin: 10px;
-        border: none;
-    }
-  
-    li a {
-        padding: 20px;
-        display: block;
-        text-align: left;
-    }
-  
-    .boton_menu {
-        background-image: url('../assets/iconoMenuSinFondo.png');        
-        background-repeat: no-repeat;
-        height: 30px;
-        width: 30px;
-        background-size: 30px;
-        background-position: center;
-    }
-  
-    .abrir_menu {
-        transform: translate(0%);
-        transition: 0.5s;
-        width: 50%;
-        background: rgba(30, 30, 30, 0.6);
-        backdrop-filter: blur(2px);
-    }
-  
-    .colocar_x {
-        background-image: url('../assets/cerrarSinFondo.png');        
-        background-repeat: no-repeat;
-        height: 30px;
-        width: 30px;
-        background-size: 30px;
-        background-position: center;
-    }
+
+  .nombreImagenLogo {
+    top: 5%;
+    left: 50%; 
+    transform: translateX(-73%); 
+    z-index: 999;
   }
-  
-  @media(max-width: 500px){
-    .desplegable{
-        width: 100%;
-        font-size: 1.6rem;
-    }
+
+  ul {
+    margin-top: 25%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
-  
-  
+
+  .abrir_menu {
+    transform: translate(0%);
+    transition: (0.5sS);
+    width: 100%;
+    height: 100%;
+    background: rgb(4, 45, 65);
+    backdrop-filter: blur(2px);
+  }
+
+  .button_menu {
+    /* background-image: url(../assets/cerrarSinFondo.png); */
+    /* background-image: url(../assets/iconoMenuSinFondo.png); */
+    /*  background-color: #8cf305;
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+      background-size: 60px;
+      background-position: center;
+      margin: 60px;
+      border: none; */
+  }
+
+  .colocar_x {
+    background-image: url(../assets/cerrarSinFondo.png);
+    background-color: #f3f3f0;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+    background-position: center;
+    border: none;
+  }
+
+  li a {
+    margin-top: 40px;
+    padding: 20px;
+    display: block;
+  }
+}

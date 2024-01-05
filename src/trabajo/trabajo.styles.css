@@ -11,7 +11,7 @@
 .containerJob {
   display: grid;
   grid-template-columns: repeat(2, 1fr);   
-  margin-top: 15%;   
+  margin-top: 12vw;   
 }
 
 .trabajo-container {
@@ -465,23 +465,13 @@
   
 
   .tituloProyectos {
-    font-size: 1rem;
+    font-size: 1.2rem;
     opacity: 1;
     justify-content:center; 
     align-items: center;
-  }
+  }  
+
   
-
-  .footer {
-    height: auto; 
-  }
-
-  .scroll-button {
-    position: fixed;
-    bottom: 10px; 
-    right: 5%; 
-    z-index: 999;
-  }
 
   .image-row {
     max-width: 50%;  
@@ -520,8 +510,23 @@
   .sequelize { 
     filter: none; 
     opacity: 1; 
-    max-width: 65%;
+    max-width: 55%;
    transform: scale(1);
   }
 
+  .scroll-button {
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    bottom: 0;
+    right: 0;    
+    margin: 0;       
+    font-size: 1rem;
+    color: #04b8b8;
+    background-color: #242923;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 999;
+  }
+
+  
 }

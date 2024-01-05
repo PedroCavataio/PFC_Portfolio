@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./nav.styles.css";
 import pedroCavataio from "../assets/LogoPFC.png";
 import { NavLink } from "react-router-dom";
+import Cerrar from "../assets/cerrar.svg"
 import {
   CastingRef,
   RickMortyRef,
@@ -102,71 +103,17 @@ function Nav() {
               </NavLink>
             </li>
 
-
             <li className={activeItem === "/landing" ? "active" : ""}>
               <NavLink to="/landing" onClick={() => setActiveItem("/landing")}>
                 Inicio
               </NavLink>
             </li>
 
-           {/*  <li className={activeItem === "/trabajo" ? "active" : ""}>
+            <li className={activeItem === "/trabajo" ? "active" : ""}>
               <NavLink to="/trabajo" onClick={() => setActiveItem("/trabajo")}>
                 Mi trabajo
               </NavLink>
-            </li> */}
-
-<nav
-              id="menuMiTrabajo"
-              className={`desplegableMiTrabajo ${isMenuOpen ? "open" : ""}`}
-              onMouseEnter={handleMenuHover}
-              onMouseLeave={handleMenuLeave}
-            >
-              <li className={activeItem === "/trabajo" ? "active" : ""}>
-                <NavLink
-                  to="/trabajo"
-                  onClick={() => {
-                    setActiveItem("/trabajo");
-                    handleSectionClick(CastingRef);
-                  }}
-                >
-                  Mi trabajo
-                </NavLink>
-                {isMenuOpen && (
-                  <ul className="submenu">
-                    <li>
-                      <a onClick={() => handleSectionClick(CastingRef)}>
-                        Casting APP - Proyecto grupal
-                      </a>
-                    </li>
-                    <li>
-                      <a onClick={() => handleSectionClick(RickMortyRef)}>
-                        SPA Rick & Morty - Api
-                      </a>
-                    </li>
-                    <li>
-                      <a onClick={() => handleSectionClick(SPAcountriesRef)}>
-                        SPA Countries - Api
-                      </a>
-                    </li>
-                    <li>
-                      <a onClick={() => handleSectionClick(ControlRef)}>
-                        Control PK-AEP AA2000
-                      </a>
-                    </li>
-                    <li>
-                      <a onClick={() => handleSectionClick(ProximamenteRef)}>
-                        En construccion 
-                      </a>
-                    </li>
-                  </ul>
-                )}
-              </li>
-            </nav>
-
-
-
-
-
+            </li>
 
             <li className={activeItem === "/about" ? "active" : ""}>
               <NavLink to="/about" onClick={() => setActiveItem("/about")}>
