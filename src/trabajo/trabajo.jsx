@@ -25,6 +25,7 @@ import FormsPree from "../assets/formsPree.png";
 import NodeMailer from "../assets/nodeMailer.png";
 import ControlAep from "../assets/ControlAEP.xlsx";
 import { useNavigate } from "react-router-dom";
+import pedroCavataio from "../assets/LogoPFC.png";
 
 export const CastingRef = React.createRef();
 export const RickMortyRef = React.createRef();
@@ -50,6 +51,9 @@ const Trabajo = () => {
 
   return (
     <>
+    <div className="image-logo">
+        <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" />
+      </div>
       <div className="background">
         <div className="containerJob">
           <div className="trabajo-container" id="castingRef" ref={CastingRef}>

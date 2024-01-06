@@ -25,7 +25,7 @@
   color: #f1f1f1;
   font-size: 1.5rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  width: 60%;
+  width: 40%;
   margin-top: 6%;
   text-align: left;
   z-index: 1;
@@ -81,8 +81,8 @@
 @media (max-width: 768px) {
 
   .nombre-image {
-    position: absolute;
-    top: 1%;
+    position: absolute; 
+    top: 1%;   
     left: 10%;
     height: 12%;
   }
@@ -102,7 +102,8 @@
     width: 50vw;
   }
 
-  .light {   
+  .light {  
+   
     width: 100%;
     position: fixed;
     height: 8%;
@@ -120,7 +121,7 @@
 
   .nombre-image {
     position: absolute;
-    top: 2%;
+    top: 1%;
     left: 10%;
     height: 8%;
   }

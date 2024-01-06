@@ -42,8 +42,7 @@ const Landing = ({ userName }) => {
 
   return (
     <>
-
-<div className="image-logo">
+      <div className="image-logo">
         <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" />
       </div>
       <Nav />
@@ -52,13 +51,8 @@ const Landing = ({ userName }) => {
           Con más de 20 años de experiencia en el mundo laboral, mi espíritu
           emprendedor transitó con éxito hacia el sector informático como
           Frontend Developer.
-          <br />
-          <span className="destacado">
-          He seleccionado especialmente para tí, algunos de los proyectos en los que he estado involucrado.
-          </span>
         </h1>
 
-       
         <div className="foto-container">
           <img
             src={Foto}
@@ -71,7 +65,7 @@ const Landing = ({ userName }) => {
             onMouseEnter={handleLightHover}
             onMouseLeave={handleLightLeave}
           >
-            Este soy yo!&nbsp;&nbsp; <span className="arrow">▲</span>              
+            Este soy yo!&nbsp;&nbsp; <span className="arrow">▲</span>
           </button>
         </div>
       </div>

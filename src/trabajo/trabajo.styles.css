@@ -14,6 +14,13 @@
   margin-top: 12vw;   
 }
 
+.nombre-image {
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  height: 12%;
+}
+
 .trabajo-container {
   display: flex;
   flex-direction: column;
@@ -53,8 +60,6 @@
   flex-basis: calc(25% - 3px); 
   margin-top: 15px;   
 }
-
-
 
 .image-container {
   position: relative;
@@ -444,6 +449,13 @@
     text-align: center; 
   }
 
+  .nombre-image {
+    position: absolute;
+    top: 1%;
+    left: 10%;
+    height: 12%;
+  }
+
   .image-container {
     margin-left: 0;
     justify-content:center; 
@@ -465,18 +477,20 @@
   
 
   .tituloProyectos {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     opacity: 1;
     justify-content:center; 
     align-items: center;
   }  
 
   .image-row {
-    max-width: 50%;  
-    margin-top: 30%;      
-    justify-content:center;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    max-width: 100%;  
+    margin-top: 30%;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
   }
   
   .image-text {  
