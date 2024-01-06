@@ -1,4 +1,5 @@
-import React, { useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./trabajo.styles.css";
 import CountriesGris from "../assets/countriesDeployGris.png";
 import Countries from "../assets/countriesDeploy.png";
@@ -24,7 +25,6 @@ import Bootstrap from "../assets/bootstrap.png";
 import FormsPree from "../assets/formsPree.png";
 import NodeMailer from "../assets/nodeMailer.png";
 import ControlAep from "../assets/ControlAEP.xlsx";
-import { useNavigate } from "react-router-dom";
 import pedroCavataio from "../assets/LogoPFC.png";
 
 export const CastingRef = React.createRef();
@@ -36,6 +36,8 @@ export const ProximamenteRef = React.createRef();
 
 
 const Trabajo = () => {
+  const [textColor, setTextColor] = useState('#04b8b8');
+
   const navigate = useNavigate();
   const scrollToTop = () => {
     window.scrollTo({
@@ -44,6 +46,13 @@ const Trabajo = () => {
     });
   };
 
+  const handleButtonClick = () => {
+    setTextColor('#e1e9e9');
+    scrollToTop(); 
+    setTimeout(() => {
+      setTextColor('#04b8b8');
+    }, 300); 
+  };
 
   useEffect(() => {
     navigate("/trabajo#CastingRef");
@@ -51,12 +60,12 @@ const Trabajo = () => {
 
   return (
     <>
-    <div className="image-logo">
+      <div className="image-logo">
         <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" />
       </div>
       <div className="background">
         <div className="containerJob">
-          <div className="trabajo-container" id="castingRef" ref={CastingRef}>
+          <div className="trabajo-container" id="CastingRef" ref={CastingRef}>
             <p className="tituloProyectos">Casting APP - Proyecto grupal</p>
             <div className="deploy">
               <a
@@ -137,13 +146,17 @@ const Trabajo = () => {
             </div>
           </div>
 
-          <div  className="trabajo-container"
+          <div
+            className="trabajo-container"
             id="rickMortyRef"
-            ref={RickMortyRef}>
-            
+            ref={RickMortyRef}
+          >
             <p className="tituloProyectos">SPA Rick & Morty - Api</p>
             <div className="deploy">
-              <a href="https://pedrocavataio.github.io/rick_and_morty/" target="_blank">
+              <a
+                href="https://pedrocavataio.github.io/rick_and_morty/"
+                target="_blank"
+              >
                 <div className="image-container left">
                   <img
                     src={RickGris}
@@ -198,11 +211,11 @@ const Trabajo = () => {
             </div>
           </div>
 
-
-          <div  className="trabajo-container"
+          <div
+            className="trabajo-container"
             id="SPAcountriesRef"
-            ref={SPAcountriesRef}>
-
+            ref={SPAcountriesRef}
+          >
             <p className="tituloProyectos">SPA Countries - Api</p>
             <div className="deploy">
               <a href="https://www.umet.edu.ar" target="_blank">
@@ -257,14 +270,16 @@ const Trabajo = () => {
                   <p className="image-text">Express</p>
                 </div>
                 <div className="image-item">
-                  <img src={PostgreSQL} alt="postgreSQL" className="postgreSQL" />
+                  <img
+                    src={PostgreSQL}
+                    alt="postgreSQL"
+                    className="postgreSQL"
+                  />
                   <p className="image-text">PostgreSQL</p>
                 </div>
               </div>
             </div>
           </div>
-
-          
 
           <div className="trabajo-container" id="controlRef" ref={ControlRef}>
             <p className="tituloProyectos">Control PK-AEP AA2000</p>
@@ -293,9 +308,11 @@ const Trabajo = () => {
             </div>
           </div>
 
-          <div className="trabajo-container"
+          <div
+            className="trabajo-container"
             id="proximamenteRef"
-            ref={ProximamenteRef}>
+            ref={ProximamenteRef}
+          >
             <p className="tituloProyectos">
               Portfolio Delfina Deluca - en construcción
             </p>
@@ -346,9 +363,13 @@ const Trabajo = () => {
           </div>
         </div>
 
-         <div className="footer">
-          <button onClick={scrollToTop} className="scroll-button">
-            Volver arriba
+        <div className={`footer`}>
+          <button
+            onClick={handleButtonClick}
+            className="scroll-button"
+            style={{ color: textColor }}
+          >
+            ▲
           </button>
         </div>
       </div>

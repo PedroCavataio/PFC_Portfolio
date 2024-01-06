@@ -39,53 +39,31 @@
 .sectionCV {
   display: flex;  
   align-items: center;
+  justify-content: center;
   text-align: center;  
 }
 
-.CV {
-  height: 150px;
-  transition: transform 0.3s ease;
-}
-
-.CV:hover {
-  transform: scale(1.2);
- 
+.ubicacion-container {
+  display: flex;
+  align-items: center;
 }
 
 .ubicacion {
-  height: 60px;  
+  height: 60px;
   transition: transform 0.3s ease;  
 }
 
+.CV {
+  height: 140px;
+  transition: transform 0.3s ease;
+  margin-left: 12vw; 
+}
+
+.CV:hover,
 .ubicacion:hover {
   transform: scale(1.2);
 }
 
-.ubicacion:hover + .españa {
-  opacity: 1; 
-}
-
-.españa {
-  color: #f5f4f4; 
-  font-size: 18px;   
-  
-  opacity: 0; 
-  transition: opacity 0.3s ease; 
-  }
-
-  .es {
-    color: red;
-  }
-  
-  .pa {
-    color: yellow;
-  }
-  
-  .ña {
-    color: red;
-  }
-
- 
   .section p {
   margin: 0;
   padding: 15px;   
@@ -157,8 +135,89 @@
   height: 60px;  
 }
 
-.puntos {
-  height: 60px;
-  margin-bottom: 10%;
-  margin-top: -102%;
+.scroll-button {
+  width: 10vw;
+  position: fixed; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  bottom: 20px; 
+  font-size: 0.8rem;
+  color: #04b8b8;
+  background-color: #242923;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;  
+  margin: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  z-index: 999;
+}
+
+.scroll-button:hover {
+  color: #04b8b8;
+  background-color: #242923;
+  box-shadow: 0 0 15px rgba(2, 150, 155, 0);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.button-clicked .scroll-button {
+  background-color: #e1e9e9;
+  color: #242923;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .about-container {    
+    background: #0a2841;    
+  }
+
+  .ubicacion {
+    margin-left: 11vw;   
+  }
+  
+  .CV {
+    margin-left: 1vw; 
+  }  
+
+  .sectionCV {
+    display: flex;  
+    align-items: center;
+    text-align: center;  
+  }
+
+  .sections-container {
+    padding: 3%;
+    align-items: center;
+  }
+
+  .section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info,
+  .data,
+  .images-container {
+    max-width: 100%;
+    margin-top: 8%;
+  }
+
+  .scroll-button {
+    max-width: none;
+    width: 100%;
+    height: 8%;
+    bottom: 0;
+    right: 0;    
+    margin: 0;       
+    font-size: 1rem;
+    color: #04b8b8;
+    background-color: #242923;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 999;
+  }
+
 }

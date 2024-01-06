@@ -88,22 +88,15 @@
   }
 
   .fraseLanding {
-    width: 90%;
-    margin-top: 12%;
+    width: 90%;     
   }
-
-  .destacado {
-    width: 90%;
-    margin-top: 18%;
-  }
-
+  
   .fotoPedro {
-    margin-top: 1%;
+    margin-top: 20%;
     width: 50vw;
   }
 
-  .light {  
-   
+  .light {     
     width: 100%;
     position: fixed;
     height: 8%;

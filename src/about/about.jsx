@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./about.styles.css";
 import figuraPuntos from "../assets/figuraPuntos.png";
@@ -10,9 +10,26 @@ import Tecnocasa from "../assets/tecnocasa.png";
 import Umet from "../assets/umet.png";
 import Ubicacion from "../assets/ubicacionMapaBlanco.png";
 import Curriculum from "../assets/CVpedroCavataio_fullStackDeveloper.pdf";
+import pedroCavataio from "../assets/LogoPFC.png";
 
 const About = () => {
+  const [textColor, setTextColor] = useState("#04b8b8");
+
   const navigate = useNavigate();
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleButtonClick = () => {
+    setTextColor("#e1e9e9");
+    scrollToTop();
+    setTimeout(() => {
+      setTextColor("#04b8b8");
+    }, 300);
+  };
 
   const handleEnter = () => {
     navigate("/landing");
@@ -20,17 +37,20 @@ const About = () => {
 
   return (
     <div className="about-container">
+      <div className="image-logo">
+        <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" />
+      </div>
       <div className="sections-container">
         <div className="section">
           <div className="info">
             <div className="contAbout-texto">
               <div className="sectionCV">
+              <div className="ubicacion-container">
                 <img src={Ubicacion} alt="Ubicacion" className="ubicacion" />
                 <p className="españa">
-                  <span className="es">ES</span>
-                  <span className="pa">PA</span>
-                  <span className="ña">ÑA</span>
+                  España
                 </p>
+                </div>
                 <a href={Curriculum} target="_blank">
                   <img src={DescargaCV} alt="CV" className="CV" />
                 </a>
@@ -56,18 +76,18 @@ const About = () => {
           <div className="info">
             <div className="contAbout-texto">
               <p>
-                Mi participación en el bootcamp de Henry ha sido una
-                experiencia transformadora. A lo largo del programa, he
-                adquirido conocimientos sólidos en programación y desarrollo web
-                a través de un enfoque práctico y colaborativo. Los proyectos
-                desafiantes en los que trabajé en equipo no solo mejoraron mis
-                habilidades técnicas, sino también mis habilidades de
-                comunicación y resolución de problemas. Uno de los aspectos más
-                destacados fue el apoyo constante que recibí de los instructores
-                y mentores altamente calificados. Esto hizo que mi proceso de
-                aprendizaje fuera más efectivo y gratificante. Estoy emocionado
-                por lo que el futuro tiene reservado para mí gracias a esta
-                experiencia educativa.
+                Mi participación en el bootcamp de Henry ha sido una experiencia
+                transformadora. A lo largo del programa, he adquirido
+                conocimientos sólidos en programación y desarrollo web a través
+                de un enfoque práctico y colaborativo. Los proyectos desafiantes
+                en los que trabajé en equipo no solo mejoraron mis habilidades
+                técnicas, sino también mis habilidades de comunicación y
+                resolución de problemas. Uno de los aspectos más destacados fue
+                el apoyo constante que recibí de los instructores y mentores
+                altamente calificados. Esto hizo que mi proceso de aprendizaje
+                fuera más efectivo y gratificante. Estoy emocionado por lo que
+                el futuro tiene reservado para mí gracias a esta experiencia
+                educativa.
               </p>
             </div>
           </div>
@@ -78,7 +98,7 @@ const About = () => {
           </div>
         </div>
 
-        <hr className="section-divider" />
+        <hr className="section-dividerCV" />
 
         <div className="section">
           <div className="data">
@@ -124,7 +144,7 @@ const About = () => {
           </div>
         </div>
 
-        <hr className="section-divider" />
+        <hr className="section-dividerCV" />
 
         <div className="section">
           <div className="data">
@@ -170,7 +190,7 @@ const About = () => {
           </div>
         </div>
 
-        <hr className="section-divider" />
+        <hr className="section-dividerCV" />
 
         <div className="section">
           <div className="data">
@@ -215,7 +235,7 @@ const About = () => {
           </div>
         </div>
 
-        <hr className="section-divider" />
+        <hr className="section-dividerCV" />
 
         <div className="section">
           <div className="data">
@@ -270,13 +290,17 @@ const About = () => {
               <p></p>
             </div>
           </div>
-
-          <div className="contAbout-texto">
-            <p>
-              <img src={figuraPuntos} alt="puntos" className="puntos" />
-            </p>
-          </div>
         </div>
+      </div>
+
+      <div className={`footer`}>
+        <button
+          onClick={handleButtonClick}
+          className="scroll-button"
+          style={{ color: textColor }}
+        >
+          ▲
+        </button>
       </div>
     </div>
   );

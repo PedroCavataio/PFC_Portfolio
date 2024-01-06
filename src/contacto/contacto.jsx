@@ -5,6 +5,7 @@ import Linkedin from "../assets/linkedin.png";
 import GitHub from "../assets/github.png";
 import Whatsapp from "../assets/whatsapp.png";
 import Gmail from "../assets/gmail.png";
+import pedroCavataio from "../assets/LogoPFC.png";
 
 const Contacto = () => {
   const navigate = useNavigate();
@@ -26,7 +27,11 @@ const Contacto = () => {
   };
 
   return (
+    
     <div className="contacto-container">
+      <div className="image-logo">
+        <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" />
+      </div>
       <div className="container p-4">
         <div className="texto-encabezado">
           <h1 className="titulo">¡Envíame un mensaje!</h1>
