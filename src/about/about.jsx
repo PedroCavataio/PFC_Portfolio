@@ -37,8 +37,8 @@ const About = () => {
 
   return (
     <div className="about-container">
-      <div className="image-logo">
-        <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" />
+      <div>
+        <img src={pedroCavataio} alt="pedroIndex" className="nombreImageVista" />
       </div>
       <div className="sections-container">
         <div className="section">

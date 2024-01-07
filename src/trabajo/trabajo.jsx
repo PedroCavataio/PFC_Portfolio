@@ -60,8 +60,8 @@ const Trabajo = () => {
 
   return (
     <>
-      <div className="image-logo">
-        <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" />
+      <div>
+        <img src={pedroCavataio} alt="pedroIndex" className="nombreImageVista" />
       </div>
       <div className="background">
         <div className="containerJob">

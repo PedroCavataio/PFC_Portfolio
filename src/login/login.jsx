@@ -77,7 +77,7 @@ const Login = ({ onLogin, access }) => {
   return (
      <form className="login-container" onSubmit={handleSubmit}>
       <div className="image-logo">
-        <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" />
+        <img src={pedroCavataio} alt="pedroIndex" className="nombreImage" />
       </div>
       <div className="contenedor">
         <div className="hola">ALOHA!! </div>

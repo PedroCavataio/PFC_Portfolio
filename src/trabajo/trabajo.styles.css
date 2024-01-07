@@ -14,7 +14,7 @@
   margin-top: 12vw;   
 }
 
-.nombre-image {
+.nombreImageVista {
   position: absolute;
   top: 2%;
   left: 10%;
@@ -110,8 +110,6 @@
   margin-left: 20px; 
 }
 
-
-
 .tituloProyectos {
   opacity: 0;
   color: #e6e3e3; 
@@ -127,7 +125,6 @@
   opacity: 1; 
   transform: scale(1.1);
 }
-
 
 .excel {
   margin-top: 5%; 
@@ -443,7 +440,7 @@
 @media (max-width: 768px) {
   
   .trabajo-container {
-    margin-top: 5%; 
+    margin-top: 10%; 
   }
 
   .containerJob {
@@ -455,11 +452,11 @@
     text-align: center; 
   }
 
-  .nombre-image {
+  .nombreImageVista {
     position: absolute;
-    top: 1%;
-    left: 10%;
-    height: 12%;
+    top: 2%;   
+    left: 3%;
+    height: 10%;
   }
 
   .image-container {
@@ -481,7 +478,6 @@
     opacity: 0;
   }
   
-
   .tituloProyectos {
     font-size: 1.3rem;
     opacity: 1;
@@ -528,22 +524,25 @@
     filter: none; 
     opacity: 1; 
     max-width: 55%;
-   transform: scale(1);
+    transform: scale(1);
   }
-
-  .scroll-button {
-    max-width: none;
-    width: 100%;
-    height: 8%;
-    bottom: 0;
-    right: 0;    
-    margin: 0;       
-    font-size: 1rem;
-    color: #04b8b8;
-    background-color: #242923;    
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    z-index: 999;
-  }
-
   
+  .scroll-button {
+    width: auto;
+    position: fixed;    
+    height: 8%;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
+    color: #04b8b8;
+    background-color: #242923;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  }  
+}
+
+@media (max-width: 450px) {
+  
+  .trabajo-container {
+    margin-top: 20%; 
+  }
 }

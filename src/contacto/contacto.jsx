@@ -27,11 +27,11 @@ const Contacto = () => {
   };
 
   return (
-    
-    <div className="contacto-container">
-      <div className="image-logo">
-        <img src={pedroCavataio} alt="pedroIndex" className="nombre-image" />
+    <>
+      <div>
+        <img src={pedroCavataio} alt="pedroIndex" className="nombreImageVista" />
       </div>
+    <div className="contacto-container">
       <div className="container p-4">
         <div className="texto-encabezado">
           <h1 className="titulo">¡Envíame un mensaje!</h1>
@@ -103,6 +103,7 @@ const Contacto = () => {
         </a>
       </div>
     </div>
+    </>
   );
 };
 

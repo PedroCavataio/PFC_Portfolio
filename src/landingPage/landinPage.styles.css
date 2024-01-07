@@ -13,7 +13,7 @@
   z-index: -2;
 }
 
-.nombre-image {
+.nombreImageVistas {
   position: absolute;
   top: 2%;
   left: 10%;
@@ -80,11 +80,11 @@
 
 @media (max-width: 768px) {
 
-  .nombre-image {
+  .nombreImageVistas {
     position: absolute; 
-    top: 1%;   
-    left: 10%;
-    height: 12%;
+    top: 2%;   
+    left: 3%;
+    height: 10%;
   }
 
   .fraseLanding {
@@ -92,17 +92,17 @@
   }
   
   .fotoPedro {
-    margin-top: 20%;
+    margin-top: 10%;
     width: 50vw;
   }
 
   .light {     
-    width: 100%;
-    position: fixed;
+    width: auto;
+    position: fixed;    
     height: 8%;
-    bottom: 0;
-    right: 0;
-    margin: 0;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
     color: #04b8b8;
     background-color: #242923;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
@@ -112,11 +112,11 @@
 
 @media (max-width: 480px) {
 
-  .nombre-image {
+  .nombreImageVistas {
     position: absolute;
-    top: 1%;
-    left: 10%;
-    height: 8%;
+    top: 2%;
+    left: 3%;
+    height: 10%;
   }
 
   .destacado {

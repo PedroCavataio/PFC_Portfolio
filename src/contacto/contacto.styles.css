@@ -12,12 +12,12 @@
   z-index: -1;
 }
 
-.nombre-image {
+/* .nombre-image {
   position: absolute;
   top: 2%;
   left: 10%;
   height: 2%;
-}
+} */
 
 .container.p-4 {
   margin-top: 7%;
@@ -86,14 +86,16 @@
   box-shadow: 0 0 15px rgba(2, 150, 155, 0);
 }
 
-.redes-sociales {
+.redes-container {
+  position: fixed;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Alinea verticalmente en el modo responsive */
-  margin-top: 10px;
-  margin-bottom: 10px; /* Espaciado entre los iconos */
-  width: 50%; /* Ajusta el ancho según sea necesario */
-  margin-left: 25%; /* Centra en la pantalla en el modo responsive */
+  align-items: flex-end;
+  justify-content: center;
+  top: 60%;
+  right: 15%;
+  padding: 10%;
+  transform: translateY(-50%);
 }
 
 .linkedin,
@@ -101,82 +103,7 @@
 .whatsapp,
 .gmail {
   height: 40px;
-  transition: transform 0.3s ease;
-  margin-bottom: 10px; /* Espaciado entre los iconos */
-}
-
-.linkedin:hover,
-.github:hover,
-.whatsapp:hover,
-.gmail:hover {
-  transform: scale(1.2);
-}
-
-/* .linkedin {
-  position: absolute;
-  right: 14%; 
-  top: 32%; 
-  transform: translateY(-50%);
-  height: 40px;
-  transition: transform 0.3s ease; 
-}
-
-.linkedin:hover {
-  transform: translateY(-50%) scale(1.2);
-}
-
-.github {
-  position: absolute;
-  right: 14%; 
-  top: 50.2%; 
-  transform: translateY(-50%);
-  height: 40px;
-  transition: transform 0.3s ease; 
-}
-
-.github:hover {
-  transform: translateY(-50%) scale(1.2);
-}
-
-.whatsapp {
-  position: absolute;
-  right: 14%; 
-  top: 68%; 
-  transform: translateY(-50%);
-  height: 40px;
-  transition: transform 0.3s ease; 
-}
-
-.whatsapp:hover {
-  transform: translateY(-50%) scale(1.2);
-}
-
-.gmail {
-  position: absolute;
-  right: 13.5%; 
-  top: 84%; 
-  transform: translateY(-50%);
-  height: 40px;
-  transition: transform 0.3s ease; 
-}
-
-.gmail:hover {
-  transform: translateY(-50%) scale(1.2);
-} */
-
-/* .redes-sociales {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
-  width: 50%; 
-  margin-left: 25%; 
-}
-
-.linkedin,
-.github,
-.whatsapp,
-.gmail {
-  height: 40px;
+  margin-bottom: 5vw;
   transition: transform 0.3s ease;
 }
 
@@ -186,7 +113,7 @@
 .gmail:hover {
   transform: scale(1.2);
 }
- */
+
 
 @media (max-width: 768px) {
   .nombre-image {
@@ -197,7 +124,7 @@
   }
 
   .texto-encabezado {
-    margin-top: 10%;
+    margin-top: 20%;
     width: 90%;
     margin-left: 5%;
   }
@@ -216,7 +143,7 @@
     width: 90%;
   }
 
-  .redes-sociales {
+  .redes-container {
     width: 80%; 
     margin-left: 10%; 
     margin-bottom: 40%;

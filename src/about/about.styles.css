@@ -175,12 +175,14 @@
   }
 
   .ubicacion {
-    margin-left: 11vw;   
+    margin-left: 7vw;   
   }
   
   .CV {
     margin-left: 1vw; 
-  }  
+  }
+
+  
 
   .sectionCV {
     display: flex;  
