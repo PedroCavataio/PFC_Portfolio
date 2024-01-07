@@ -19,8 +19,6 @@
   position: fixed;
   top: 0;
   right: 0;
-  padding: 10px;
-  z-index: 999;
 }
 
 @keyframes fade-in {
@@ -71,28 +69,28 @@ ul li a:hover {
   color: rgb(160, 160, 160);
 }
 
-@media (max-width: 850px) {  
-
+@media (max-width: 850px) {
   .barras {
     display: block;
+    z-index: 999;
   }
 
   .desplegable {
     transform: translate(-100%);
     font-size: 1.5rem;
     width: 100%;
-    z-index: 999;
+    z-index: 900;
   }
 
   .nombreImagenLogo {
-    top: 5%;
-    left: 50%; 
-    transform: translateX(-64%); 
+    top: 10%;
+    left: 50%;
+    transform: translateX(-64%);
     z-index: 999;
   }
 
   ul {
-    margin-top: 25%;
+    margin-top: 72%;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -109,25 +107,23 @@ ul li a:hover {
   }
 
   .button_menu {
-    /* background-image: url(../assets/cerrarSinFondo.png); */
-    /* background-image: url(../assets/iconoMenuSinFondo.png); */
-    /*  background-color: #8cf305;
-      background-repeat: no-repeat;
-      width: 60px;
-      height: 60px;
-      background-size: 60px;
-      background-position: center;
-      margin: 60px;
-      border: none; */
+    background-image: url("../assets/menuRegular.png");
+    background-color:rgba(2, 150, 155, 0.29);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    background-size: 40px;
+    background-position: center;
+    border: none;
   }
 
   .colocar_x {
-    background-image: url(../assets/cerrarSinFondo.png);
-    background-color: #f3f3f0;
+    background-image: url(../assets/xRegular.png);
+    background-color:rgba(2, 150, 155, 0);    
     background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    background-size: 30px;
+    width: 60px;
+    height: 60px;
+    background-size: 40px;
     background-position: center;
     border: none;
   }

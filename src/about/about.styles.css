@@ -1,10 +1,7 @@
-
 .about-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 100vw;
-  overflow-x: hidden;
+  height: auto; 
   background: linear-gradient(
     to right,
     #0a2841 ,
@@ -14,10 +11,9 @@
     #c9caca 80%, 
     #c9caca 100% 
   );
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  position: absolute;
   z-index: -1;
+  margin: 0;
 }
 
 .sections-container {
@@ -75,13 +71,15 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: left;
   margin: 0;
+  margin-bottom: 5%;
  }
 
 .data {
   flex: 1;
   max-width: 12%;
   margin-right: 3vw;
-  margin-left: 3vw;   
+  margin-left: 3vw; 
+  margin-bottom: 2%;  
 }
 
 .info {
@@ -94,6 +92,7 @@
 .images-container {
   flex: 1;   
   margin-left: 1vw;
+  margin-bottom: 3%;
 }
 
 .section-dividerCV {
@@ -135,6 +134,12 @@
   height: 60px;  
 }
 
+/* .footer {
+  margin-top: 1%;
+  height: 10vh;
+} */
+
+
 .scroll-button {
   width: 10vw;
   position: fixed; 
@@ -152,6 +157,7 @@
   margin: 10px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   z-index: 999;
+  transition: background-color 0.3s ease;
 }
 
 .scroll-button:hover {
@@ -182,8 +188,6 @@
     margin-left: 1vw; 
   }
 
-  
-
   .sectionCV {
     display: flex;  
     align-items: center;
@@ -212,18 +216,16 @@
     margin-top: 8%;
   }
 
+  
   .scroll-button {
-    max-width: none;
     width: 100%;
+    position: fixed;
+    bottom: 1px;    
     height: 8%;
-    bottom: 0;
-    right: 0;    
-    margin: 0;       
-    font-size: 1rem;
+    margin: 0;
     color: #04b8b8;
-    background-color: #242923;    
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    z-index: 999;
-  }
+    background-color: #242923;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  }  
 
 }

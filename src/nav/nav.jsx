@@ -3,14 +3,6 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./nav.styles.css";
 import pedroCavataio from "../assets/LogoPFC.png";
 import { NavLink } from "react-router-dom";
-import Cerrar from "../assets/cerrar.svg"
-import {
-  CastingRef,
-  RickMortyRef,
-  SPAcountriesRef,
-  ControlRef,
-  ProximamenteRef,
-} from "../trabajo/trabajo";
 
 
 function Nav() {
@@ -78,19 +70,18 @@ function Nav() {
  
   return (
     <>
-    <header ref={menuRef}>
-    <div className="barras">
+      <header ref={menuRef}>
+        <div className="barras">
           <button
             onClick={abrir_cerrar_menu}
-            className="boton_menu"
+            className="button_menu"
             id="x"
-          ></button>
+          ><img /></button>
         </div>
-              
-        
+
         <nav id="menu" className="desplegable">
-        <ul>
-        <li>
+          <ul>
+            <li>
               <NavLink
                 to="/PFC_Portfolio"
                 onClick={() => setActiveItem("/landing")}
@@ -122,15 +113,16 @@ function Nav() {
             </li>
 
             <li className={activeItem === "/contacto" ? "active" : ""}>
-              <NavLink to="/contacto" onClick={() => setActiveItem("/contacto")}>
+              <NavLink
+                to="/contacto"
+                onClick={() => setActiveItem("/contacto")}
+              >
                 Contacto
               </NavLink>
             </li>
 
             <li>
-              <a href="/PFC_Portfolio">
-                Salir
-              </a>
+              <a href="/PFC_Portfolio">Salir</a>
             </li>
           </ul>
         </nav>

@@ -107,12 +107,12 @@
 
 @media (max-width: 768px) {
 
-  .nombre-image {
+/*   .nombre-image {
     position: absolute;
-    top: 1%;
+    
     left: 10%;
     height: 8%;
-  }
+  } */
 
   .texto-encabezado {
     margin-top: 20%;

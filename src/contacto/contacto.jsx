@@ -36,8 +36,8 @@ const Contacto = () => {
         <div className="texto-encabezado">
           <h1 className="titulo">¡Envíame un mensaje!</h1>
           <h2 className="sub-titulo">
-            ¿Tienes alguna pregunta o propuesta, o simplemente quieres saludar?
-            Adelante.
+            ¿Tienes alguna pregunta o propuesta, o simplemente quieres saludar?, 
+            Adelante!!.
           </h2>
         </div>
         <div className="card-body">
