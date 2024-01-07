@@ -26,8 +26,8 @@
   font-size: 1.5rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   width: 40%;
-  margin-top: 6%;
-  text-align: left;
+  margin-top: 10%;
+  text-align: center;
   z-index: 1;
 }
 
@@ -41,7 +41,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center; 
+  margin-top: 3%; 
 }
 
 .fotoPedro {
@@ -88,7 +89,8 @@
   }
 
   .fraseLanding {
-    width: 90%;     
+    width: 90%; 
+    text-align: center;    
   }
   
   .fotoPedro {
@@ -102,7 +104,7 @@
     height: 8%;
     bottom: 1px;
     left: 1px;
-    right: 1px;
+    right: 1px;    
     color: #04b8b8;
     background-color: #242923;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 

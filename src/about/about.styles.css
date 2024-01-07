@@ -201,6 +201,10 @@
     text-align: center;
   }
 
+  .contAbout-texto {    
+    font-size: 1rem;   
+   }
+
   .info,
   .data,
   .images-container {
