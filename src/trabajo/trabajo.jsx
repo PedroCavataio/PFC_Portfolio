@@ -219,7 +219,7 @@ const Trabajo = () => {
           >
             <p className="tituloProyectos">SPA Countries - Api</p>
             <div className="deploy">
-              <a href="https://www.umet.edu.ar" target="_blank">
+              <a href=" https://pedrocavataio.github.io/PI-Countries/" target="_blank">
                 <div className="image-container left">
                   <img
                     src={CountriesGris}
