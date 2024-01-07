@@ -47,7 +47,7 @@ ul {
 
 li {
   list-style: none;
-  margin-right: 80px;
+  margin-right: 50px;
   transition: color 0.3s;
 }
 
@@ -87,6 +87,10 @@ ul li a:hover {
     left: 50%;
     transform: translateX(-64%);
     z-index: 999;
+  }
+
+  li {    
+    margin-right: 10px;
   }
 
   ul {

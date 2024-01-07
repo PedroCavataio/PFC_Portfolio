@@ -296,7 +296,7 @@ const About = () => {
 
           
         </div>
-        <div className={`footer`}>
+        <div>
           <button
             onClick={handleButtonClick}
             className="scroll-button"
