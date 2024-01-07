@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   height: 12%;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -47,7 +47,7 @@ ul {
 
 li {
   list-style: none;
-  margin-right: 30px;
+  margin-right: 80px;
   transition: color 0.3s;
 }
 
