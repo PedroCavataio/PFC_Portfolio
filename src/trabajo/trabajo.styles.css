@@ -11,7 +11,7 @@
 .containerJob {
   display: grid;
   grid-template-columns: repeat(2, 1fr);   
-  margin-top: 17vw;   
+  margin-top: 15vw;   
 }
 
 .nombreImageVista {
@@ -30,7 +30,8 @@
 
 .deploy {  
   color: #00000000; 
-  background-color: #04b8b800;   
+  background-color: #04b8b800;
+  
 }
 
 .deploy:hover {
@@ -47,6 +48,7 @@
   align-items: center;
 }
 
+
 .image-text {  
   margin-top: 2%; 
   margin-bottom: 2%;
@@ -58,7 +60,7 @@
 
 .image-item {
   flex-basis: calc(25% - 3px); 
-  margin-top: 15px;   
+  margin-top: 5%; 
 }
 
 .image-container {

@@ -65,9 +65,10 @@ const Trabajo = () => {
       </div>
       <div className="background">
         <div className="containerJob">
+          
           <div className="trabajo-container" id="CastingRef" ref={CastingRef}>
-            <p className="tituloProyectos">Casting APP - Proyecto grupal</p>
             <div className="deploy">
+            <p className="tituloProyectos">Casting APP - Proyecto grupal</p>
               <a
                 href="https://deploy-sprint-2-frontend.onrender.com/"
                 target="_blank"
@@ -363,7 +364,7 @@ const Trabajo = () => {
           </div>
         </div>
 
-        <div className={`footer`}>
+        <div>
           <button
             onClick={handleButtonClick}
             className="scroll-button"
