@@ -147,6 +147,7 @@ const Trabajo = () => {
             </div>
           </div>
 
+
           <div
             className="trabajo-container"
             id="rickMortyRef"
@@ -285,7 +286,7 @@ const Trabajo = () => {
           <div className="trabajo-container" id="controlRef" ref={ControlRef}>
             <p className="tituloProyectos">Control PK-AEP AA2000</p>
             <div className="deploy">
-              <a href={ControlAep} target="_blank">
+              <a href={ControlAep} target="_blank" rel="noopener noreferrer">
                 <div className="image-container left">
                   <img
                     src={ControlGris}
