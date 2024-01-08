@@ -2,19 +2,22 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./about.styles.css";
 import figuraPuntos from "../assets/figuraPuntos.png";
-import DescargaCV from "../assets/descargaCV.png";
 import Henry from "../assets/henry.png";
 import Ivba from "../assets/ivba.png";
 import AA2000 from "../assets/aa2000.png";
 import Tecnocasa from "../assets/tecnocasa.png";
 import Umet from "../assets/umet.png";
 import Ubicacion from "../assets/ubicacionMapaBlanco.png";
+import UbicacionResponsive from "../assets/ubicacionResponsive.png";
 import Curriculum from "../assets/CVpedroCavataio_fullStackDeveloper.pdf";
 import pedroCavataio from "../assets/LogoPFC.png";
+import CVPC from "../assets/descargaCV.png";
+import CVResponsive from "../assets/descargaCVresponsive.png";
+
 
 const About = () => {
   const [textColor, setTextColor] = useState("#04b8b8");
-
+  
   const navigate = useNavigate();
   const scrollToTop = () => {
     window.scrollTo({
@@ -35,6 +38,19 @@ const About = () => {
     navigate("/landing");
   };
 
+
+  const cvImage = () => {
+    if(window.screen.width <= 780) {
+      return CVResponsive
+    } return CVPC
+  }
+
+  const ubicacionImage = () => {
+    if(window.screen.width <= 780) {
+      return UbicacionResponsive
+    } return Ubicacion
+  }
+
   return (
     <>
       <div>
@@ -51,15 +67,11 @@ const About = () => {
               <div className="contAbout-texto">
                 <div className="sectionCV">
                   <div className="ubicacion-container">
-                    <img
-                      src={Ubicacion}
-                      alt="Ubicacion"
-                      className="ubicacion"
-                    />
+                     <img src={ubicacionImage()} alt="ubicacion" className="ubicacion" />
                     <p className="españa">España</p>
                   </div>
                   <a href={Curriculum} target="_blank">
-                    <img src={DescargaCV} alt="CV" className="CV" />
+                    <img src={cvImage()} alt="CV" className="CV" />
                   </a>
                 </div>
               </div>
@@ -81,7 +93,7 @@ const About = () => {
               </div>
             </div>
             <div className="info">
-              <div className="contAbout-texto">
+              <div className="contAbout-textoDesarrollo">
                 <p>
                   Mi participación en el bootcamp de Henry ha sido una
                   experiencia transformadora. A lo largo del programa, he
@@ -122,7 +134,7 @@ const About = () => {
               </div>
             </div>
             <div className="info">
-              <div className="contAbout-texto">
+              <div className="contAbout-textoDesarrollo">
                 <p>
                   Durante mi periodo como desarrollador en el Departamento de
                   Sistemas del Instituto de Vivienda de Buenos Aires, desde
@@ -169,7 +181,7 @@ const About = () => {
               </div>
             </div>
             <div className="info">
-              <div className="contAbout-texto">
+              <div className="contAbout-textoDesarrollo">
                 <p>
                   Desde el año 2013, he ocupado el puesto de Supervisor en
                   Aeropuertos Argentina 2000 S.A., una destacada empresa en el
@@ -217,7 +229,7 @@ const About = () => {
               </div>
             </div>
             <div className="info">
-              <div className="contAbout-texto">
+              <div className="contAbout-textoDesarrollo">
                 <p>
                   En mi carrera en el sector inmobiliario, he desempeñado
                   diversas funciones, desde la intermediación en transacciones
@@ -262,7 +274,7 @@ const About = () => {
               </div>
             </div>
             <div className="info">
-              <div className="contAbout-texto">
+              <div className="contAbout-textoDesarrollo">
                 <p>
                   Mi Licenciatura en Gestión de Organizaciones ha sido un viaje
                   académico y profesional profundamente enriquecedor. Durante mi
