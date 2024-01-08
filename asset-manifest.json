@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/PFC_Portfolio/static/css/main.b802b153.css",
+    "main.css": "/PFC_Portfolio/static/css/main.cef49461.css",
     "main.js": "/PFC_Portfolio/static/js/main.a14a7c4d.js",
     "static/js/787.137c8416.chunk.js": "/PFC_Portfolio/static/js/787.137c8416.chunk.js",
     "static/media/ControlAEP.xlsx": "/PFC_Portfolio/static/media/ControlAEP.526ab3ece94cb69ffb74.xlsx",
@@ -38,12 +38,12 @@
     "static/media/whatsapp.png": "/PFC_Portfolio/static/media/whatsapp.e00b71fb082abf76ee95.png",
     "static/media/tecnocasa.png": "/PFC_Portfolio/static/media/tecnocasa.d0a6b8dfa38a017a11ca.png",
     "index.html": "/PFC_Portfolio/index.html",
-    "main.b802b153.css.map": "/PFC_Portfolio/static/css/main.b802b153.css.map",
+    "main.cef49461.css.map": "/PFC_Portfolio/static/css/main.cef49461.css.map",
     "main.a14a7c4d.js.map": "/PFC_Portfolio/static/js/main.a14a7c4d.js.map",
     "787.137c8416.chunk.js.map": "/PFC_Portfolio/static/js/787.137c8416.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b802b153.css",
+    "static/css/main.cef49461.css",
     "static/js/main.a14a7c4d.js"
   ]
 }
