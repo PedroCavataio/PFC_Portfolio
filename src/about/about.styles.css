@@ -1,15 +1,15 @@
 .about-container {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   width: 100%;
-  height: auto; 
+  height: auto;
   background: linear-gradient(
     to right,
-    #0a2841 ,
-    #0a2841  20%, 
-    #003c5f  20%, 
-    #003c5f  80%, 
-    #c9caca 80%, 
-    #c9caca 100% 
+    #0a2841,
+    #0a2841 20%,
+    #003c5f 20%,
+    #003c5f 80%,
+    #c9caca 80%,
+    #c9caca 100%
   );
   position: absolute;
   z-index: -1;
@@ -33,10 +33,10 @@
 }
 
 .sectionCV {
-  display: flex;  
+  display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;  
+  text-align: center;
 }
 
 .ubicacion-container {
@@ -46,13 +46,17 @@
 
 .ubicacion {
   height: 60px;
-  transition: transform 0.3s ease;  
+  transition: transform 0.3s ease;
+}
+
+.españa {
+  font-size: 16px;
 }
 
 .CV {
   height: 130px;
   transition: transform 0.3s ease;
-  margin-left: 12vw; 
+  margin-left: 12vw;
 }
 
 .CV:hover,
@@ -60,9 +64,9 @@
   transform: scale(1.2);
 }
 
-  .section p {
+.section p {
   margin: 0;
-  padding: 15px;   
+  padding: 15px;
 }
 
 .contAbout-texto {
@@ -72,25 +76,23 @@
   text-align: left;
   margin: 0;
   margin-bottom: 5%;
- }
+}
 
-
- .contAbout-textoDesarrollo {
+.contAbout-textoDesarrollo {
   color: #f5f5f3;
   font-size: 16px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: left;
   margin: 0;
   margin-bottom: 5%;
- }
-
+}
 
 .data {
   flex: 1;
   max-width: 12%;
   margin-right: 3vw;
-  margin-left: 3vw; 
-  margin-bottom: 2%;  
+  margin-left: 3vw;
+  margin-bottom: 2%;
 }
 
 .info {
@@ -101,7 +103,7 @@
 }
 
 .images-container {
-  flex: 1;   
+  flex: 1;
   margin-left: 1vw;
   margin-bottom: 3%;
 }
@@ -122,7 +124,7 @@
   background-color: rgb(100, 100, 98);
   border: none;
   margin: 50px 0;
-  margin-left: -20%; 
+  margin-left: -20%;
 }
 
 .henry {
@@ -134,7 +136,7 @@
 }
 
 .aa2000 {
-  height: 60px;  
+  height: 60px;
 }
 
 .umet {
@@ -142,16 +144,15 @@
 }
 
 .tecnocasa {
-  height: 60px;  
+  height: 60px;
 }
-
 
 .scroll-button {
   width: 10vw;
-  position: fixed; 
-  left: 50%; 
-  transform: translateX(-50%); 
-  bottom: 20px; 
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
   font-size: 0.8rem;
   color: #04b8b8;
   background-color: #242923;
@@ -159,9 +160,9 @@
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 5px;
-  cursor: pointer;  
+  cursor: pointer;
   margin: 10px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   z-index: 999;
   transition: background-color 0.3s ease;
 }
@@ -178,46 +179,43 @@
   color: #242923;
 }
 
-
-
 @media (max-width: 768px) {
-
-  .about-container {    
+  .about-container {
     background: linear-gradient(
-    to bottom,
-    #efefef 0%,  /* Inicio del color en la parte superior */
-    #efefef 8%,  /* Fin del color en el 5% superior */
-    #efefef 8%,  /* Inicio del color en el 5% inferior */
-    #efefef 100% /* Fin del color en el 100% inferior */
-    );    
+      to bottom,
+      #e9e8e8 0%,
+      #e9e8e8  8%,
+      #e9e8e8  8%,
+      #e9e8e8 100%
+        
+    );
   }
-  
-/*   .about-container {    
-    background: #efefef;    
-  } */
+
+  .españa {
+    color: #676666;
+    font-size: 1.2rem;
+  }
 
   .ubicacion {
     height: 40px;
-    margin-left: 7vw; 
-  
-  }
-  
-  .CV {
-    height: 95px;
-    margin-left: 1vw; 
-    background-image: url(../assets/descargaCVresponsive.png);
-    
+    margin-left: 7vw;
   }
 
-.section-dividerCV {
-  margin: 10%;
-}
+  .CV {
+    height: 95px;
+    margin-left: 1vw;
+    background-image: url(../assets/descargaCVresponsive.png);
+  }
+
+  .section-dividerCV {
+    margin: 10%;
+  }
 
   .sectionCV {
     margin-bottom: 1%;
-    display: flex;  
+    display: flex;
     align-items: center;
-    text-align: center;  
+    text-align: center;
   }
 
   .sections-container {
@@ -232,16 +230,16 @@
     text-align: center;
   }
 
-  .contAbout-texto { 
-    color: #323232;     
-    font-size: 1.5rem; 
-    text-align: center;  
-   }
+  .contAbout-texto {
+    color: #323232;
+    font-size: 1.5rem;
+    text-align: center;
+  }
 
   .contAbout-textoDesarrollo {
     color: #676666;
-    font-size: 1.2rem; 
-    text-align:left;
+    font-size: 1.2rem;
+    text-align: left;
   }
 
   .info,
@@ -250,16 +248,15 @@
     max-width: 100%;
     margin-top: 8%;
   }
-  
+
   .scroll-button {
     width: 100%;
     position: fixed;
-    bottom: 1px;    
+    bottom: 1px;
     height: 8%;
     margin: 0;
     color: #04b8b8;
     background-color: #242923;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-  }  
-
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
 }

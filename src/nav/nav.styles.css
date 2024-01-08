@@ -113,7 +113,7 @@ ul li a:hover {
 
   .button_menu {
     background-image: url("../assets/menuRegular.png");
-    background-color:rgba(2, 150, 155, 0.29);
+    background-color:rgba(2, 150, 155, 0);
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
