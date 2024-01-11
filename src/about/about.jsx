@@ -127,7 +127,7 @@ const About = () => {
             <div className="data">
               <div className="contAbout-texto">
                 <p>
-                  <span class="job-role">FullStack Developer</span>
+                  <span class="job-role">Full Stack Developer</span>
                   <br />
                   <span class="company-name">IVBA</span>
                   <br />
