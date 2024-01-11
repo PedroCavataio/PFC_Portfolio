@@ -174,7 +174,7 @@ const About = () => {
             <div className="data">
               <div className="contAbout-texto">
                 <p>
-                  <span>Coach Ágile / Supervisor Experiencia al Cliente</span>
+                  <span>Coach Agile / Supervisor Experiencia al Cliente</span>
                   <br />
                   <span>AA 2000 S.A.</span>
                   <br />
@@ -209,7 +209,7 @@ const About = () => {
                   cultivar una cultura de adaptabilidad en el equipo,
                   consolidando, junto con mi gestión en la atención al cliente,
                   la reputación del servicio ofrecido por Aeropuertos Argentina
-                  2000. .
+                  2000. 
                 </p>
               </div>
             </div>
