@@ -14,10 +14,9 @@ import pedroCavataio from "../assets/LogoPFC.png";
 import CVPC from "../assets/descargaCV.png";
 import CVResponsive from "../assets/descargaCVresponsive.png";
 
-
 const About = () => {
   const [textColor, setTextColor] = useState("#04b8b8");
-  
+
   const navigate = useNavigate();
   const scrollToTop = () => {
     window.scrollTo({
@@ -38,18 +37,19 @@ const About = () => {
     navigate("/landing");
   };
 
-
   const cvImage = () => {
-    if(window.screen.width <= 780) {
-      return CVResponsive
-    } return CVPC
-  }
+    if (window.screen.width <= 780) {
+      return CVResponsive;
+    }
+    return CVPC;
+  };
 
   const ubicacionImage = () => {
-    if(window.screen.width <= 780) {
-      return UbicacionResponsive
-    } return Ubicacion
-  }
+    if (window.screen.width <= 780) {
+      return UbicacionResponsive;
+    }
+    return Ubicacion;
+  };
 
   return (
     <>
@@ -67,7 +67,11 @@ const About = () => {
               <div className="contAbout-texto">
                 <div className="sectionCV">
                   <div className="ubicacion-container">
-                     <img src={ubicacionImage()} alt="ubicacion" className="ubicacion" />
+                    <img
+                      src={ubicacionImage()}
+                      alt="ubicacion"
+                      className="ubicacion"
+                    />
                     <p className="españa">España</p>
                   </div>
                   <a href={Curriculum} target="_blank">
@@ -123,7 +127,7 @@ const About = () => {
             <div className="data">
               <div className="contAbout-texto">
                 <p>
-                  <span class="job-role">Frontend Developer</span>
+                  <span class="job-role">FullStack Developer</span>
                   <br />
                   <span class="company-name">IVBA</span>
                   <br />
@@ -170,7 +174,7 @@ const About = () => {
             <div className="data">
               <div className="contAbout-texto">
                 <p>
-                  <span>Supervisor Experiencia al Cliente</span>
+                  <span>Coach Ágile / Supervisor Experiencia al Cliente</span>
                   <br />
                   <span>AA 2000 S.A.</span>
                   <br />
@@ -183,24 +187,29 @@ const About = () => {
             <div className="info">
               <div className="contAbout-textoDesarrollo">
                 <p>
-                  Desde el año 2013, he ocupado el puesto de Supervisor en
-                  Aeropuertos Argentina 2000 S.A., una destacada empresa en el
-                  sector aeroportuario. En mis primeros años en atención al
-                  cliente, gestionaba transacciones complejas de cobro para
-                  diversos perfiles y modos de pago. Desde 2016 hasta 2022,
-                  asumí el rol de Supervisor en la gerencia de Experiencia al
-                  Cliente, liderando un equipo de 30 personas en el Aeropuerto
-                  Jorge Newbery. En este entorno aeroportuario altamente
-                  dinámico, con más de 747,000 transacciones anuales, mantuve
-                  altos estándares de calidad. A partir de 2016, además de mis
-                  responsabilidades como Supervisor, me formé y desempeñé el rol
-                  de Coach de Agilidad. Esta doble función me ha permitido
-                  contribuir al desarrollo de mi equipo, fomentando la
-                  adaptabilidad en un entorno dinámico. Mi trayectoria refleja
-                  habilidades sólidas en la gestión de operaciones, resolución
-                  de problemas, atención al detalle, adaptación a cambios y
-                  estabilidad profesional; elementos fundamentales para el éxito
-                  en mi carrera.
+                  Desde 2016, asumí la responsabilidad de supervisar a un equipo
+                  de más de 30 personas en el Aeropuerto Internacional Jorge
+                  Newbery. En un entorno altamente dinámico, donde manteníamos
+                  un riguroso estándar de calidad, llevamos a cabo operaciones
+                  de caja que abarcaban más de 747,000 transacciones anuales. A
+                  partir de 2019, además de mi rol de supervisión, inicié el
+                  papel de Coach Agile, liderando un equipo compuesto por cuatro
+                  jefes de sector, un jefe de área y dos administrativas.
+                  Implementé ceremonias ágiles, como reuniones diarias, de
+                  revisión, retrospectiva y presentaciones, eventos clave para
+                  el proceso ágil que destacan logros y establecen metas claras
+                  para fomentar la mejora continua. En el ámbito técnico,
+                  introduje prácticas ágiles como Scrum y Kanban, adaptándolas a
+                  las necesidades específicas de nuestro entorno. Implementé
+                  herramientas colaborativas y plataformas de gestión de
+                  proyectos para optimizar la comunicación y visualización del
+                  trabajo. Facilité talleres para fortalecer la colaboración y
+                  la resolución conjunta de problemas. Este enfoque técnico como
+                  Coach Agile contribuyó a mejorar la eficiencia operativa y
+                  cultivar una cultura de adaptabilidad en el equipo,
+                  consolidando, junto con mi gestión en la atención al cliente,
+                  la reputación del servicio ofrecido por Aeropuertos Argentina
+                  2000. .
                 </p>
               </div>
             </div>
@@ -305,8 +314,6 @@ const About = () => {
           </div>
 
           <hr className="section-dividerCV" />
-
-          
         </div>
         <div>
           <button
