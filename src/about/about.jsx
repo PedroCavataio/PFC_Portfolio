@@ -191,25 +191,36 @@ const About = () => {
                   de más de 30 personas en el Aeropuerto Internacional Jorge
                   Newbery. En un entorno altamente dinámico, donde manteníamos
                   un riguroso estándar de calidad, llevamos a cabo operaciones
-                  de caja que abarcaban más de 747,000 transacciones anuales. A
-                  partir de 2019, además de mi rol de supervisión, inicié el
-                  papel de Coach Agile, liderando un equipo compuesto por cuatro
-                  jefes de sector, un jefe de área y dos administrativas.
-                  Implementé ceremonias ágiles, como reuniones diarias, de
-                  revisión, retrospectiva y presentaciones, eventos clave para
-                  el proceso ágil que destacan logros y establecen metas claras
-                  para fomentar la mejora continua. En el ámbito técnico,
-                  introduje prácticas ágiles como Scrum y Kanban, adaptándolas a
-                  las necesidades específicas de nuestro entorno. Implementé
-                  herramientas colaborativas y plataformas de gestión de
-                  proyectos para optimizar la comunicación y visualización del
-                  trabajo. Facilité talleres para fortalecer la colaboración y
-                  la resolución conjunta de problemas. Este enfoque técnico como
-                  Coach Agile contribuyó a mejorar la eficiencia operativa y
-                  cultivar una cultura de adaptabilidad en el equipo,
+                  de caja que abarcaban más de 747,000 transacciones anuales.
+                  <br />
+                  Establecí y ajusté protocolos para diversas situaciones, desde
+                  atención al cliente hasta la coordinación de equipos
+                  transversales. Abordé incidencias y desafíos, implementando
+                  soluciones ágiles. Coordiné con equipos de mantenimiento
+                  (infraestructura, eléctrico y termomecánica), asegurando
+                  funcionamiento y rápida disponibilidad de repuestos para una
+                  operativa continua y segura. Eficientemente gestioné
+                  documentación operativa. Cree el programa de control de
+                  indicadores en el Parking AEP.
+                  <br />
+                  A partir de 2019, además de mi rol de supervisión,
+                  inicié el papel de Coach Agile, liderando un equipo compuesto
+                  por cuatro jefes de sector, un jefe de área y dos
+                  administrativas. Implementé ceremonias ágiles, como reuniones
+                  diarias, de revisión, retrospectiva y presentaciones, eventos
+                  clave para el proceso ágil que destacan logros y establecen
+                  metas claras para fomentar la mejora continua. En el ámbito
+                  técnico, introduje prácticas ágiles como Scrum y Kanban,
+                  adaptándolas a las necesidades específicas de nuestro entorno.
+                  Implementé herramientas colaborativas y plataformas de gestión
+                  de proyectos para optimizar la comunicación y visualización
+                  del trabajo. Facilité talleres para fortalecer la colaboración
+                  y la resolución conjunta de problemas. Este enfoque técnico
+                  como Coach Agile contribuyó a mejorar la eficiencia operativa
+                  y cultivar una cultura de adaptabilidad en el equipo,
                   consolidando, junto con mi gestión en la atención al cliente,
                   la reputación del servicio ofrecido por Aeropuertos Argentina
-                  2000. 
+                  2000.
                 </p>
               </div>
             </div>
