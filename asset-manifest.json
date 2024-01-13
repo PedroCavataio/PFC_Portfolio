@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PFC_Portfolio/static/css/main.cef49461.css",
-    "main.js": "/PFC_Portfolio/static/js/main.64254b74.js",
+    "main.js": "/PFC_Portfolio/static/js/main.a1ecfc76.js",
     "static/js/787.137c8416.chunk.js": "/PFC_Portfolio/static/js/787.137c8416.chunk.js",
     "static/media/ControlAEP.xlsx": "/PFC_Portfolio/static/media/ControlAEP.526ab3ece94cb69ffb74.xlsx",
     "static/media/countriesDeploy.png": "/PFC_Portfolio/static/media/countriesDeploy.e8225880ad62cd2e29b2.png",
@@ -39,11 +39,11 @@
     "static/media/tecnocasa.png": "/PFC_Portfolio/static/media/tecnocasa.d0a6b8dfa38a017a11ca.png",
     "index.html": "/PFC_Portfolio/index.html",
     "main.cef49461.css.map": "/PFC_Portfolio/static/css/main.cef49461.css.map",
-    "main.64254b74.js.map": "/PFC_Portfolio/static/js/main.64254b74.js.map",
+    "main.a1ecfc76.js.map": "/PFC_Portfolio/static/js/main.a1ecfc76.js.map",
     "787.137c8416.chunk.js.map": "/PFC_Portfolio/static/js/787.137c8416.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cef49461.css",
-    "static/js/main.64254b74.js"
+    "static/js/main.a1ecfc76.js"
   ]
 }
