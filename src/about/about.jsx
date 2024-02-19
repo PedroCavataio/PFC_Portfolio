@@ -9,7 +9,7 @@ import Tecnocasa from "../assets/tecnocasa.png";
 import Umet from "../assets/umet.png";
 import Ubicacion from "../assets/ubicacionMapaBlanco.png";
 import UbicacionResponsive from "../assets/ubicacionResponsive.png";
-import Curriculum from "../assets/CVpedroCavataio_fullStackDeveloper.pdf";
+import Curriculum from "../assets/CVpedroCavataioAMZ.pdf";
 import pedroCavataio from "../assets/LogoPFC.png";
 import CVPC from "../assets/descargaCV.png";
 import CVResponsive from "../assets/descargaCVresponsive.png";
@@ -123,7 +123,7 @@ const About = () => {
 
           <hr className="section-dividerCV" />
 
-          <div className="section">
+         {/*  <div className="section">
             <div className="data">
               <div className="contAbout-texto">
                 <p>
@@ -140,24 +140,30 @@ const About = () => {
             <div className="info">
               <div className="contAbout-textoDesarrollo">
                 <p>
-                  Durante mi periodo como desarrollador en el Departamento de
-                  Sistemas del Instituto de Vivienda de Buenos Aires, desde
-                  octubre de 2022 hasta noviembre de 2023, me he centrado en el
-                  mantenimiento de sistemas, aplicando actualizaciones y parches
-                  con lenguajes como HTML, CSS, JavaScript y ReactJS. Mis
-                  responsabilidades incluyeron desde corregir bugs para
-                  garantizar estabilidad hasta realizar historias de usuario y
-                  mejoras de rendimiento. En un entorno ágil, he participado
-                  activamente en reuniones diarias, sprints, demos y
-                  retrospectivas. Colaboré estrechamente con analistas para
-                  agregar nuevas funcionalidades y mejorar las existentes,
-                  utilizando tecnologías como React para el desarrollo frontend.
-                  Además, he resuelto problemas técnicos en colaboración con
-                  usuarios finales. La documentación detallada, que abarcaba la
-                  descripción de implementaciones específicas y casos de uso,
-                  desempeñó un papel clave en mi rol al facilitar la
-                  colaboración y establecer bases sólidas para futuros
-                  desarrollos.
+                  A lo largo de mi experiencia como desarrollador en IVBA, me he
+                  especializado en el mantenimiento y desarrollo de la intranet.
+                  He utilizado como Stack tecnológico: JavaScript, ReactJS,
+                  HTML, CSS, Node.js, Express, Sequelize y Nodemailer. Mi
+                  enfoque se ha centrado en la estructuración y modularización
+                  eficientes de componentes, con la implementación estratégica
+                  de Redux para gestionar de manera efectiva el estado global.
+                  Adicionalmente, he llevado a cabo pruebas de uso, incorporando
+                  funciones clave como paginados, filtros combinados,
+                  formularios, y la creación de rutas para nuevas vistas, así
+                  como endpoints para llamadas a APIs. Este enfoque técnico ha
+                  contribuido al éxito continuo y la mejora constante de la
+                  intranet. Además, he participado activamente en la
+                  colaboración con el sector de diseño UI/UX, siempre orientado
+                  a ofrecer la mejor experiencia del usuario. Mi enfoque
+                  proactivo se refleja en la resolución de problemas técnicos
+                  muchas de las veces en colaboración con los usuarios finales.
+                  En un entorno ágil, he sido parte integral de reuniones
+                  diarias, sprints, demos y retrospectivas, contribuyendo al
+                  dinamismo y éxito de los proyectos. Asimismo, he elaborado
+                  documentación detallada que abarca la descripción de
+                  implementaciones específicas y casos de uso. Estoy
+                  comprometido con proporcionar soluciones técnicas y seguir
+                  contribuyendo al progreso continuo de los proyectos.
                 </p>
               </div>
             </div>
@@ -168,13 +174,13 @@ const About = () => {
             </div>
           </div>
 
-          <hr className="section-dividerCV" />
+          <hr className="section-dividerCV" /> */}
 
           <div className="section">
             <div className="data">
               <div className="contAbout-texto">
                 <p>
-                  <span>Coach Agile / Supervisor Experiencia al Cliente</span>
+                  <span>Especialista en cintas  transportadoras Mantenimiento Preventivo / Predictivo / Correctivo de Sistema BHS Terminal Aeroportuario</span>
                   <br />
                   <span>AA 2000 S.A.</span>
                   <br />
@@ -187,40 +193,43 @@ const About = () => {
             <div className="info">
               <div className="contAbout-textoDesarrollo">
                 <p>
-                  Desde 2016, asumí la responsabilidad de supervisar a un equipo
-                  de más de 30 personas en el Aeropuerto Internacional Jorge
-                  Newbery. En un entorno altamente dinámico, donde manteníamos
-                  un riguroso estándar de calidad, llevamos a cabo operaciones
-                  de caja que abarcaban más de 747,000 transacciones anuales.
-                  <br />
-                  Establecí y ajusté protocolos para diversas situaciones, desde
-                  atención al cliente hasta la coordinación de equipos
-                  transversales. Abordé incidencias y desafíos, implementando
-                  soluciones ágiles. Coordiné con equipos de mantenimiento
-                  (infraestructura, eléctrico y termomecánica), asegurando
-                  funcionamiento y rápida disponibilidad de repuestos para una
-                  operativa continua y segura. Eficientemente gestioné
-                  documentación operativa. Cree el programa de control de
-                  indicadores en el Parking AEP.
-                  <br />
-                  A partir de 2019, además de mi rol de supervisión,
-                  inicié el papel de Coach Agile, liderando un equipo compuesto
-                  por cuatro jefes de sector, un jefe de área y dos
-                  administrativas. Implementé ceremonias ágiles, como reuniones
-                  diarias, de revisión, retrospectiva y presentaciones, eventos
-                  clave para el proceso ágil que destacan logros y establecen
-                  metas claras para fomentar la mejora continua. En el ámbito
-                  técnico, introduje prácticas ágiles como Scrum y Kanban,
-                  adaptándolas a las necesidades específicas de nuestro entorno.
-                  Implementé herramientas colaborativas y plataformas de gestión
-                  de proyectos para optimizar la comunicación y visualización
-                  del trabajo. Facilité talleres para fortalecer la colaboración
-                  y la resolución conjunta de problemas. Este enfoque técnico
-                  como Coach Agile contribuyó a mejorar la eficiencia operativa
-                  y cultivar una cultura de adaptabilidad en el equipo,
-                  consolidando, junto con mi gestión en la atención al cliente,
-                  la reputación del servicio ofrecido por Aeropuertos Argentina
-                  2000.
+                Desde 2013, he desempeñado el rol de técnico de mantenimiento en Aeropuertos Argentina 2000 SA.
+                A partir de 2018, y en el marco de la construcción de la nueva Terminal de Partidas del Aeropuerto Internacional Ministro Pistarini de Ezeiza,me especialicé en el montaje, reparación y mantenimiento correctivo, preventivo y predictivo de cintas transportadoras. Participé en el proyecto de implementación del avanzado sistema de autogestión de equipaje (BHS) en dicha terminal.
+                <br />
+                • 20 puestos de despacho (Self Baggage Drop-off) Autofacturación e impresión de etiquetas por pasajeros.
+                <br />
+                • 8 Tomógrafos.
+                <br />
+                • 2.250 metros de cinta transportadora de equipaje, 150balanzas, 150 inyectoras para etiquetas y 4 puestos alternativos en la vereda de ingreso,Vanderlande.
+                <br />
+                
+                 <br />
+                 <br />
+                 1. Inspeccionar y mantener las cintas transportadoras: 
+                 <br />
+                 • Realizar inspecciones regulares de las cintas transportadoras para detectar problema o desgastes.
+                 • Mantenimiento preventivo y correctivo de las cintas transportadoras, como la limpieza, lubricación y reemplazo de piezas desgastadas, centrado de bandas,cambio de rodillos, motores y fotocélulas.
+                 <br />
+                 <br />
+                 2. Solucionar problemas: 
+                 <br />
+                 • Ante un problema con un cinta transportadora, me ocupaba de realizar diagnosis y solucionarlo de manera rápida y eficiente para minimizar el tiempo de inactividad. 
+                 <br />
+                 <br />
+                 3. Realizarreparaciones:
+                 <br />
+                 • Reparación o sustitución de piezas.
+                 • Corrección de las bandas. Fotocélulas, etc.
+                 <br />
+                 <br />
+                 4. Registros:
+                 <br />
+                 • Elaboración del registro de todas las inspecciones, reparaciones y mantenimiento realizado en las cintas transportadoras. 
+                 <br />
+                 <br />
+                 5.Garantizar la seguridad:
+                 <br />
+                 • Velar por la seguridad en su uso, así como el cumplimiento de la normativa de seguridad aplicable.
                 </p>
               </div>
             </div>
