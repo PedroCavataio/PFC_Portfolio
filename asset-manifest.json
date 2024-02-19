@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/PFC_Portfolio/static/css/main.cef49461.css",
-    "main.js": "/PFC_Portfolio/static/js/main.1046334e.js",
+    "main.js": "/PFC_Portfolio/static/js/main.968f88e8.js",
     "static/js/787.137c8416.chunk.js": "/PFC_Portfolio/static/js/787.137c8416.chunk.js",
     "static/media/ControlAEP.xlsx": "/PFC_Portfolio/static/media/ControlAEP.526ab3ece94cb69ffb74.xlsx",
     "static/media/countriesDeploy.png": "/PFC_Portfolio/static/media/countriesDeploy.e8225880ad62cd2e29b2.png",
     "static/media/rickDeploy.png": "/PFC_Portfolio/static/media/rickDeploy.04595055600826e74628.png",
-    "static/media/CVpedroCavataio.pdf": "/PFC_Portfolio/static/media/CVpedroCavataio.0dba238bcc25abad1500.pdf",
     "static/media/LogoPFC.png": "/PFC_Portfolio/static/media/LogoPFC.63dfa0166ca774114d93.png",
+    "static/media/CVpedroCavataioAMZ.pdf": "/PFC_Portfolio/static/media/CVpedroCavataioAMZ.076d5fda759f1ceb9cc1.pdf",
     "static/media/rickDeployGris.png": "/PFC_Portfolio/static/media/rickDeployGris.89b541ef03e2edd2ed3c.png",
     "static/media/countriesDeployGris.png": "/PFC_Portfolio/static/media/countriesDeployGris.9619468b35a53b4c0c2d.png",
     "static/media/castingAppDeployGris.png": "/PFC_Portfolio/static/media/castingAppDeployGris.614a3ce7eb2c55772d52.png",
@@ -39,11 +39,11 @@
     "static/media/tecnocasa.png": "/PFC_Portfolio/static/media/tecnocasa.d0a6b8dfa38a017a11ca.png",
     "index.html": "/PFC_Portfolio/index.html",
     "main.cef49461.css.map": "/PFC_Portfolio/static/css/main.cef49461.css.map",
-    "main.1046334e.js.map": "/PFC_Portfolio/static/js/main.1046334e.js.map",
+    "main.968f88e8.js.map": "/PFC_Portfolio/static/js/main.968f88e8.js.map",
     "787.137c8416.chunk.js.map": "/PFC_Portfolio/static/js/787.137c8416.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cef49461.css",
-    "static/js/main.1046334e.js"
+    "static/js/main.968f88e8.js"
   ]
 }
